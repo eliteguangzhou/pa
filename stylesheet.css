@@ -100,7 +100,7 @@ table	 {width:100%;}
 
 .header td 		 {color:#010101; vertical-align:middle}
 .header span	 {color:#FFFFFF; font-size:10px;}
-.header a 		 {color:Black; text-decoration:underline; font-size:11px; }
+.header a 		 {color:white; text-decoration:underline; font-size:11px; }
 .header a:hover  {color:gray;text-decoration:none}
 
 /* -box_body- */
