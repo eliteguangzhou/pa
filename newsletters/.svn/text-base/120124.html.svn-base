@@ -1,0 +1,107 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; iso-8859-1">
+	<title>Newsletter Parfumrama.com</title>
+</head>
+<body style="color:#000;font-family: Arial,Helvetica,sans-serif;" bgcolor="#fff">
+	<center>
+	<table cellpadding="0" cellspacing="0" style="padding:0 10px;width:600px;border:1px solid black;">
+		<tr><td width="600" height="24"style="font-size:11px;color:#000;"><center>Si vous ne visualisez pas correctement cette newsletter, <a style="color:#000" href="http://www.parfumrama.com/newsletters/{type}/120124.html">cliquez ici</a></center></td></tr>
+		<tr>
+			<td width="600" height="45">
+				<table cellpadding="0" cellspacing="0">
+					<tr>
+						<td width="350"><a href="{link}" style="font-size:35px;color:#dfaa5e;text-decoration:none;">Parfumrama.com</a></td>
+						<td width="250" valign="bottom" align="right"><a href="{link}" style="font-size:17px;color:#dfaa5e;text-decoration:none;">Vos parfums à prix coûtant</a></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td width="600" height="42" style="font-size:12px;text-align:center;">
+				<table cellpadding="0" cellspacing="0">
+					<tr>
+						<td width="120" height="42"><a style="color:#000;text-decoration:none;" href="{link}">Parfums femme</a></td>
+						<td width="120"><a style="color:#000;text-decoration:none;" href="{link}">Parfums homme</a></td>
+						<td width="120"><a style="color:#000;text-decoration:none;" href="{link}">Soldes</a></td>
+						<td width="120"><a style="color:#000;text-decoration:none;" href="{link}">Bons plans</a></td>
+						<td width="120"><a style="color:#000;text-decoration:none;" href="{link}">Coffrets cadeaux</a></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td width="600" height="362" valign="top">
+				<table cellpadding="0" cellspacing="0" height="352">
+					<tr>
+						<td><a href="{link}"><img style="border:none;display:block;" src="http://www.parfumrama.com/newsletters/images/120124/reduc-03-01.jpg" width="300" height="200" /></a></td>
+						<td><a href="{link}"><img style="border:none;display:block;" src="http://www.parfumrama.com/newsletters/images/120124/reduc-03-02.jpg" width="300" height="200" /></a></td>
+					</tr>
+					<tr>
+						<td><a href="{link}"><img style="border:none;display:block;" src="http://www.parfumrama.com/newsletters/images/120124/reduc-03-03.jpg" width="300" height="152" /></a></td>
+						<td><a href="{link}"><img style="border:none;display:block;" src="http://www.parfumrama.com/newsletters/images/120124/reduc-03-04.jpg" width="300" height="152" /></a></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td width="580" height="190" style="font-size:12px;text-align:center;padding:5px;border:5px solid #191919;">
+				<table cellpadding="0" cellspacing="0" width="580" height="190" style="border:1px solid #191919;">
+					<tr>
+						<td width="290" align="center"><a href="{link}" style="color:#000;text-decoration:none;"><img style="border:none;display:block;" src="http://www.parfumrama.com/newsletters/images/120124/reduc-05-02.jpg" width="107" height="200" /></a></td>
+						<td>
+							<table cellpadding="0" cellspacing="0" style="color:#000;text-align:left;margin:5px;">
+								<tr><td height="36" width="290" style="color:black;font-size:20px;" align="center" valign="middle">1 CADEAU DE BIENVENUE</td></tr>
+								<tr><td height="105">
+									<font style="color:#c49957;font-size:15px;font-weight:bold;">GUCCI BY GUCCI</font> <font style="color:#c49957;font-size:11px;">de Gucci</font><br />
+									Gel douche 50 ml d'une valeur de 19 euros<br /><br />
+								</td></tr>
+								<tr><td height="45">
+									<font style="font-weight:bold;">Code promo</font><br />
+									<a href="{link}"style="color:black;font-size:15px;padding:6px;float:left;text-decoration:none;margin-top:1px;">REDUC2012</a>
+									<a href="{link}" style="float:right;"><img style="border:none;display:block;" src="http://www.parfumrama.com/newsletters/images/120124/reduc-05-03-02.jpg" width="145" height="32" alt="J'en profite" /></a></td></tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<table cellpadding="0" cellspacing="0" width="600" height="100">
+					<tr>
+						<td>
+							<table cellpadding="0" cellspacing="0" width="462" height="100">
+								<tr><td colspan="3"><center><a style="color:#c49957;font-size:15px;font-weight:bold;text-decoration:none;">NOTRE PROMESSE CLIENT</a></center></td></tr>
+								<tr style="color:#000;font-size:10px;">
+									<td width="125"><center><a href="{link}" style="color:#000;text-decoration:none;"><font style="color:#c49957;font-size:10px;font-weight:bold;">Un large choix</font><br />Plus de 15000 parfums</a></center></td>
+									<td width="175"><center><a href="{link}" style="color:#000;text-decoration:none;"><font style="color:#c49957;font-size:10px;font-weight:bold;">Des prix bas</font><br />Dans toute la boutique toute l'année</a></center></td>
+									<td width="162"><center><a href="{link}" style="color:#000;text-decoration:none;"><font style="color:#c49957;font-size:10px;font-weight:bold;">Des codes reduc</font><br />Des réductions chaque semaine</a></center></td></tr>
+							</table>
+						</td>
+						<td width="138" height="100"><a href="{link}"><img alt="Paypal, paiements sécurisés" style="border:none;display:block;" src="http://www.parfumrama.com/newsletters/images/120124/reduc-08-01.jpg" width="135" height="96" /></a></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td width="600" height="50" style="font-size:11px;">
+				<br />
+				<a href="{link}" style="color:#000;text-decoration:none;">
+					Parfumrama.com est le 1er club de parfums qui vous permet d’acheter vos parfums de marque sans marge et sans intermédiaire toute l’année. <br />
+					En adhérant au Club Parfumrama.com, vous pouvez acheter à Prix Club 20 000 produits de beauté à prix coûtant ! (500 grandes marques de parfums). <br />
+					Vous payez vos parfums à prix coûtant ! Zéro frais de structure, Zéro frais marketing, Zéro taxes... et rien d’autre ! <br />
+					Pour la première fois, vous payez le prix juste. Nous nous rémunérons uniquement sur la formule d'adhésion de nos membres. <br />
+					Soit 70% d’économie en moyenne par rapport au prix pratiqué en boutique. <br />
+					Nos hôtesses sont à votre service pour répondre à toutes vos questions : contact@parfumrama.com<br />
+					La shopping révolution est en marche… rejoignez le mouvement !<br />
+				</a>
+				<br />
+				<br />
+			</td>
+		</tr>
+	</table>
+	</center>
+</body>
+</html>

@@ -1,0 +1,4 @@
+<?php
+  define('MODULE_NB_PRODUCTS_DISCOUNT_TITLE', 'Ermäßigung je nach Anzahl der Produkte');
+  define('MODULE_NB_PRODUCTS_DISCOUNT_DESCRIPTION', 'Ermäßigung je nach Anzahl der Produkte.');
+?>

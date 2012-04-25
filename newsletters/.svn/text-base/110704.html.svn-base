@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>parfumrama</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table border="0" cellapdding="0" cellspacing="0" style="text-align:center;width:623px;" align="center">
+  <tr>
+    <td style="padding:5px;">Si vous ne visualisez pas correctement cette newsletter, <a href="http://www.parfumrama.com/newsletters/{type}/110704.html">cliquez ici</a></td>
+  </tr>
+</table>
+<table border="0" cellapdding="0" cellspacing="0" style="border:3px solid #d6c7f2;text-align:center;width:623px;font-family:Tahoma;" align="center">
+  <tr style="background-color:#d6c7f2;">
+    <td style="padding:0px;width:340px;"><a href="http://www.parfumrama.com/?type={type}&newsletter={newsletter}"><img src="/newsletters/images/110704/logo.jpg" style="width:340px;height:74px;border:none;"alt="parfumrama.com"/></a></td>
+    <td style="padding:0px;color:#fff;font-weight:bold;font-size:18px;font-family:comic;">Vos parfums à prix coûtant</td>
+  </tr>
+  <tr>
+    <td style="padding:0px;" colspan="2"><a href="http://www.parfumrama.com/?type={type}&newsletter={newsletter}"><img src="/newsletters/images/110704/top.jpg" style="width:617px;height:384px;border:none;"alt="Top"/></a></td>
+  </tr>
+  <tr>
+    <td style="padding:0px;" colspan="2" align="center">
+      <table border="0" cellapdding="0" cellspacing="0" style="font-family:verdana;font-size:17px;font-family:comic;width:563px;text-align:center;border:1px solid #d6c7f2; border-bottom:none;margin-top:10px;" align="center">
+        <tr>
+           <td style="padding:0px;"><a href="http://www.parfumrama.com/product_info.php?products_id=145368&type={type}&newsletter={newsletter}"><img src="/newsletters/images/110704/products.jpg" alt="Cadeaux" style="border:none;" /></a></td>
+           <td style="padding:0px;">
+             <div style="font-weight:bold;font-size:20px;">LOLITA LEMPICKA<br>Eau de Parfum Vaporisateur 100 ml</div><br>
+             <div style="text-align:left;padding:10px;">Parfum de créatrice, le premier parfum de Lolita Lempicka est un conte de fées pour femmes qui réenchante le quotidien. Fruit de la tentation, c'est un parfum tout en contraste où chaque détail parle d'amour. Sa fragrance est un nectar enivrant de fleur de réglisse, alliance d'un accord réglisse et d'un habillage fleuri oriental gourmand.</div>
+           </td>
+        </tr>
+        <tr>
+          <td style="font-weight:bold;" colspan="2"><br>
+            PRIX PARFUMRAMA : 29.70 EUR<br><br>
+            <div style="font-size:13px;font-weight:normal;">Prix Marionnaud : 85.80 EUR</div><br>
+            <div style="font-size:13px;font-weight:normal;">Prix Sephora : 85.80 EUR</div>
+          </td>
+        </tr>
+        <tr>
+          <td style="padding:20px 0;" colspan="2">
+            <a href="http://www.parfumrama.com/product_info.php?products_id=145368&type={type}&newsletter={newsletter}">
+              <img src="/newsletters/images/110704/button.jpg" alt="J'en profite" style="border:none;" />
+            </a>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" style="vertical-align:top;color:#fff;padding:0px;" colspan="2">
+      <img src="/newsletters/images/110704/bg.jpg" style="width:617px;height:162px;" alt="Notre promesse client">
+    </td>
+  </tr>
+</table>
+</body>
+</html>
