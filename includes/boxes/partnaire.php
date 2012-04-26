@@ -1,15 +1,19 @@
 <tr>
-
-
-<td align="center">
-  <table border="0" width="100%" cellspacing="0" cellpadding="0" class="box_heading_table_3">
-  <tbody><tr>
-<!--     <td><img src="includes/languages/french/images/box_corn_l_3.gif" border="0" alt="" width="11" height="30" style="background:white;"></td> -->
-    <td style="width:100%;" class="box_heading_td_3"><?php echo OUR_MARQUES;?></td>
-<!--     <td><img src="includes/languages/french/images/box_corn_r_3.gif" border="0" alt="" width="11" height="30" style="background:white;"></td> -->
-  </tr>
-</tbody></table>
-    </td>
+	<td>
+		<table border="0" width="100%" cellspacing="0" cellpadding="0"
+			class="box_heading_table_2">
+			<tbody>
+				<tr>
+					<td><img src="includes/languages/french/images/box_corn_lROSE.gif"
+						border="0" alt="" width="21" height="24">
+					</td>
+					<td style="width: 100%;" class="box_heading_td_2">Nos marques</td>
+					<td><img src="includes/languages/french/images/box_corn_rROSE.gif"
+						border="0" alt="" width="11" height="24">
+					</td>
+				</tr>
+			</tbody>
+		</table></td>
 </tr>
 <tr>
 <td>

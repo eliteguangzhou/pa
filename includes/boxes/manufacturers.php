@@ -19,7 +19,7 @@
     $info_box_contents = array();
     $info_box_contents[] = array('text' => BOX_HEADING_MANUFACTURERS);
 
-    new infoBoxHeading3($info_box_contents, false, false);
+    new infoBoxHeading($info_box_contents, false, false);
 
     if ($number_of_rows <= MAX_DISPLAY_MANUFACTURERS_IN_A_LIST) {
 // Display a list

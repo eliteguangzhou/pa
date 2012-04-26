@@ -104,9 +104,9 @@ function debuttableau($titre)
 
 echo '<table border="0" width="100%" cellspacing="0" cellpadding="0"  class="box_heading_table_2">
   <tr>
-    <td></td>
+    <td>'.tep_image(DIR_WS_IMAGES.'box_corn_lROSE.gif').'</td>
     <td  style="width:100%;" class="box_heading_td_2">'.$titre.'</td>
-    <td></td>
+    <td>'.tep_image(DIR_WS_IMAGES.'box_corn_rROSE.gif').'</td>
   </tr>
 </table>
 ';	

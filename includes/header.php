@@ -96,7 +96,7 @@
                                     </table>
                                 </td>-->
 <!--                                     <td><?php require_once(DIR_WS_MODULES.'easy_coupons_box2.php'); ?></td> -->
-                                <td><?php echo $customer_name ? HEADER_HELLO . ' ' . $customer_name . '<br />'.(isset($new_discount) && $new_discount > 0 ? constant('HEADER_NEW_DISCOUNT'.(isset($new_discount) && $new_discount > 1 ? 'S' : '')) . '<br />' : '').'<a href="'.tep_href_link('logoff.php').'">'.HEADER_LOGOUT.'</a>' : '<a href="'.tep_href_link('login.php').'">'.HEADER_LOGIN.'</a>'; ?></td>
+                                <td><?php echo $customer_name ? HEADER_HELLO . ' ' . $customer_name . '<br />'.(isset($new_discount) && $new_discount > 0 ? constant('HEADER_NEW_DISCOUNT'.(isset($new_discount) && $new_discount > 1 ? 'S' : '')) . '<br />' : '').'<a class="banner_login" href="'.tep_href_link('logoff.php').'">'.HEADER_LOGOUT.'</a>' : '<a class="banner_login" href="'.tep_href_link('login.php').'">'.HEADER_LOGIN.'</a>'; ?></td>
   
                             </tr>
                         </table> 

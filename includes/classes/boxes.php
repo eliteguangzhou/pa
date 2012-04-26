@@ -94,11 +94,11 @@
 
       $info_box_contents = array();
       $info_box_contents[] = array(array('params' => '',
-                                         'text' => ''),
+                                         'text' => ''.tep_image(DIR_WS_IMAGES.'box_corn_lROSE.gif').''),
 									(array('params' => ' style="width:100%;" class="box_heading_td_2"',
                                          'text' => ''.$contents[0]['text'].'')),
 									(array('params' => '',
-                                         'text' => '')));
+                                         'text' => ''.tep_image(DIR_WS_IMAGES.'box_corn_rROSE.gif').'')));
       $this->tableBox($info_box_contents, true);
     }
   } 
@@ -150,12 +150,12 @@
       }
 
       $info_box_contents = array();
-      $info_box_contents[] = array(array('params' => '',
-                                         'text' => ''),
+      $info_box_contents[] = array(array('params' => 'style="background-color:white;"',
+                                         'text' => ''.tep_image(DIR_WS_IMAGES.'box_corn_l_0.gif').''),
 									(array('params' => ' style="width:100%;" class="box_heading_td"',
                                          'text' => ''.$contents[0]['text'].'')),
-									(array('params' => '',
-                                         'text' => '')));
+									(array('params' => 'style="background-color:white;"',
+                                         'text' => ''.tep_image(DIR_WS_IMAGES.'box_corn_r_0.gif').'')));
       $this->tableBox($info_box_contents, true);
     }
   } 
