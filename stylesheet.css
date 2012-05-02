@@ -405,7 +405,7 @@ table#sponsorship_list td{padding:3px;}
 #notice_error{background-color:#FFB3B5;margin-bottom:10px;padding:2px;color:black;}
 
 /*Menu*/
-.main_menu{text-align:center;height:28px;font-weight:bold;}
+.main_menu{text-align:center;height:28px;font-weight:bold;width: 100%;}
 .main_menu a{text-decoration:none;font-weight:bold;}
 .main_menu .noel{background: url(images/noel.jpg) center center no-repeat;}
 .main_menu .noel a{color:red;font-weight:bold;}
