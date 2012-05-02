@@ -87,7 +87,7 @@ table, td, .main, select, input, textarea {
 	padding:0px;
 }
 img      {border:0px;}
-table	 {width:100%;}
+table	 { /*width:179px/*100%;*/}
 
 .vam { vertical-align:middle}
 .shipCart{ padding-left : 45px; }
@@ -505,16 +505,17 @@ span.black-text{color:#000000;}
 
 /* partnaire box */
 #partnair_cont,#partnair_cont_sup{
-      width: 180px;
+      width: 178px;
   height: 345px;
   border-bottom: 1px solid black;
+  border-right: 1px solid black;
 /*   position: relative; */
   overflow: hidden; 
   margin: 0 auto;
 }
 
 .picture_partnaire{
-          width: 180px;
+          width: 179px;
   height: 69px;
   position: relative;
 /*   overflow: hidden; */
