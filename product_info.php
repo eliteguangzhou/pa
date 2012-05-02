@@ -304,4 +304,4 @@ include(DIR_WS_MODULES .'other_products_gamme.php');// echo get_related_products
 
 <?php $category_q = tep_db_query('select categories_id from products_to_categories where products_id = '.$product_info['products_id']);
 $category = tep_db_fetch_array($category_q);?>
-<script type="text/javascript" src="http://img.netaffiliation.com/u/31/p13233.js?zone=produit&idproduit=<?php echo $HTTP_GET_VARS['products_id'];?>&idcategorie=<?php echo $info_box_contents['text'];?>"></script>
+<script type="text/javascript" src="http://img.netaffiliation.com/u/31/p13233.js?zone=produit&idproduit=<?php echo $HTTP_GET_VARS['products_id'];?>&idcategorie=<?php echo $category['categories_id'];?>"></script>

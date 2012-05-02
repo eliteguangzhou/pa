@@ -57,7 +57,7 @@
     $products_query = tep_db_query("select products_id, products_name from " . TABLE_ORDERS_PRODUCTS . " where orders_id = '" . (int)$orders['orders_id'] . "' order by products_name");
     $products_ids = '';
     while ($products = tep_db_fetch_array($products_query)) {
-      $products_ids .= $products[$i]['id'].',';
+      $products_ids .= $products['products_id'].',';
       $products_array[] = array('id' => $products['products_id'],
                                 'text' => $products['products_name']);
     }
@@ -272,7 +272,7 @@ var google_conversion_value = 0;
 <!-- footer_eof //--></body>
 </html>
 <?php require(DIR_WS_INCLUDES . 'application_bottom.php'); ?>
-<script type="text/javascript" src="http://img.netaffiliation.com/u/38/p28451.js?zone=fincommande&montant=<?php echo $netaffiliation;?>&listeids=<?php echo $products_ids;?>&idtransaction=<?php $insert_id;?>"></script>
+<script type="text/javascript" src="http://img.netaffiliation.com/u/38/p28451.js?zone=fincommande&montant=<?php echo $netaffiliation;?>&listeids=<?php echo $products_ids;?>&idtransaction=<?php echo $insert_id;?>"></script>
 <script language="JavaScript">
 var merchant_id = '478192'
 var order_id = '<?php $insert_id;?>'

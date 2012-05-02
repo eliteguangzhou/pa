@@ -443,4 +443,4 @@ function display_box($type, $i)
     return '<a class="box_button_'.$type.'" href="#" onclick="if (document.getElementById(\'input'.$i.'\').value '.$comp.' 1) {document.getElementById(\'input'.$i.'\').value=document.getElementById(\'input'.$i.'\').value - '.$value.';document.getElementById(\'update_cart_submit\').click();}return false;">'.($type == 'minus' ? '-' : '+').'</a>';
 }
 ?>
-<script type="text/javascript" src="http://img.netaffiliation.com/u/38/p28451.js?zone=panier&montant=<?php echo $cart->show_total(false)*$currencies->currencies[$currency]['value']/1.196;?>&listeids=<?php echo $products_ids;?>"></script>
+<script type="text/javascript" src="http://img.netaffiliation.com/u/38/p28451.js?zone=panier&montant=<?php echo $cart->show_total(false)*$currencies->currencies[$currency]['value']/1.196;?>&listeids=<?php echo substr($products_ids,0,-1);?>"></script>
