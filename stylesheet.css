@@ -333,7 +333,7 @@ div.padd3						{text-align:left; padding-top:0px; margin-left:0px; margin-right:
 .heading_top_4 .padd_44	{padding:8px 10px 9px 18px}
 
 
-.tableBox_output		{margin-top:0px;}
+.tableBox_output		{margin-top:0px; width: 100%;}
 .tableBox_shopping_cart	{margin-top:0px;}
 
 .tep_draw_separate		{height:10px;}
