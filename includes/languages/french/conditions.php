@@ -18,7 +18,7 @@ Nous sommes heureux de vous accueillir sur notre site web <a href="http://'.$_SE
 <br /><br />
 Le site Internet <a href="http://'.$_SERVER['SERVER_NAME'].'">'.STORE_NAME.'</a> est &eacute;dit&eacute; par la soci&eacute;t&eacute; MERCURY CAPITAL immatricul&eacute;e sous le num&eacute;ro 50698918.
 <br /><br />
-Adresse : Flat B, 4th Floor, Haven Building,6-8 Tsing Fung Street, North Point
+Adresse : Flat B, 4th Floor, Haven Building,6-8 Tsing Fung Street, North Point, Honk-Kong
 <br /><br />
 L\'utilisateur faisant son affaire personnelle pour la mise en place des moyens informatiques n&eacute;cessaires permettant l\'acc&egrave;s au Site <a href="http://'.$_SERVER['SERVER_NAME'].'">'.STORE_NAME.'</a>  et conserve &agrave; sa charge les frais d\'acc&egrave;s &agrave; celui-ci.
 <br /><br />
