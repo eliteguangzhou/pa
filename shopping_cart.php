@@ -258,7 +258,6 @@ $products_ids = '';  //use for the tag in last line.
                 elseif ($cart->can_buy(3))
                     echo TEXT_MIN_PRODUCTS2;
 
-                    error_log('is member ='.$is_member);
 				$max = MAX_DAILY_LIMIT_NOT_MEMBER;//$is_member || $cart->has_card() ? MAX_DAILY_LIMIT : MAX_DAILY_LIMIT_NOT_MEMBER;
                 if ($cart->count_contents(false) >= $max ) {
                   if (!$is_member && !$cart->has_card())
