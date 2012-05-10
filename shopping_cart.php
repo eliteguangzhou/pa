@@ -258,7 +258,6 @@ $products_ids = '';  //use for the tag in last line.
                 elseif ($cart->can_buy(3))
                     echo TEXT_MIN_PRODUCTS2;
 
-                    error_log('is member ='.$is_member);
 				$max = MAX_DAILY_LIMIT_NOT_MEMBER;//$is_member || $cart->has_card() ? MAX_DAILY_LIMIT : MAX_DAILY_LIMIT_NOT_MEMBER;
                 if ($cart->count_contents(false) >= $max ) {
                   if (!$is_member && !$cart->has_card())
@@ -443,4 +442,4 @@ function display_box($type, $i)
     return '<a class="box_button_'.$type.'" href="#" onclick="if (document.getElementById(\'input'.$i.'\').value '.$comp.' 1) {document.getElementById(\'input'.$i.'\').value=document.getElementById(\'input'.$i.'\').value - '.$value.';document.getElementById(\'update_cart_submit\').click();}return false;">'.($type == 'minus' ? '-' : '+').'</a>';
 }
 ?>
-<script type="text/javascript" src="http://img.netaffiliation.com/u/38/p28451.js?zone=panier&montant=<?php echo $cart->show_total(false)*$currencies->currencies[$currency]['value']/1.196;?>&listeids=<?php echo $products_ids;?>"></script>
+<script type="text/javascript" src="http://img.netaffiliation.com/u/38/p28451.js?zone=panier&montant=<?php echo $cart->show_total(false)*$currencies->currencies[$currency]['value']/1.196;?>&listeids=<?php echo substr($products_ids,0,-1);?>"></script>

@@ -82,6 +82,7 @@ class shoppingCart {
 		 return PRODUCTS_NOT_TOGETHER1;*/
 		$max = MAX_DAILY_LIMIT_NOT_MEMBER;//$is_member || $this->has_card() ? MAX_DAILY_LIMIT : MAX_DAILY_LIMIT_NOT_MEMBER;
 		if (
+		(
 		$max > 0 &&
 		(
 		isset($this->contents[$products_id]['qty']) &&
@@ -89,7 +90,7 @@ class shoppingCart {
 		|| !isset($this->contents[$products_id])
 		) &&
 		$this->count_contents(false) >= $max
-		) {
+		) && !$gift){
 			return;
 		}
 

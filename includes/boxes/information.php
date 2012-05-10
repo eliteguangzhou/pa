@@ -35,7 +35,7 @@
                                          '</ul>');
 
   new infoBox($info_box_contents);
-?><tr><td> <br> <br> </td></tr>
+?>
             </td>
           </tr>
 <!-- information_eof //-->

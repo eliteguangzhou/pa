@@ -14,9 +14,11 @@ define('NAVBAR_TITLE', 'CONDITIONS GENERALES DE VENTE');
 define('HEADING_TITLE', 'CONDITIONS GENERALES DE VENTE');
 
 define('TEXT_INFORMATION', '
-Nous sommes heureux de vous accueillir sur notre site web <a href="http://'.$_SERVER['SERVER_NAME'].'">'.STORE_NAME.'</a> (ci-apr&egrave;s d&eacute;nomm&eacute; le "Site"). Nous nous efforçons d\'assurer au mieux de nos possibilit&eacute;s, l\'exactitude et la mise &agrave; jour des informations diffus&eacute;es sur ce site, dont nous nous r&eacute;servons le droit de corriger, &agrave; tout moment et sans pr&eacute;avis, le contenu.
+Nous sommes heureux de vous accueillir sur notre site web <a href="http://'.$_SERVER['SERVER_NAME'].'">'.STORE_NAME.'</a> (ci-apr&egrave;s d&eacute;nomm&eacute; le "Site"). Nous nous effor&ccedil;ons d\'assurer au mieux de nos possibilit&eacute;s, l\'exactitude et la mise &agrave; jour des informations diffus&eacute;es sur ce site, dont nous nous r&eacute;servons le droit de corriger, &agrave; tout moment et sans pr&eacute;avis, le contenu.
 <br /><br />
-Le site Internet <a href="http://'.$_SERVER['SERVER_NAME'].'">'.STORE_NAME.'</a> est &eacute;dit&eacute; par la soci&eacute;t&eacute; MERCURY CAPITAL immatricul&eacute;e sous le num&eacute;ro 5069891888223892.
+Le site Internet <a href="http://'.$_SERVER['SERVER_NAME'].'">'.STORE_NAME.'</a> est &eacute;dit&eacute; par la soci&eacute;t&eacute; MERCURY CAPITAL immatricul&eacute;e sous le num&eacute;ro 50698918.
+<br /><br />
+Adresse : Flat B, 4th Floor, Haven Building,6-8 Tsing Fung Street, North Point, Honk-Kong
 <br /><br />
 L\'utilisateur faisant son affaire personnelle pour la mise en place des moyens informatiques n&eacute;cessaires permettant l\'acc&egrave;s au Site <a href="http://'.$_SERVER['SERVER_NAME'].'">'.STORE_NAME.'</a>  et conserve &agrave; sa charge les frais d\'acc&egrave;s &agrave; celui-ci.
 <br /><br />
@@ -164,10 +166,7 @@ Un cookie n\'a que pour but d\'enregistrer des informations relatives &agrave; l
 <br /><br />
 Votre configuration Internet vous permet de refuser l\'enregistrement de ces cookies.
 <br />
-<h3>Article 12. Textes applicables et attribution de juridiction.</h3>
-Le pr&eacute;sent contrat est soumis &agrave; la loi Europ&eacute;enne. Tout litige concernant l\'interpr&eacute;tation, l\'ex&eacute;cution ou la rupture du contrat conclu entre <a href="http://'.$_SERVER['SERVER_NAME'].'">'.STORE_NAME.'</a> et l\'utilisateur sera, même en cas de pluralit&eacute; de d&eacute;fendeurs et &agrave; d&eacute;faut d\'accord amiable, de la comp&eacute;tence exclusive des tribunaux de Gen&egrave;ve.
-<br />
-<h3>Article 13. Modification des conditions g&eacute;n&eacute;rales de vente.</h3>
+<h3>Article 12. Modification des conditions g&eacute;n&eacute;rales de vente.</h3>
 Compte tenu des &eacute;volutions possibles du site, <a href="http://'.$_SERVER['SERVER_NAME'].'">'.STORE_NAME.'</a> se r&eacute;serve la possibilit&eacute; de modifier &agrave; tout moment les pr&eacute;sentes conditions g&eacute;n&eacute;rales de vente. Les nouvelles conditions g&eacute;n&eacute;rales de vente seront disponibles en ligne sur le site de <a href="http://'.$_SERVER['SERVER_NAME'].'">'.STORE_NAME.'</a> et seront applicables aux seules ventes r&eacute;alis&eacute;es post&eacute;rieurement &agrave; la modification. Il appartient au client de v&eacute;rifier l\'existence de nouvelles clauses dans les Conditions G&eacute;n&eacute;rales de Vente ici pr&eacute;sentes &agrave; chaque nouvelle commande.
 ');
 ?>

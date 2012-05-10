@@ -32,27 +32,29 @@
         'MPN' => 'products_model',
         'Marque / Fabriquant' => 'm.manufacturers_name as manufacturer',
         'EAN / UPC' => 'products_model as model',
-        'Référence Interne' => 'products_model as intern',
+        'RÃ©fÃ©rence Interne' => 'products_model as intern',
         'Nom du produit' => 'CONCAT(products_name, " - ", products_description) as products_name',
         'Description du produit' => 'products_description',
-        'Prix' => 'products_price',
+        'Prix actuel' => 'products_price',
+        
         'Expedition standard' => "'15'",
-        'Disponibilité' => 'IF(products_status, "O", "N") as products_status',
-        'Description de la disponibilité + garantie' => "'Livraison sous 8 à 12 jours ouvrables'",
+        'DisponibilitÃ©' => 'IF(products_status, "O", "N") as products_status',
+        'Description de la disponibilitÃ© + garantie' => "'Livraison sous 8 Ã  12 jours ouvrables'",
         'URL produit' => "CONCAT('http://www.parfumrama.com/product_info.php?products_id=', p.products_id)",
         'URL image' => "CONCAT('http://www.parfumwholesale.com/images/', products_image)",
-        'Catégorie' => 'p.type as cat',
+        'CatÃ©gorie' => 'p.type as cat',
         'Type' => 'p.type as Type',
-        'Sexe' => 'p.gender as Gender'
+        'Sexe' => 'p.gender as Gender',
+ 	   'Prix d\'origine' => 'products_price',
     );
 
     $cat = array(
-        'Shampoo' => 'Santé et beauté > Parfum',
-        'Conditioner' => 'Santé et beauté > Parfum',
-        'Fragrances' => 'Santé et beauté > Parfum',
-        'Bath & Body' => 'Santé et beauté > Parfum',
-        'Gift Sets' => 'Santé et beauté > Parfum',
-        'Gift Set' => 'Santé et beauté > Parfum'
+        'Shampoo' => 'SantÃ© et beautÃ© > Parfum',
+        'Conditioner' => 'SantÃ© et beautÃ© > Parfum',
+        'Fragrances' => 'SantÃ© et beautÃ© > Parfum',
+        'Bath & Body' => 'SantÃ© et beautÃ© > Parfum',
+        'Gift Sets' => 'SantÃ© et beautÃ© > Parfum',
+        'Gift Set' => 'SantÃ© et beautÃ© > Parfum'
     );
 
     $type = array(
@@ -65,7 +67,7 @@
     );
 
     $query = tep_db_query("
-        SELECT ".join(',', $fields)."
+        SELECT ".join(',', $fields).",products_tax_class_id, buy_price
         FROM `products` p, products_description pd, manufacturers m
         WHERE pd.products_id = p.products_id
         and m.manufacturers_id = p.manufacturers_id
@@ -77,6 +79,9 @@
     $datas = join('|', array_keys($fields));
     while ($data = tep_db_fetch_array($query)) {
         $data['products_price'] = round($currencies->currencies[$currency]['value']*$data['products_price']*100)/100;
+        $data['products_price_r'] = substr($currencies->display_price(get_reduced_price($data['buy_price']), tep_get_tax_rate($data['products_tax_class_id'])),0,-3);
+		unset($data['buy_price']);
+		unset($data['products_tax_class_id']);
         $data['cat'] = $cat[$data['cat']];
         $data['Type'] = $type[$data['Type']];
         $datas .= "\r\n".join('|', $data);
@@ -105,7 +110,7 @@
     //CSV SHOPZILLA.com
     //***************************************
     $fields = array (
-        'Catégorie' => 'p.type as Type',
+        'CatÃ©gorie' => 'p.type as Type',
         'Fabriquant' => 'm.manufacturers_name as manufacturer',
         'Titre' => 'CONCAT(products_name, " - ", products_description) as products_name',
         'Desc' => 'products_description',
@@ -116,7 +121,7 @@
         'Condition' => "'' as cond",
         'Poids' => "'' as poids",
         'Frais de Livraison' => "'15' as frais",
-        'Enchère' => "'' as enchere",
+        'EnchÃ©re' => "'' as enchere",
         'Promo' => "'' as promo",
         'EAN/UPC' => 'products_model as upc',
         'Prix' => 'products_price'

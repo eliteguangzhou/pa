@@ -87,7 +87,7 @@ table, td, .main, select, input, textarea {
 	padding:0px;
 }
 img      {border:0px;}
-table	 {width:100%;}
+table	 { /*width:179px/*100%;*/}
 
 .vam { vertical-align:middle}
 .shipCart{ padding-left : 45px; }
@@ -333,7 +333,7 @@ div.padd3						{text-align:left; padding-top:0px; margin-left:0px; margin-right:
 .heading_top_4 .padd_44	{padding:8px 10px 9px 18px}
 
 
-.tableBox_output		{margin-top:0px;}
+.tableBox_output		{margin-top:0px; width: 100%;}
 .tableBox_shopping_cart	{margin-top:0px;}
 
 .tep_draw_separate		{height:10px;}
@@ -405,7 +405,7 @@ table#sponsorship_list td{padding:3px;}
 #notice_error{background-color:#FFB3B5;margin-bottom:10px;padding:2px;color:black;}
 
 /*Menu*/
-.main_menu{text-align:center;height:28px;font-weight:bold;}
+.main_menu{text-align:center;height:28px;font-weight:bold;width: 100%;}
 .main_menu a{text-decoration:none;font-weight:bold;}
 .main_menu .noel{background: url(images/noel.jpg) center center no-repeat;}
 .main_menu .noel a{color:red;font-weight:bold;}
@@ -505,16 +505,17 @@ span.black-text{color:#000000;}
 
 /* partnaire box */
 #partnair_cont,#partnair_cont_sup{
-      width: 180px;
+      width: 178px;
   height: 345px;
   border-bottom: 1px solid black;
+  border-right: 1px solid black;
 /*   position: relative; */
   overflow: hidden; 
   margin: 0 auto;
 }
 
 .picture_partnaire{
-          width: 180px;
+          width: 179px;
   height: 69px;
   position: relative;
 /*   overflow: hidden; */

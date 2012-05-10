@@ -1,13 +1,13 @@
 <tr>
 	<td>
-		<table border="0" width="100%" cellspacing="0" cellpadding="0"
+		<table border="0" width="179px" cellspacing="0" cellpadding="0"
 			class="box_heading_table_2">
 			<tbody>
 				<tr>
 					<td><img src="includes/languages/french/images/box_corn_lROSE.gif"
 						border="0" alt="" width="21" height="24">
 					</td>
-					<td style="width: 100%;" class="box_heading_td_2">Nos marques</td>
+					<td style="width: 179px" class="box_heading_td_2">Nos marques</td>
 					<td><img src="includes/languages/french/images/box_corn_rROSE.gif"
 						border="0" alt="" width="11" height="24">
 					</td>
