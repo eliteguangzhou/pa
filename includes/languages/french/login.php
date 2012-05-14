@@ -20,9 +20,9 @@ define('TEXT_NEW_CUSTOMER_INTRODUCTION', 'Veuillez cliquer sur le bouton "Contin
 define('HEADING_RETURNING_CUSTOMER', 'Vous avez d$eacute;j&agrave; un compte ?');
 define('TEXT_RETURNING_CUSTOMER', 'Identifiez-vous pour y acc&egrave;der.  ');
 
-define('TEXT_PASSWORD_FORGOTTEN', 'Vous avez oubli$eacute; votre mot de passe ? Cliquez ici.');
+define('TEXT_PASSWORD_FORGOTTEN', 'Vous avez oubli&eacute; votre mot de passe ? Cliquez ici.');
 
-define('TEXT_LOGIN_ERROR_IN_LOGIN', 'Erreur : Cette adresse email n\'est pas enregistr$eacute;e sur notre site.');
+define('TEXT_LOGIN_ERROR_IN_LOGIN', 'Erreur : Cette adresse email n\'est pas enregistr&eacute;e sur notre site.');
 define('TEXT_LOGIN_ERROR_IN_PASSWORD', 'Erreur : Le mot de passe n\'est pas valide pour cette adresse email.');
 define('TEXT_VISITORS_CART', '<font color="#ff0000"><b>REMARQUE :</b></font> Le contenu de votre &quot;panier visiteurs&quot; sera ajout$eacute; &agrave; celui de votre &quot;panier membres&quot; d&eacute;s que vous aurez ouvert une session. <a href="javascript:session_win();">[Plus d\'info]</a>');
 
