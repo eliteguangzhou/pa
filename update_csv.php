@@ -153,9 +153,9 @@
     while ($data = tep_db_fetch_array($query)) {
         $data['products_price'] = round($currencies->currencies[$currency]['value']*$data['products_price']*100)/100;
         $data['Type'] = $type[$data['Type']]; 
-        $datas .= "\r\n".join(chr(9), $data);
-        $data['products_price_r'] = substr($currencies->display_price(get_reduced_price($data['buy_price']), tep_get_tax_rate($data['products_tax_class_id'])),0,-3);
-		
+        $data['products_price_r'] .= substr($currencies->display_price(get_reduced_price($data['buy_price']), tep_get_tax_rate($data['products_tax_class_id'])),0,-3);
+		$datas .= "\r\n".join(chr(9), $data);
+        
         if (strpos($data['products_description'], 'vaporisateur') !== false) {
           $data['products_description'] = str_replace('vaporisateur', 'spray', $data['products_description']);
           $data['products_name'] = str_replace('vaporisateur', 'spray', $data['products_name']);
