@@ -124,7 +124,8 @@
         'Enchére' => "'' as enchere",
         'Promo' => "'' as promo",
         'EAN/UPC' => 'products_model as upc',
-        'Prix' => 'products_price'
+        'Prix' => 'products_price',
+    	'Prix Barrés' => 'products_price'
     );
 
     $type = array(
@@ -151,8 +152,10 @@
     $datas = join(chr(9), array_keys($fields));
     while ($data = tep_db_fetch_array($query)) {
         $data['products_price'] = round($currencies->currencies[$currency]['value']*$data['products_price']*100)/100;
-        $data['Type'] = $type[$data['Type']];
+        $data['Type'] = $type[$data['Type']]; 
         $datas .= "\r\n".join(chr(9), $data);
+        $data['products_price_r'] = substr($currencies->display_price(get_reduced_price($data['buy_price']), tep_get_tax_rate($data['products_tax_class_id'])),0,-3);
+		
         if (strpos($data['products_description'], 'vaporisateur') !== false) {
           $data['products_description'] = str_replace('vaporisateur', 'spray', $data['products_description']);
           $data['products_name'] = str_replace('vaporisateur', 'spray', $data['products_name']);
@@ -167,6 +170,7 @@
           $data['products_model'] = $data['products_model'] . '1';
           $datas .= "\r\n".join(chr(9), $data);
         }
+        
     }
     $file = 'download/csv/shopzilla.csv';
     if (file_put_contents($file, $datas)) echo 'CSV Shopzilla.com mis a jour <br />';
