@@ -138,7 +138,7 @@
     );
 
     $query = tep_db_query("
-        SELECT ".join(',', $fields)."
+        SELECT ".join(',', $fields)." ,products_tax_class_id, buy_price
         FROM `products` p, products_description pd, products_to_categories ptc, manufacturers m
         WHERE pd.products_id = p.products_id
         and m.manufacturers_id = p.manufacturers_id
@@ -154,7 +154,9 @@
         $data['products_price'] = round($currencies->currencies[$currency]['value']*$data['products_price']*100)/100;
         $data['Type'] = $type[$data['Type']]; 
         $data['products_price_r'] .= substr($currencies->display_price(get_reduced_price($data['buy_price']), tep_get_tax_rate($data['products_tax_class_id'])),0,-3);
-		$datas .= "\r\n".join(chr(9), $data);
+				unset($data['buy_price']);
+		unset($data['products_tax_class_id']);
+        $datas .= "\r\n".join(chr(9), $data);
         
         if (strpos($data['products_description'], 'vaporisateur') !== false) {
           $data['products_description'] = str_replace('vaporisateur', 'spray', $data['products_description']);

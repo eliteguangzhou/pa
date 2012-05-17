@@ -17,5 +17,5 @@ define('TEXT_INFORMATION', '<b>Nous livrons dans le monde entier ! </b></p>
 <p><b>Co&ucirc;t du transport : </b>
 15&euro;</p>
 <p><b>D&eacute;lais de livraison :</b>
-8 à 12 jours.</p>');
+8 &agrave; 12 jours ouvrables.</p>');
 ?>
