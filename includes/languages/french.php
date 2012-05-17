@@ -208,10 +208,10 @@ define('ENTRY_CITY_ERROR', 'Votre ville doit contenir un minimum de ' . ENTRY_CI
 define('ENTRY_CITY_TEXT', '*');
 define('ENTRY_STATE', 'Etat/D&eacute;partement :');
 define('ENTRY_STATE_ERROR', 'Votre &eacute;tat doit contenir un minimum de ' . ENTRY_STATE_MIN_LENGTH . ' caract&eacute;res.');
-define('ENTRY_STATE_ERROR_SELECT', 'Veuillez choisir un &eacute;tat &agarve; partir de la liste d&eacute;roulante.');
+define('ENTRY_STATE_ERROR_SELECT', 'Veuillez choisir un &eacute;tat &agrave; partir de la liste d&eacute;roulante.');
 define('ENTRY_STATE_TEXT', '*');
 define('ENTRY_COUNTRY', 'Pays :');
-define('ENTRY_COUNTRY_ERROR', 'Veuillez choisir un pays &agarve; partir de la liste d&eacute;roulante.');
+define('ENTRY_COUNTRY_ERROR', 'Veuillez choisir un pays &agrave; partir de la liste d&eacute;roulante.');
 define('ENTRY_COUNTRY_TEXT', '*');
 define('ENTRY_TELEPHONE_NUMBER', 'Num&eacute;ro de t&eacute;l&eacute;phone :');
 define('ENTRY_TELEPHONE_NUMBER_ERROR', 'Votre num&eacute;ro de t&eacute;l&eacute;phone doit contenir un minimum de ' . ENTRY_TELEPHONE_MIN_LENGTH . ' caract&egrave;res.');
@@ -226,7 +226,7 @@ define('ENTRY_NEWSLETTER_NO', 'Ne pas s\'abonner');
 define('ENTRY_NEWSLETTER_ERROR', '');
 define('ENTRY_PASSWORD', 'Mot de passe :');
 define('ENTRY_PASSWORD_ERROR', 'Votre mot de passe doit contenir un minimum de ' . ENTRY_PASSWORD_MIN_LENGTH . ' caract&egrave;res.');
-define('ENTRY_PASSWORD_ERROR_NOT_MATCHING', 'Le mot de passe de confirmation doit &ecric;tre identique &agarve; votre mot de passe.');
+define('ENTRY_PASSWORD_ERROR_NOT_MATCHING', 'Le mot de passe de confirmation doit &ecric;tre identique &agrave; votre mot de passe.');
 define('ENTRY_PASSWORD_TEXT', '*');
 define('ENTRY_PASSWORD_CONFIRMATION', 'Mot de passe de confirmation :');
 define('ENTRY_PASSWORD_CONFIRMATION_TEXT', '*');
@@ -236,18 +236,18 @@ define('ENTRY_PASSWORD_CURRENT_ERROR', 'Votre mot de passe doit contenir un mini
 define('ENTRY_PASSWORD_NEW', 'Nouveau mot de passe :');
 define('ENTRY_PASSWORD_NEW_TEXT', '*');
 define('ENTRY_PASSWORD_NEW_ERROR', 'Votre nouveau mot de passe doit contenir un minimum de ' . ENTRY_PASSWORD_MIN_LENGTH . ' caract&egrave;res.');
-define('ENTRY_PASSWORD_NEW_ERROR_NOT_MATCHING', 'Le mot de passe de confirmation doit &ecirc;tre identique &agarve; votre nouveau mot de passe.');
+define('ENTRY_PASSWORD_NEW_ERROR_NOT_MATCHING', 'Le mot de passe de confirmation doit &ecirc;tre identique &agrave; votre nouveau mot de passe.');
 define('PASSWORD_HIDDEN', '--CACHE--');
 
 define('FORM_REQUIRED_INFORMATION', '* Information requise');
 
 // constants for use in tep_prev_next_display function
 define('TEXT_RESULT_PAGE', 'Pages de r&eacute;sultat :');
-define('TEXT_DISPLAY_NUMBER_OF_PRODUCTS', 'Afficher <b>%d</b> &agarve; <b>%d</b> (sur <b>%d</b> produits)');
-define('TEXT_DISPLAY_NUMBER_OF_ORDERS', 'Afficher <b>%d</b> &agarve; <b>%d</b> (sur <b>%d</b> orders)');
-define('TEXT_DISPLAY_NUMBER_OF_REVIEWS', 'Afficher <b>%d</b> &agarve; <b>%d</b> (sur <b>%d</b> critiques)');
-define('TEXT_DISPLAY_NUMBER_OF_PRODUCTS_NEW', 'Afficher <b>%d</b> &agarve; <b>%d</b> (sur <b>%d</b> nouveaux produits)');
-define('TEXT_DISPLAY_NUMBER_OF_SPECIALS', 'Afficher <b>%d</b> &agarve; <b>%d</b> (sur <b>%d</b> promotions)');
+define('TEXT_DISPLAY_NUMBER_OF_PRODUCTS', 'Afficher <b>%d</b> &agrave; <b>%d</b> (sur <b>%d</b> produits)');
+define('TEXT_DISPLAY_NUMBER_OF_ORDERS', 'Afficher <b>%d</b> &agrave; <b>%d</b> (sur <b>%d</b> orders)');
+define('TEXT_DISPLAY_NUMBER_OF_REVIEWS', 'Afficher <b>%d</b> &agrave; <b>%d</b> (sur <b>%d</b> critiques)');
+define('TEXT_DISPLAY_NUMBER_OF_PRODUCTS_NEW', 'Afficher <b>%d</b> &agrave; <b>%d</b> (sur <b>%d</b> nouveaux produits)');
+define('TEXT_DISPLAY_NUMBER_OF_SPECIALS', 'Afficher <b>%d</b> &agrave; <b>%d</b> (sur <b>%d</b> promotions)');
 
 define('PREVNEXT_TITLE_FIRST_PAGE', 'Premi&eacute;re page');
 define('PREVNEXT_TITLE_PREVIOUS_PAGE', 'Page pr&eacute;c&eacute;dente');
@@ -281,9 +281,9 @@ define('IMAGE_BUTTON_REMOVE_NOTIFICATIONS', 'Supprimer les notifications');
 define('IMAGE_BUTTON_REVIEWS', 'Critiques');
 define('IMAGE_BUTTON_SEARCH', 'Rechercher');
 define('IMAGE_BUTTON_SHIPPING_OPTIONS', 'Options d\'exp&eacute;dition');
-define('IMAGE_BUTTON_TELL_A_FRIEND', 'Envoyer &agarve; un ami');
-define('IMAGE_BUTTON_UPDATE', 'Mise &agarve; jour');
-define('IMAGE_BUTTON_UPDATE_CART', 'Mise &agarve; jour panier');
+define('IMAGE_BUTTON_TELL_A_FRIEND', 'Envoyer &agrave; un ami');
+define('IMAGE_BUTTON_UPDATE', 'Mise &agrave; jour');
+define('IMAGE_BUTTON_UPDATE_CART', 'Mise &agrave; jour panier');
 define('IMAGE_BUTTON_WRITE_REVIEW', 'Ecrire une critique');
 
 define('SMALL_IMAGE_BUTTON_DELETE', 'Supprimer');
