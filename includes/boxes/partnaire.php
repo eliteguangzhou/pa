@@ -61,7 +61,6 @@ function move_partnair(){
     else
         after = current-1;
     move = current;
-    console.log(after+'et'+move+'c='+current);
   $('#picture'+current).animate({'marginTop':-69},1000,function (){
   
     $('#picture'+after).after($('#picture'+move));
