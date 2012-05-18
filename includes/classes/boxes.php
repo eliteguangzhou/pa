@@ -336,7 +336,7 @@
 											}
 
 				 
-			  $tableBox_string .= '    <td';
+			  $tableBox_string .= '    <td class="product_zoom"'; 
               if (isset($contents[$i][$x]['align']) && tep_not_null($contents[$i][$x]['align'])) $tableBox_string .= ' align="' . tep_output_string($contents[$i][$x]['align']) . '"';
               if (isset($contents[$i][$x]['params']) && tep_not_null($contents[$i][$x]['params'])) {
                 $tableBox_string .= ' ' . $contents[$i][$x]['params'];
