@@ -87,7 +87,7 @@ table, td, .main, select, input, textarea {
 	padding:0px;
 }
 img      {border:0px;}
-table	 { /*width:179px/*100%;*/}
+table	 { width:100%;}
 
 .vam { vertical-align:middle}
 .shipCart{ padding-left : 45px; }
@@ -524,4 +524,8 @@ span.black-text{color:#000000;}
 
 .header a.banner_login{
 	color:black;
+	}
+	
+.box_width_right table {
+	width:179px;
 	}
