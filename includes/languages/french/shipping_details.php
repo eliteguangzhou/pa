@@ -13,7 +13,7 @@
 define('NAVBAR_TITLE', 'D&eacute;tails d\'exp&eacute;dition');
 define('HEADING_TITLE', 'D&eacute;tails d\'exp&eacute;dition');
 
-define('TEXT_INFORMATION', '<b>Nous livrons dans le monde entier ! </b></p>
+define('TEXT_INFORMATION', '<b>Nous livrons en France Metropolitaine, Belgique, Luxembourg, Suisse, Italie, Espagne et uk ! </b></p>
 <p><b>Co&ucirc;t du transport : </b>
 15&euro;</p>
 <p><b>D&eacute;lais de livraison :</b>
