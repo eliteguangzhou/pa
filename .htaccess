@@ -1025,5 +1025,5 @@ allow from all
 Options +FollowSymLinks
 RewriteEngine on
 	
-RewriteRule ^newsletters/([_0-9a-z]+)/([0-9]+)([B]?).html$ newsletter.php?n=$2$3&p=$1 [NC,L]
-RewriteRule ^([_0-9a-z]+)/([0-9]+)([B]?).html$ index.php?newsletter=$2$3&type=$1 [NC,L]
+#RewriteRule ^newsletters/([_0-9a-z]+)/([0-9]+)([B]?).html$ newsletter.php?n=$2$3&p=$1 [NC,L]
+#RewriteRule ^([_0-9a-z]+)/([0-9]+)([B]?).html$ index.php?newsletter=$2$3&type=$1 [NC,L]
