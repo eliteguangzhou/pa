@@ -1076,7 +1076,7 @@ td.padd2 {
 }
 /* -------------------------------------------------          -------------------------------------------------------- */
 .product div {
-	padding: 8px 0px 5px 0px;
+//	padding: 8px 0px 5px 0px;
 }
 
 div.padd3 {
@@ -1631,4 +1631,29 @@ padding-bottom: 5px;
 .product_zoom:hover{
 	border-radius: 15px;
 	box-shadow: 0px 0px 20px black;
+}
+
+.zoom {
+	z-index:50;
+		padding-right: 10px;
+	padding-left: 10px;
+padding-top: 5px;
+padding-bottom: 5px;
+	background:white;
+	position:absolute;
+		border-radius: 15px;
+	box-shadow: 0px 0px 20px black; 
+}
+
+
+.zoom .instead_of { 
+	font-size:1.1em;
+}
+
+.zoom .vam span{ 
+	font-size:1.1em;
+}
+
+.zoom .vam span a{ 
+	font-size:1.1em;
 }
