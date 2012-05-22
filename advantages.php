@@ -43,7 +43,7 @@
 
 		<tr><td>
 
-<?php tep_draw_heading_top(901);?>
+<?php tep_draw_heading_top_a(901);?>
 
 <?php tep_draw_heading_top_1();?>
 

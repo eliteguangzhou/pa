@@ -35,9 +35,9 @@
   define('DIR_FS_DOWNLOAD', DIR_FS_CATALOG . 'download/');
   define('DIR_FS_DOWNLOAD_PUBLIC', DIR_FS_CATALOG . 'pub/');
 
-  define('DB_SERVER', 'localhost');
-  define('DB_SERVER_USERNAME', 'pa123');
-  define('DB_SERVER_PASSWORD', '3ry54SJhRAvEul');
+  define('DB_SERVER', '192.168.1.31');
+  define('DB_SERVER_USERNAME', 'pa');
+  define('DB_SERVER_PASSWORD', 'Mt9pHhMv5CjV22Vx');
   define('DB_DATABASE', 'pa123');
   define('USE_PCONNECT', 'false');
   define('STORE_SESSIONS', 'mysql');

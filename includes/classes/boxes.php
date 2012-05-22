@@ -336,7 +336,7 @@
 											}
 
 				 
-			  $tableBox_string .= '    <td class="product_zoom"'; 
+			  $tableBox_string .= '    <td';
               if (isset($contents[$i][$x]['align']) && tep_not_null($contents[$i][$x]['align'])) $tableBox_string .= ' align="' . tep_output_string($contents[$i][$x]['align']) . '"';
               if (isset($contents[$i][$x]['params']) && tep_not_null($contents[$i][$x]['params'])) {
                 $tableBox_string .= ' ' . $contents[$i][$x]['params'];
@@ -567,6 +567,15 @@ class tableBox_shopping_cart {
   function tep_draw_heading_top($current_category_id = 0)
   {
  			require(DIR_WS_BOXES . 'panel_top.php');
+  echo '
+					<table cellpadding="0" cellspacing="0" border="0" style="border-top:1px solid #d9d9d9;">
+						<tr>
+							<td style="border-left:1px solid #d9d9d9;">'.tep_draw_separator('spacer.gif', '1', '1').'</td>
+							<td style="padding:0px 10px 0px 10px;">';
+  }
+    function tep_draw_heading_top_a($current_category_id = 0)
+  {
+ 			require(DIR_WS_BOXES . 'panel_top_advantage.php');
   echo '
 					<table cellpadding="0" cellspacing="0" border="0" style="border-top:1px solid #d9d9d9;">
 						<tr>
