@@ -434,7 +434,7 @@ define('SPECIAL_DISCOUNT', get_promo('text').'<br />(hors carte)');
 define('SPECIAL_DISCOUNT_PAYPAL', get_promo('text').' (hors carte)');
 
 define('TEXT_MAIN_MEMBER', 'Pour devenir membre de '.STORE_NAME.' et b&eacute;n&eacute;ficier de tous les avantages du Club, il vous suffit de choisir parmi nos formules d\'adh&eacute;sion :');
-define('MEMBER_CARD1', '<span class="bigger">- <span class="blue bold">Membre SAPHIR</span> : Carte membre (validit&eacute; '.$cards->list['card1']['duration'].' mois) : <span class="red bold">'.$currencies->format($cards->list['card1']['price']).'</span></span>');
+define('MEMBER_CARD1', '<span class="bigger">- <span class="blue bold">Membre SAPHIR</span> : Carte membre (validit&eacute; '.$cards->list['card1']['duration'].' mois) : <span class="red bold">'.$currencies->format($cards->list['card1']['price']).'</span>  <strike>39.95EUR</strike></span>');
 define('MEMBER_CARD2', '<span class="bigger">- <span class="red">Membre RUBIS</span> : Carte membre '.$cards->list['card2']['duration'].' mois : <span class="red bold">'.$currencies->format($cards->list['card2']['price']).'</span> (<span class="bold">-50% d\'&eacute;conomie</span>)</span>');
 define('MEMBER_CARD3', '<span class="bigger">- <span class="gold bold">Membre GOLD</span> : Carte membre (validit&eacute; '.$cards->list['card3']['duration'].' mois) : <span class="red bold">'.$currencies->format($cards->list['card3']['price']).'</span> <span class="bold small">(soit '.$currencies->format(floor($cards->list['card3']['price'] / 12)).' par mois)</span></span>');
 define('MEMBER_CARD31', '<span class="bold small">(-80% d\'&eacute;conomie)</span>');
