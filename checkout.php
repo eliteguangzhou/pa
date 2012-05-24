@@ -38,7 +38,7 @@ $address_count = 0;
 if ($cart->count_contents() < 1) {
 	tep_redirect(tep_href_link(FILENAME_SHOPPING_CART));
 }
-if (!$is_member && !$cart->has_card()){
+if (!$is_member && !$cart->has_card() || $cart->count_contents(false) == 0){
 	echo $promo_nb;
 }
 

@@ -251,12 +251,8 @@ $products_ids = '';  //use for the tag in last line.
 				<tr><td width="350"  style="vertical-align:middle">
                 <?php
 				
-                if (!$is_member && !$cart->has_card()){
+                if (!$is_member && !$cart->has_card() || $cart->count_contents(false) == 0){
                     echo $promo_nb;
-                }
-  
-                elseif ($cart->can_buy(1)){
-                    echo TEXT_MIN_PRODUCTS0;
                 }
                 elseif ($cart->can_buy(2)){
                     echo TEXT_MIN_PRODUCTS1;
