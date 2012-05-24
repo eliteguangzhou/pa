@@ -685,7 +685,7 @@ class shoppingCart {
 
 	function can_buy($number) {
 		global $is_member, $check_server;
-		return $check_server != 'en' && ($is_member || $this->has_card() && !$this->card_only()) && $this->count_contents(false) < $number;
+		return /*$check_server != 'en' && */ ($is_member || $this->has_card() /*&& !$this->card_only()*/) && $this->count_contents(false) < $number;
 	}
 
 	function first_order() {

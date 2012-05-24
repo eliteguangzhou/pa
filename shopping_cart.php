@@ -251,13 +251,19 @@ $products_ids = '';  //use for the tag in last line.
 				<tr><td width="350"  style="vertical-align:middle">
                 <?php
 				
-                if (!$is_member && !$cart->has_card())
+                if (!$is_member && !$cart->has_card()){
                     echo $promo_nb;
-                elseif ($cart->can_buy(2))
+                }
+  
+                elseif ($cart->can_buy(1)){
+                    echo TEXT_MIN_PRODUCTS0;
+                }
+                elseif ($cart->can_buy(2)){
                     echo TEXT_MIN_PRODUCTS1;
-                elseif ($cart->can_buy(3))
+                }
+                elseif ($cart->can_buy(3)){
                     echo TEXT_MIN_PRODUCTS2;
-
+                }
 				$max = MAX_DAILY_LIMIT_NOT_MEMBER;//$is_member || $cart->has_card() ? MAX_DAILY_LIMIT : MAX_DAILY_LIMIT_NOT_MEMBER;
                 if ($cart->count_contents(false) >= $max ) {
                   if (!$is_member && !$cart->has_card())

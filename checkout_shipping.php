@@ -119,7 +119,7 @@
     $free_shipping = true;
 
   $shippable = country_shippable($order->delivery['country']['id'], $order->delivery['postcode']);
-
+  
 // process the selected shipping method
   if ( $shippable && isset($HTTP_POST_VARS['action']) && ($HTTP_POST_VARS['action'] == 'process') ) {
     if (!tep_session_is_registered('comments')) tep_session_register('comments');

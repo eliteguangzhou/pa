@@ -14,6 +14,8 @@ define('SUB_TITLE_NB_PRODUCTS_DISCOUNT', 'R&eacute;duction :');
 define('OUT_OF_STOCK_CANT_CHECKOUT', 'Les produits marqu&eacute;s ' . STOCK_MARK_PRODUCT_OUT_OF_STOCK . ' ne sont pas en stock dans la quantit&eacute; d&eacute;sir&eacute;e.<br>Merci de corriger la quantit&eacute; des articles marqu&eacute;s (' . STOCK_MARK_PRODUCT_OUT_OF_STOCK . '), Merci');
 define('OUT_OF_STOCK_CAN_CHECKOUT', 'Les produits marqu&eacute;s avec ' . STOCK_MARK_PRODUCT_OUT_OF_STOCK . ' ne sont pas en stock dans la quantit&eacute; d&egrave;sir&eacute;e.<br>Vous pouvez n&eacute;anmoins les acheter ils vous seront d&eacute;livr&eacute;s d&egrave;s disponibilit&eacute;.');
 define('STR_GIFT', 'Votre cadeau offert');
+
+define('TEXT_MIN_PRODUCTS0', '<span class="red">Vous devez ajouter trois produits dans votre panier pour pouvoir commander.</span>');
 define('TEXT_MIN_PRODUCTS1', '<span class="red">Vous devez ajouter deux produits dans votre panier pour pouvoir commander.</span>');
 define('TEXT_MAX_PRODUCTS', '<span class="red">Vous avez atteint le nombre maximum de produits autoris&eacute;s dans une commande.</span>');
 define('SUB_TITLE_SUB_TOTAL_PRODUCTS', 'Total produits :');
