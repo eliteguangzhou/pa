@@ -157,7 +157,7 @@
                                 <td style="width: 11px;background:white;"><img src="images/border_left.GIF" /></td>
 								<?php if ($check_server == 'fr') { ?>
 									<td width="<?php echo $width; ?>">
-										<a class="menu_top4" style="padding:4px 0;" href="<?php echo tep_href_link(FILENAME_CONCEPT)?>">
+										<a class="menu_top4" style="padding:4px 0;color:#E519A8;" href="<?php echo tep_href_link(FILENAME_CONCEPT)?>">
 											<?php echo MENU_CONCEPT; ?></a>
 									</td>
 								<?php } ?>
@@ -166,7 +166,7 @@
                                         <?php echo MENU_SAVINGS?></a>
                                 </td>-->
                                 <td width="<?php echo $width; ?>">
-                                    <a class="menu_top2" style="padding:4px 0;" href="<?php echo tep_href_link(FILENAME_SELECTION)?>">
+                                    <a class="menu_top2" style="padding:4px 0;color:red;" href="<?php echo tep_href_link(FILENAME_SELECTION)?>">
                                         <?php echo MENU_SELECTION?></a>
                                 </td>
                                 <td width="<?php echo $width; ?>">
