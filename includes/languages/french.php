@@ -226,7 +226,7 @@ define('ENTRY_NEWSLETTER_NO', 'Ne pas s\'abonner');
 define('ENTRY_NEWSLETTER_ERROR', '');
 define('ENTRY_PASSWORD', 'Mot de passe :');
 define('ENTRY_PASSWORD_ERROR', 'Votre mot de passe doit contenir un minimum de ' . ENTRY_PASSWORD_MIN_LENGTH . ' caract&egrave;res.');
-define('ENTRY_PASSWORD_ERROR_NOT_MATCHING', 'Le mot de passe de confirmation doit &ecric;tre identique &agrave; votre mot de passe.');
+define('ENTRY_PASSWORD_ERROR_NOT_MATCHING', 'Le mot de passe de confirmation doit être identique à votre mot de passe.');
 define('ENTRY_PASSWORD_TEXT', '*');
 define('ENTRY_PASSWORD_CONFIRMATION', 'Mot de passe de confirmation :');
 define('ENTRY_PASSWORD_CONFIRMATION_TEXT', '*');
@@ -236,7 +236,7 @@ define('ENTRY_PASSWORD_CURRENT_ERROR', 'Votre mot de passe doit contenir un mini
 define('ENTRY_PASSWORD_NEW', 'Nouveau mot de passe :');
 define('ENTRY_PASSWORD_NEW_TEXT', '*');
 define('ENTRY_PASSWORD_NEW_ERROR', 'Votre nouveau mot de passe doit contenir un minimum de ' . ENTRY_PASSWORD_MIN_LENGTH . ' caract&egrave;res.');
-define('ENTRY_PASSWORD_NEW_ERROR_NOT_MATCHING', 'Le mot de passe de confirmation doit &ecirc;tre identique &agrave; votre nouveau mot de passe.');
+define('ENTRY_PASSWORD_NEW_ERROR_NOT_MATCHING', ' Le mot de passe de confirmation doit être identique à votre mot de passe.');
 define('PASSWORD_HIDDEN', '--CACHE--');
 
 define('FORM_REQUIRED_INFORMATION', '* Information requise');
