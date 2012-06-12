@@ -20,6 +20,6 @@ Ce masque innovant contient des ingrédients bioactifs, qui ont une action hydrat
 Ce masque à l\'or 24 carats raffermit et tonifie la peau 
 Stimule la production de collagène 
 Favorise le processus de cicatrisation de la peau et la prot&egrave;ge
-</span>
+</span><div style="margin-top:20px;">'.tep_image(DIR_WS_IMAGES.'adm.jpg').'</div>
 ');
 ?>
