@@ -180,7 +180,7 @@ class shoppingCart {
 				}
 			}
 		}
-		 
+			
 		if (is_numeric($products_id) && isset($this->contents[$products_id_string]) && is_numeric($quantity) && ($attributes_pass_check == true)) {
 			$this->contents[$products_id_string]['qty'] = (int)$quantity;
 			// update database
@@ -546,7 +546,7 @@ class shoppingCart {
 					$reduc_packs[] = $index;
 				}
 			}
-				
+
 			if ($total == 0 && !($this->card_only && !empty($reduc_packs))) {
 				reset($all_gift);
 				while(list(,$index) = each($all_gift)){
@@ -586,10 +586,10 @@ class shoppingCart {
 			error_log('*************************4');       }
 			}*/
 			elseif (!empty($reduc_packs) && $total < 2) {
-			reset($reduc_packs);
-			while(list(,$index) = each($reduc_packs))
-			{              $this->remove($index, false);
-			error_log('*************************4');       }
+				reset($reduc_packs);
+				while(list(,$index) = each($reduc_packs))
+				{              $this->remove($index, false);
+				error_log('*************************4');       }
 			}
 			//Si nb produit = 2, on enleve 1 produit cadeau s'il y en a NB_GIFT_FOR_3
 			elseif (!empty($already_gift) && $total < 3 && $gift_nb == NB_GIFT_FOR_3) {

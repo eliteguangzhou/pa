@@ -21,6 +21,7 @@
 
   $product_check_query = tep_db_query("select count(*) as total from " . TABLE_PRODUCTS . " p, " . TABLE_PRODUCTS_DESCRIPTION . " pd where p.products_status = '1' and p.products_id = '" . (int)$HTTP_GET_VARS['products_id'] . "' and pd.products_id = p.products_id and pd.language_id = '" . (int)$languages_id . "'");
   $product_check = tep_db_fetch_array($product_check_query);
+ 
 ?>
 <!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html <?php echo HTML_PARAMS; ?>>
@@ -51,7 +52,7 @@ function popupWindow(url) {
 <!-- body_text //-->
     <td width="100%" class="col_center"><?php echo tep_draw_form('cart_quantity', tep_href_link(FILENAME_PRODUCT_INFO, tep_get_all_get_params(array('action')) . 'action=add_product')); ?><table border="0" width="100%" cellspacing="0" cellpadding="0">
 <?php
-  if ($product_check['total'] < 1) {
+  if ($product_check['total'] < 1 || $HTTP_GET_VARS['products_id'] == '999999') {
 ?>
       <tr><td>
 <?php tep_draw_heading_top(901); ?>

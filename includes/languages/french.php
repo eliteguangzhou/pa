@@ -17,7 +17,9 @@
 // on FreeBSD try 'en_US.ISO_8859-1'
 // on Windows try 'en', or 'English'
 @setlocale(LC_TIME, 'fr_FR.ISO_8859-1');
-if (eregi('windows', $_SERVER['SystemRoot'])) @setlocale(LC_TIME, 'fr'); // Page de code pour serveur sous Windows (installation locale)
+/*if (preg_match('windows', $_SERVER['SystemRoot'])) {
+	@setlocale(LC_TIME, 'fr'); // Page de code pour serveur sous Windows (installation locale)
+}*/
 
 define('DATE_FORMAT_SHORT', '%d/%m/%Y');  // this is used for strftime()
 define('DATE_FORMAT_LONG', '%A %d %B %Y'); // this is used for strftime()

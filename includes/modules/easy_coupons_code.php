@@ -16,6 +16,7 @@ $ec_mf      = $ec_config[8]; // discount table value (max/fixed)
 $ec_clth    = $ec_config[9]; // length of coupon codes in characters
 $ec_reset   = $ec_config[10]; // show button reset
 $messageStack->reset();
+     
 
 if (ACTIVATE_DISCOUNT) {
   // coupons enabled
