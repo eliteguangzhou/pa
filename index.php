@@ -378,7 +378,16 @@ require('fonctioncompdb.php');
 		<br><br>
 		
         <?php
-            $rs = tep_db_query('SELECT code from cards where enabled = 1');
+	$rs = tep_db_query('SELECT code from cards where enabled = 1 and code like \'card4\'');
+            while ($data = tep_db_fetch_array($rs)) {
+                echo '<div>'.constant('MEMBER_'.strtoupper($data['code'])).'<br /><br />
+                <img align="middle" src="'.DIR_WS_IMAGES.$data['code'].'.gif" alt="'.$data['code'].'" valign="absmiddle"> <a href="'.tep_href_link("members.php","action=buy_card&products_id=".$data['code']).'">'.tep_image_button('button_add_to_cart1.gif').'</a>';
+                if ($data['code'] == 'card3')
+                  echo '<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.MEMBER_CARD31 .'<br />';
+                  
+                  echo '</div><br />';
+            }
+            $rs = tep_db_query('SELECT code from cards where enabled = 1 and code not like \'card4\'');
             while ($data = tep_db_fetch_array($rs)) {
                 echo '<div>'.constant('MEMBER_'.strtoupper($data['code'])).'<br /><br />
                 <img align="middle" src="'.DIR_WS_IMAGES.$data['code'].'.gif" alt="'.$data['code'].'" valign="absmiddle"> <a href="'.tep_href_link("members.php","action=buy_card&products_id=".$data['code']).'">'.tep_image_button('button_add_to_cart1.gif').'</a>';

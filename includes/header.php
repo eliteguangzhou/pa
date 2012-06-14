@@ -62,10 +62,15 @@
 	$width = $check_server == 'fr' ? '25%' : '33%';
 ?>
 <!-- start -->
+<script type="text/javascript" src="includes/modules/lightbox2/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="includes/modules/lightbox2/js/lightbox.js"></script>
+
 <script type="text/javascript" src="includes/jquery-1.3.2.min.js"></script>
 <script type="text/javascript" src="includes/jquery-ui-1.7.2.min.js"></script>
 <script type="text/javascript" src="includes/animation.js"></script>
 <script type="text/javascript" src="includes/zoom.js"></script>
+<link href="includes/modules/lightbox2/css/lightbox.css" rel="stylesheet" />
+
 <table cellpadding="0" cellspacing="0" border="0" style="width:980px" align="center"> 
 	<tr>
 		<td>

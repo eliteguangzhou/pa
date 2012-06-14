@@ -137,7 +137,7 @@ function popupWindow(url) {
 							<?php echo tep_draw_prod_pic_top();?>
 
 							<script language="javascript"><!--
-							document.write('<?php echo '<a href="javascript:popupWindow(\\\'' . tep_href_link(FILENAME_POPUP_IMAGE, 'pID=' . $product_info['products_id']) . '\\\')">' . tep_image(DIR_WS_PWS_IMAGE . $product_info['products_image'], addslashes($product_info['products_name']), SMALL_IMAGE_WIDTH, SMALL_IMAGE_HEIGHT, ' style="margin:0px 0px 0px 0px;"') . ''; ?>');
+							document.write('<?php echo '<a href="http://www.parfumwholesale.com/images/'.$product_info['products_image'].'" rel="lightbox">' . tep_image(DIR_WS_PWS_IMAGE . $product_info['products_image'], addslashes($product_info['products_name']), SMALL_IMAGE_WIDTH, SMALL_IMAGE_HEIGHT, ' style="margin:0px 0px 0px 0px;"') . ''; ?>');
 							//--></script>
 							<noscript>
 							<?php echo '<a href="' . tep_href_link(DIR_WS_PWS_IMAGE . $product_info['products_image']) . '" target="_blank">' . tep_image(DIR_WS_PWS_IMAGE . $product_info['products_image'], $product_info['products_name'], SMALL_IMAGE_WIDTH, SMALL_IMAGE_HEIGHT, ' style="margin:0px 0px 0px 0px;"') . ''; ?>

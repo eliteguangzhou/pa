@@ -14,12 +14,14 @@ define('HEADING_TITLE', 'Les 13 avantages du Club');
 define('NAVBAR_TITLE', 'Les 13 avantages du Club');
 define('TEXT_INFORMATION','<br /><h2 class="text_rose">Cadeau</h2>
 <span style="font-size:14px;line-height:19px;">
-Pour toute commande sur le site, Parfumrama vous offre ce Masque Collagène à l\'Or 24 carats en cadeau d\'une valeur de 39.90 euros. <br/>
-Offre  Valable jusqu\'au 20 Juin<br/>
-Ce masque innovant contient des ingrédients bioactifs, qui ont une action hydratante sur votre peau, qui réduit l\'apparition des rides. <br/>
-Ce masque à l\'or 24 carats raffermit et tonifie la peau 
-Stimule la production de collagène 
-Favorise le processus de cicatrisation de la peau et la prot&egrave;ge
-</span><div style="margin-top:20px;">'.tep_image(DIR_WS_IMAGES.'adm.jpg').'</div>
+Votre carte membre parfumrama vous est offerte.
+Vous pourrez im&eacute;m&eacute;diatement bn&eacute;ficier des parfums &agrave; prix coutant pendant 1 mois uniquement. (Offre valable jusqu\'au 14 juillet 2012).
+Afin de profiter de l\'offre il vous suffit de rajouter la carte d\'essais dans votre panier, puis de choisir les parfums de votre choix en s&eacute;lectionnant les prix membres.
+Bon shopping.
+</span>
+<br/>
+<br/>
+<div><span class="bigger">- <span class="pink bold">Membre JUNIOR</span> : Carte membre (validit&eacute; 1 mois) : <span class="red bold">Offerte</span> </span><span class="bold small">(Offre valable jusqu\'au 14 juillet)</span><br><br>
+                <img align="middle" src="includes/languages/french/images/card4.gif" alt="card4" valign="absmiddle"> <a href="http://parfumrama.localhost.com/members.php?action=buy_card&amp;products_id=card4"><img src="includes/languages/french/images/buttons/button_add_to_cart1.gif" border="0" alt="" width="100" height="22"></a></div>
 ');
 ?>
