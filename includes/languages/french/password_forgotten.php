@@ -19,8 +19,8 @@ define('TEXT_MAIN', 'Si vous avez oublié votre mot de passe, entrez votre adress
 
 define('TEXT_NO_EMAIL_ADDRESS_FOUND', 'Erreur : L\'adresse électronique n\'a pas été trouvée dans notre base, veuillez réessayer. ');
 
-define('EMAIL_PASSWORD_REMINDER_SUBJECT', STORE_NAME . ' - Nouveau mot de passe');
-define('EMAIL_PASSWORD_REMINDER_BODY', 'Votre nouveau mot de passe sur \'' . STORE_NAME . '\' est:' . "\n\n" . '   %s' . "\n\n");
+define('EMAIL_PASSWORD_REMINDER_SUBJECT', ' - Nouveau mot de passe'); //STORE_NAME . 
+define('EMAIL_PASSWORD_REMINDER_BODY', 'Votre nouveau mot de passe sur est:' . "\n\n" . '   %s' . "\n\n");//\'' . STORE_NAME . '\' 
 
 define('SUCCESS_PASSWORD_SENT', 'Succès : Un nouveau mot de passe a été envoyé à votre adresse électronique.');
 ?>
