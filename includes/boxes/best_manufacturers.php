@@ -9,7 +9,7 @@ $info_box_contents = array();
   
 //si il n y a pas de categoriees selectionnnees
 if (empty($current_category_id)){
-
+    $cat_name = '';
 	$best_sellers_query = tep_db_query("SELECT
                     m.manufacturers_name, m.manufacturers_id
                     FROM products p, `statique_best_seller` sbs
