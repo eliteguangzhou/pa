@@ -39,6 +39,7 @@ asort($newResult);
   new infoBox($info_box_contents);
 }
 else {
+ $cat_name = '';
   $str = '';
   for ($i = ord("A"), $j = 0; $i <= ord("Z"); $i++, $j++) {
     if($j % 8 == 0)
