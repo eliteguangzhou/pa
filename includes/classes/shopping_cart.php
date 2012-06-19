@@ -118,7 +118,7 @@ class shoppingCart {
 			$check_product = tep_db_fetch_array($check_product_query);
 			$check_product['products_price'] = $is_member || $this->has_card() ? get_price($check_product['products_price']) : get_reduced_price($check_product['buy_price']);
 
-			if (($check_product !== false) && ($check_product['products_status'] == '1')) {
+			if (($check_product !== false) && (isset($check_product['products_status']) && $check_product['products_status'] == '1')) {
 				if ($notify == true) {
 					$new_products_id_in_cart = $products_id;
 					tep_session_register('new_products_id_in_cart');
