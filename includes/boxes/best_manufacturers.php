@@ -61,6 +61,7 @@ else {
   $products_query = tep_db_query($sql);
 
   $str .= '<ul>';
+  $cat_name ='';
   while($products = tep_db_fetch_array($products_query))
   	$str .= '<li class="bg_list"> <a  href="'.tep_href_link('index.php', 'cPath='.$current_category_id.'&filter_id='.$products['manufacturers_id'].'&name='.$cat_name.'&name1='.$products['manufacturers_name']).'">'.$products['manufacturers_name'].'</a>';
   $str .= '</ul>';
