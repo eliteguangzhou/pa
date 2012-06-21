@@ -54,7 +54,7 @@ echo '</td></tr><tr><td height="9">'.tep_draw_separator('spacer.gif', '1', '1').
 /*}
 else echo tep_draw_separator('spacer.gif', '590', '1').'</td></tr></table>';*/
 ?>
-<?php if ($language_id == 5 && FALSE)  { ?>
+<?php /* if ($language_id == 5 && FALSE)  { ?>
 <script type="text/javascript">
 $(document).ready(function () {
     window.setInterval("switch_pic()",4000);
@@ -78,7 +78,7 @@ function switch_pic(){
         }
 }
 </script>
-<?php }	?>		  
+<?php } */	?>		  
 
 			
 
