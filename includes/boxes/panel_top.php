@@ -47,10 +47,16 @@ pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Versio
 type="application/x-shockwave-flash" width="600" height="245"></embed>
   </object>
 </noscript>*/
+if ($_SERVER["REQUEST_URI"] == '/'.FILENAME_SELECTION){
+    echo '<a id="picture_sw" href="'.tep_href_link(FILENAME_ADVANTAGES).'">'.tep_image(DIR_WS_IMAGES.'ysl2.jpg').'</a>';
+}   
+else {
+    echo '<a id="picture_sw" href="'.tep_href_link(FILENAME_ADVANTAGES).'">'.tep_image(DIR_WS_IMAGES.'ysl.jpg').'</a>';
+}
 
-echo '<a id="picture_sw" href="'.tep_href_link(FILENAME_ADVANTAGES).'">'.tep_image(DIR_WS_IMAGES.'ysl.jpg').'</a>';
 //echo '<a id="picture_sw">'.tep_image(DIR_WS_IMAGES.'ysl.jpg').'</a>';
 echo '</td></tr><tr><td height="9">'.tep_draw_separator('spacer.gif', '1', '1').'</td></tr></table>';
+
 /*}
 else echo tep_draw_separator('spacer.gif', '590', '1').'</td></tr></table>';*/
 ?>
