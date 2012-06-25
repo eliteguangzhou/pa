@@ -427,7 +427,7 @@ require('fonctioncompdb.php');
   </tr>
 </table>
 <!-- body_eof //-->
-
+<span id="cdSiteSeal1"><script type="text/javascript" src="//tracedseals.starfieldtech.com/siteseal/get?scriptId=cdSiteSeal1&amp;cdSealType=Seal1&amp;sealId=55e4ye7y7mb7301bee111a36304187cn50y7mb7355e4ye7c782a5c483b93a152"></script></span>
 <!-- footer //-->
 <?php require(DIR_WS_INCLUDES . 'footer.php'); ?>
 <!-- footer_eof //--></body>
