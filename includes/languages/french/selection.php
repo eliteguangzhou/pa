@@ -10,7 +10,7 @@
   Released under the GNU General Public License
 */
 
-define('NAVBAR_TITLE', 'Prix en folie');
-define('HEADING_TITLE', '<h1>Prix en folie</h1>');
+define('NAVBAR_TITLE', 'Soldes');
+define('HEADING_TITLE', '<h1>Soldes</h1>');
 
 ?>
