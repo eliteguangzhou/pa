@@ -479,7 +479,7 @@ $nb_products_discount = new nb_products_discount();
                                 $buy_card_error = ALREADY_HAVE_CARD;
                                 tep_session_register('buy_card_error');
                               }
-							  
+				error_log('+++++++++++++++++++'.$HTTP_GET_VARS['products_id']);			  
 							  $easy_discount->recalculate();
                               tep_redirect(tep_href_link($goto, tep_get_all_get_params($parameters)));
                               break;

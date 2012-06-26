@@ -262,6 +262,21 @@ if (ACTIVATE_DISCOUNT) {
 							}
 						}
 				}
+				elseif ($coupon['generated_by'] == 'card6') {
+                                        $products = array_keys($cart->contents);
+                                        $error = false;
+                                        if (!$is_member && !$cart->has_card()){
+                                                    header('LOCATION:members.php?action=buy_card&products_id=card6');
+                                        }
+                                        elseif ($is_member) {
+                                                    $buy_card_error = ALREADY_MEMBER;
+                                                    tep_session_register('buy_card_error');
+                                        }
+                                        elseif ($cart->has_card()) {
+                                                    $buy_card_error = ALREADY_HAVE_CARD;
+                                                    tep_session_register('buy_card_error');
+                                        }
+                                }
 				else {
 					$couponcode[] = array('generated_by' => $coupon['generated_by'], 'email' => $coupon['email'], 'code' => $coupon['code'], 'discount' => $coupon['discount'], 'type' => $coupon['type']);
 
