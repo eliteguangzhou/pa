@@ -444,7 +444,7 @@ define('MEMBER_CARD4', '<span class="bigger">- <span class="pink bold">Membre JU
 define('MEMBER_CARD31', '<span class="bold small">(-80% d\'&eacute;conomie)</span>');
 define('TEXT_END', '<center><span class="bold">Aucune obligation d\'achat</span><center>');
 
-define('MENU_BONS_PLANS', 'Bons Plans');
+define('MENU_BONS_PLANS', 'Commiteacute d\'entreprise');
 define('MENU_SELECTION', 'Soldes');
 define('ALREADY_MEMBER', 'Vous &ecirc;tes d&eacute;j&agrave; membre.');
 define('ALREADY_HAVE_CARD', 'Vous avez d&eacute;j&agrave; une carte dans votre panier.');

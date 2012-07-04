@@ -10,7 +10,7 @@
   Released under the GNU General Public License
 */
 
-define('NAVBAR_TITLE', 'Bons plans');
-define('HEADING_TITLE', '<h1>Bons plans</h1>');
-
+define('NAVBAR_TITLE', 'Commite&eacute d\'entreprise');
+define('HEADING_TITLE', '<h1>Commite&eacute d\'entreprise</h1>');
+define('BONSPLANS_TEXT','<br /><span style="font-size:14px;line-height:19px;">Veuillez enter ici le code fourni par votre comite&eacute; d\'entreprise puis cliquez suivant pour continuer votre commande.</span>');
 ?>
