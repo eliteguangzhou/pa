@@ -55,7 +55,7 @@ function autotab(original,destination){if (original.getAttribute&&original.value
 
 <?php echo BONSPLANS_TEXT; ?>
 
- <?php if (ACTIVATE_DISCOUNT) include (DIR_WS_MODULES.'easy_coupons_box.php'); ?>
+ <?php if (ACTIVATE_DISCOUNT) include (DIR_WS_MODULES.'easy_coupons_box2.php'); ?>
  
 <?php tep_draw_heading_bottom_1();?>
 

@@ -1,5 +1,5 @@
 <?php /*  Released under the GNU General Public License */
-if ($ec_active && $cart->count_contents() > 0) {
+//if ($ec_active && $cart->count_contents() > 0) {
 ?>
 <br /><br />
     <table cellspacing="0" cellpadding="0" id="ec_coupon">
@@ -38,4 +38,4 @@ document.write(' <a href="javascript:session_win2();">');
        </td>
       </tr>
 </table>
-<?php } ?>
+<?php //} ?>
