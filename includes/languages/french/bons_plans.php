@@ -12,5 +12,5 @@
 
 define('NAVBAR_TITLE', 'Commit&eacute d\'entreprise');
 define('HEADING_TITLE', '<h1>Commit&eacute d\'entreprise</h1>');
-define('BONSPLANS_TEXT','<br /><span style="font-size:14px;line-height:19px;">Veuillez enter ici le code fourni par votre comit&eacute; d\'entreprise puis cliquez suivant pour continuer votre commande.</span>');
+define('BONSPLANS_TEXT','<br /><span style="font-size:14px;line-height:19px;">Veuillez enter ici le code fourni par votre comit&eacute; d\'entreprise puis cliquez OK pour continuer votre commande.</span>');
 ?>

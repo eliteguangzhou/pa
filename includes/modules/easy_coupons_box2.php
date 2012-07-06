@@ -5,9 +5,9 @@ if ($ec_active) {
 <table cellspacing="0" cellpadding="0" id="ec_coupon">
   <tr>
    <td width="100%" align="center">
-    <table class="bordergray" width="100%">
+    <table class="bordergray" width="100%" style=" ">
      <tr>
-        <td align="right" style="padding-right: 20px;color:#FF92FF">
+        <td align="right" style="padding-right: 20px;color:#FF92FF;font-size:18px;">
             <?php echo YOUR_PROMO_CODE;?>
         </td>
      </tr>
