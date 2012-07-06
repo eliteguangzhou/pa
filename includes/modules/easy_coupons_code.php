@@ -281,7 +281,7 @@ if (ACTIVATE_DISCOUNT) {
                                         $products = array_keys($cart->contents);
                                         $error = false;
                                         if (!$is_member && !$cart->has_card()){
-                                                    header('LOCATION:members.php?action=buy_card&products_id=card1');
+                                                    header('LOCATION:members.php?action=buy_card&products_id=carde');
                                         }
                                         elseif ($is_member) {
                                                     $buy_card_error = ALREADY_MEMBER;
