@@ -3,9 +3,9 @@ include(DIR_WS_LANGUAGES . $language . '/' . FILENAME_EASY_COUPONS);
 // easy discount installed
 
 // configuration details extraction
-$ec_config  = preg_split('d',EASY_COUPONS); // split table from config
+$ec_config  = split('d',EASY_COUPONS); // split table from config
 $ec_table   = $ec_config[1];
-$ec_config  = preg_split(';',$ec_config[0]); // split config values
+$ec_config  = split(';',$ec_config[0]); // split config values
 $ec_active  = $ec_config[0]; // EC active
 $ec_auto    = $ec_config[1]; // EC Automatic
 $ec_email   = $ec_config[4]; // Print on email
@@ -34,7 +34,7 @@ if (ACTIVATE_DISCOUNT) {
     }
     // cart not empty
 	if (isset($coupon)) {
-		if ($cart->count_contents(false) > 0 || in_array($coupon['generated_by'], array('coupon_packs', 'produit_reduc', 'first_order'))) {
+		if ($cart->count_contents(false) >= 0 || in_array($coupon['generated_by'], array('coupon_packs', 'produit_reduc', 'first_order'))) {
 		  // coupon code input given
 		  if ($_POST['coupon_code'] != '') {
 			// concatenate the input fields

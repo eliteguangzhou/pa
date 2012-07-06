@@ -34,7 +34,7 @@ if (ACTIVATE_DISCOUNT) {
     }
     // cart not empty
 	if (isset($coupon)) {
-		if ($cart->count_contents(false) > 0 || in_array($coupon['generated_by'], array('coupon_packs', 'produit_reduc', 'first_order'))) {
+		if ($cart->count_contents(false) >= 0 || in_array($coupon['generated_by'], array('coupon_packs', 'produit_reduc', 'first_order'))) {
 		  // coupon code input given
 		  if ($_POST['coupon_code'] != '') {
 			// concatenate the input fields
