@@ -18,9 +18,9 @@ define('HEADING_TITLE', 'Information de mon compte');
 define('TEXT_ORIGIN_LOGIN', '<font color="#FF0000"><small><b>REMARQUE:</b></small></font> Si vous avez déjà un compte chez nous, veuillez vous connecter à la page d\'<a href="%s"><u>ouverture de session</u></a>.');
 
 define('EMAIL_SUBJECT', 'Bienvenue sur ' . STORE_NAME);
-define('EMAIL_GREET_MR', 'Cher Mr. vnom,' . "\n\n");
-define('EMAIL_GREET_MS', 'Cher Mme. vnom,' . "\n\n");
-define('EMAIL_GREET_NONE', 'Cher vnom' . "\n\n");
+define('EMAIL_GREET_MR', 'Cher Mr. %s,' . "\n\n");
+define('EMAIL_GREET_MS', 'Cher Mme. %s,' . "\n\n");
+define('EMAIL_GREET_NONE', 'Cher %s' . "\n\n");
 
 define('EMAIL_WELCOME', '
 Félicitation ! Votre compte personnel est maintenant créé.
@@ -29,8 +29,8 @@ Vous pouvez maintenant acheter nos parfums en cliquant sur : "ajoutez au panier"
 
 Les informations pour accéder à votre compte sont les suivantes :
 
-Utilisateur: vloggin
-Mot de passé: vpass'. "\n\n");
+Utilisateur: %s
+Mot de passé: %s'. "\n\n");
 
 define('EMAIL_TEXT', '');
 define('EMAIL_CONTACT', 'Si vous avez besoin d’aide, merci de nous contacter par email à <a href="mailto:'.STORE_OWNER_EMAIL_ADDRESS.'" target="_blank">'.STORE_OWNER_EMAIL_ADDRESS.'</a> ou par téléphone de 9H à 12H du lundi au vendredi.
