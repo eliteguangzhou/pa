@@ -27,6 +27,11 @@ $var =array(array('text'=>" r"));
         </td>
     </tr>
     <tr>
+        <td id="promo_newsletter_box">
+            recevez les parfums pas chers de la semaine
+        </td>
+    </tr>
+    <tr>
         <td id="title_newsletter_box">
             Newsletter
         </td>

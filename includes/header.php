@@ -123,15 +123,15 @@
                                                     <?php echo MENU_HOME?></a>
                                             </td>
                                             <td>
-                                                <a class="menu_top2" href="<?php echo tep_href_link('index.php?cPath=38_28')?>">
+                                                <a class="menu_top2" href="<?php echo tep_href_link('parfum-femme-pas-cher.html')?>">
                                                     <?php echo MENU_FRAGRANCE_WOMEN?></a>
                                             </td>
                                             <td>
-                                                <a class="menu_top3" href="<?php echo tep_href_link('index.php?cPath=38_27')?>">
+                                                <a class="menu_top3" href="<?php echo tep_href_link('parfum-homme-pas-cher.html')?>">
                                                     <?php echo MENU_FRAGRANCE_MEN?></a>
                                             </td>
                                             <td>
-                                                <a class="menu_top4" href="<?php echo tep_href_link('index.php?cPath=38')?>">
+                                                <a class="menu_top4" href="<?php echo tep_href_link('parfum-pas-cher.html')?>">
                                                     <?php echo MENU_ALL_BRANDS?></a>
                                             </td>
                     
