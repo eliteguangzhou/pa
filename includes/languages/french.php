@@ -370,8 +370,8 @@ define('TEXT_INSTEAD_OF', 'Au lieu de');
 define('TEXT_EN_STOCK', '<span class="en_stock">En Stock</span>');
 
 define('MENU_HOME', 'Accueil');
-define('MENU_FRAGRANCE_WOMEN', 'Parfums Femme');
-define('MENU_FRAGRANCE_MEN', 'Parfums Homme');
+define('MENU_FRAGRANCE_WOMEN', 'Parfum Femme');
+define('MENU_FRAGRANCE_MEN', 'Parfum Homme');
 define('MENU_ALL_BRANDS', 'Toutes nos marques');
 define('MENU_MY_ACCOUNT', 'Mon compte');
 define('MENU_CHRISTMAS', 'Sp&eacute;cial No&euml;l');
@@ -442,7 +442,7 @@ define('MEMBER_CARD3', '<span class="bigger">- <span class="gold bold">Membre GO
 define('MEMBER_CARD4', '<span class="bigger">- <span class="pink bold">Membre JUNIOR</span> : Carte membre (validit&eacute; '.$cards->list['card4']['duration'].' mois) : <span class="red bold">Offerte</span> </span><span class="bold small">(Offre valable jusqu\'au 30 juillet)</span>');
 
 define('MEMBER_CARD31', '<span class="bold small">(-80% d\'&eacute;conomie)</span>');
-define('TEXT_END', '<center><span class="bold">Aucune obligation d\'achat</span><center>');
+define('TEXT_END', '<center><span class="bold">Cherchez et trouvez votre parfum pas cher</span><center>');
 
 define('MENU_BONS_PLANS', 'Comit&eacute; d\'entreprise');
 define('MENU_SELECTION', 'Soldes');
@@ -461,6 +461,7 @@ define('ERROR_MAX_WEEKLY_LIMIT', 'Vous ne pouvez commander que pour '.MAX_WEEKLY
 define('REDUCED_PRICE', 'Prix r&eacute;duit : ');
 
 define('CONCEPT_INTRO','<h2 style="font-size:17px;margin-bottom:10px;">Le concept</h2><br />
+<span>Votre parfum pas cher sur Parfumrama ?</span></br></br>
 <span class="pink">'.STORE_NAME.'</span> est le 1er club de parfums qui vous permet d\'acheter vos parfums de marque <span class="bold">sans marge et sans interm&eacute;diaire</span> toute l\'ann&eacute;e.
 <br /><br />
 Entre les promotions &agrave; -30%, les soldes &agrave; -50%, les ventes priv&eacute;es &agrave; -70% et les ventes priv&eacute;e &agrave; -80%... vous vous demandez combien valent r&eacute;ellement les produits que vous achetez ?
