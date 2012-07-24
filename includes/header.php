@@ -106,6 +106,7 @@
   
                             </tr>
                         </table> 
+                        Parfum pas cher pour femme et pour homme toute l'ann&eacute;e
                         <table cellpadding="0" cellspacing="0" border="0" style="height:29px; background:url(images/top1.gif) no-repeat 10px 0; width:100%">
                             <tr>
                                 <td width="20%"  align="left" class="shipCart"><?php //echo tep_draw_separator('spacer.gif', '610', '1'); ?><?php echo tep_image(DIR_WS_IMAGES.'z1.gif')?> &nbsp; <?php echo BOX_HEADING_SHOPPING_CART?>(<a href="<?php echo tep_href_link('shopping_cart.php')?>"><?php echo $cart->count_contents()?> <?php echo BOX_SHOPPING_CART_EMPTY?></a>)</td>
