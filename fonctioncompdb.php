@@ -22,7 +22,7 @@ function pavemarque($current_category_id) {
 
     $products_query = tep_db_query($sql);
 
-    if ($current_category_id == 28){
+    if ($current_category_id == 27){
       echo '<br />'.HOMME_P_PAS_CHER.'<br />';
     }
     elseif ($current_category_id == 28) {
