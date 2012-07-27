@@ -1,9 +1,9 @@
 RewriteEngine on
-RewriteRule ^parfum-homme-pas-cher.html index.php?cPath=38_27
+RewriteRule ^parfum-homme-pas-cher.php index.php?cPath=38_27
 
-RewriteRule ^parfum-femme-pas-cher.html index.php?cPath=38_28
+RewriteRule ^parfum-femme-pas-cher.php index.php?cPath=38_28
 
-RewriteRule ^parfum-pas-cher.html index.php?cPath=38
+RewriteRule ^parfums-pas-chers.php index.php?cPath=38
 
 order allow,deny
 deny from 94.75.199.200
