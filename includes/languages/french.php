@@ -488,5 +488,7 @@ define('NEWSLETTER_NOVALID_FIELD', 'Vous avez entrez un email non valide.');
 define('NEWSLETTER_THANK', 'Merci!!');
 define('NEWSLETTER_RETURN_ERROR', 'Une erreur c\'est produite, veuillez reessayer.');
 define('OUR_MARQUES','Nos marques');
+
+define('MENU_P_PAS_CHER','parfum pas cher');
 ?>
 

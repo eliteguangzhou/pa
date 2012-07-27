@@ -135,6 +135,10 @@
                                                 <a class="menu_top4" href="<?php echo tep_href_link('parfum-pas-cher.html')?>">
                                                     <?php echo MENU_ALL_BRANDS?></a>
                                             </td>
+                                            <td>
+                                                <a class="menu_top4" href="<?php echo tep_href_link('ppascher.php')?>">
+                                                    <?php echo MENU_P_PAS_CHER?></a>
+                                            </td>
                     
                                             <td>
                                                 <a class="menu_top6" href="<?php echo tep_href_link('account.php')?>">
