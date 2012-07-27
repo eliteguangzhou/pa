@@ -74,7 +74,8 @@
 <table cellpadding="0" cellspacing="0" border="0" style="width:980px" align="center"> 
 	<tr>
 		<td align="center">
-                    Parfum pas cher pour femme et pour homme toute l'ann&eacute;e
+		<br/>
+                    <h1>Parfum pas cher pour femme et pour homme toute l'ann&eacute;e</h1>
 			<table cellpadding="0" cellspacing="0" border="0" style="height:169px;" class="header">
 				<tr>
 					<td align="center">
@@ -124,19 +125,19 @@
                                                     <?php echo MENU_HOME?></a>
                                             </td>
                                             <td>
-                                                <a class="menu_top2" href="<?php echo tep_href_link('parfum-femme-pas-cher.html')?>">
+                                                <a class="menu_top2" href="<?php echo tep_href_link('parfum-femme-pas-cher.php')?>">
                                                     <?php echo MENU_FRAGRANCE_WOMEN?></a>
                                             </td>
                                             <td>
-                                                <a class="menu_top3" href="<?php echo tep_href_link('parfum-homme-pas-cher.html')?>">
+                                                <a class="menu_top3" href="<?php echo tep_href_link('parfum-homme-pas-cher.php')?>">
                                                     <?php echo MENU_FRAGRANCE_MEN?></a>
                                             </td>
                                             <td>
-                                                <a class="menu_top4" href="<?php echo tep_href_link('parfum-pas-cher.html')?>">
+                                                <a class="menu_top4" href="<?php echo tep_href_link('parfums-pas-chers.html')?>">
                                                     <?php echo MENU_ALL_BRANDS?></a>
                                             </td>
                                             <td>
-                                                <a class="menu_top4" href="<?php echo tep_href_link('ppascher.php')?>">
+                                                <a class="menu_top4" href="<?php echo tep_href_link('parfum-pas-cher.php')?>">
                                                     <?php echo MENU_P_PAS_CHER?></a>
                                             </td>
                     

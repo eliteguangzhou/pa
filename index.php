@@ -61,11 +61,8 @@
 ?>
     <td width="100%" class="col_center">
 	
-	
 <?php  tep_draw_heading_top($cPath);?>
-	  
 <?php new contentBoxHeading_ProdNew($info_box_contents);?>
-
 <?php  tep_draw_heading_top_3();?>
 
 		
@@ -152,11 +149,8 @@ $p_name_sub = '<a href="' . tep_href_link(FILENAME_DEFAULT, $cPath_new) . '">' .
 ?>					
 					
 				</table>
-				
 <?php  tep_draw_heading_bottom_3();?>
-				
 <?php  tep_draw_heading_bottom();  ?>
-
 <?php  /*tep_draw_separate();   <!--  /////////  -->
 
 <?php   tep_draw_heading_top_77();  
@@ -276,9 +270,7 @@ $p_name_sub = '<a href="' . tep_href_link(FILENAME_DEFAULT, $cPath_new) . '">' .
     }
 ?>
     <td width="100%" class="col_center">
-
 <?php tep_draw_heading_top($cPath);?>
-
 		
 <?php
 // optional Product List Filter
@@ -341,7 +333,6 @@ require('fonctioncompdb.php');
   } else { // default page
 ?>
     <td width="100%" class="col_center">
-
 		
 <?php /* require(DIR_WS_BOXES . 'panel_top.php'); */ ?>
 	

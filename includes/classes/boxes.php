@@ -567,6 +567,14 @@ class tableBox_shopping_cart {
   function tep_draw_heading_top($current_category_id = 0)
   {
  			require(DIR_WS_BOXES . 'panel_top.php');
+ 			
+    if ($current_category_id == '38_27'){
+      echo '<br /><h1>'.HOMME_P_PAS_CHER.'</h1><br />';
+    }
+    elseif ($current_category_id == '38_28') {
+        
+      echo '<br /><h1>'.FEMME_P_PAS_CHER.'</h1><br />';
+    }
   echo '
 					<table cellpadding="0" cellspacing="0" border="0" style="border-top:1px solid #d9d9d9;">
 						<tr>

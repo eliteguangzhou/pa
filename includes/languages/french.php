@@ -460,8 +460,8 @@ define('ERROR_MAX_WEEKLY_LIMIT', 'Vous ne pouvez commander que pour '.MAX_WEEKLY
 
 define('REDUCED_PRICE', 'Prix r&eacute;duit : ');
 
-define('CONCEPT_INTRO','<h2 style="font-size:17px;margin-bottom:10px;">Le concept</h2><br />
-<span>Votre parfum pas cher sur Parfumrama ?</span></br></br>
+define('CONCEPT_INTRO','<h2 style="font-size:15px;margin-bottom:10px;">Votre parfum pas cher sur Parfumrama?</h2><br /><h2 style="font-size:15px;margin-bottom:10px;">Le concept</h2><br />
+</br>
 <span class="pink">'.STORE_NAME.'</span> est le 1er club de parfums qui vous permet d\'acheter vos parfums de marque <span class="bold">sans marge et sans interm&eacute;diaire</span> toute l\'ann&eacute;e.
 <br /><br />
 Entre les promotions &agrave; -30%, les soldes &agrave; -50%, les ventes priv&eacute;es &agrave; -70% et les ventes priv&eacute;e &agrave; -80%... vous vous demandez combien valent r&eacute;ellement les produits que vous achetez ?

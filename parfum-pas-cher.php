@@ -47,7 +47,11 @@
 
 <?php tep_draw_heading_top_1();?>
 
-<?php echo TEXT_INFORMATION; ?>
+<table border="0" width="100%" cellspacing="0" cellpadding="2">
+					  <tr>
+						<td class="main"><?php echo TEXT_INFORMATION; ?></td>
+					  </tr>
+					</table>
 
 <?php tep_draw_heading_bottom_1();?>
 
