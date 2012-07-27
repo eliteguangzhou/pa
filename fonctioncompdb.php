@@ -6,7 +6,6 @@ function pavemarque($current_category_id) {
     $i = 0;
     $mamarqueold="sdfgsd";
     $first="vrai";
-    error_log('=============='.$current_category_id);
     $sql='SELECT DISTINCT
             manufacturers.manufacturers_name,
             categories.parent_id,
@@ -21,15 +20,7 @@ function pavemarque($current_category_id) {
         ORDER BY manufacturers_name';
 
     $products_query = tep_db_query($sql);
-
-    if ($current_category_id == 27){
-      echo '<br />'.HOMME_P_PAS_CHER.'<br />';
-    }
-    elseif ($current_category_id == 28) {
-        
-      echo '<br />'.FEMME_P_PAS_CHER.'<br />';
-    }
-    
+   
     echo '<br />'.CHOOSE_YOUR_BRAND.'<br /><br /><table width="100%" border="2">';
     while($products = tep_db_fetch_array($products_query))
     {
