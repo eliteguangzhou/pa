@@ -74,7 +74,8 @@
 <table cellpadding="0" cellspacing="0" border="0" style="width:980px" align="center"> 
 	<tr>
 		<td align="center">
-                    Parfum pas cher pour femme et pour homme toute l'ann&eacute;e
+		<br/>
+                    <h1>Parfum pas cher pour femme et pour homme toute l'ann&eacute;e</h1>
 			<table cellpadding="0" cellspacing="0" border="0" style="height:169px;" class="header">
 				<tr>
 					<td align="center">
