@@ -490,5 +490,8 @@ define('NEWSLETTER_RETURN_ERROR', 'Une erreur c\'est produite, veuillez reessaye
 define('OUR_MARQUES','Nos marques');
 
 define('MENU_P_PAS_CHER','parfum pas cher');
+define('FEMME_P_PAS_CHER','Parfums Femme Votre parfum femme pas cher toute l\'ann&eacute;e');
+define('HOMME_P_PAS_CHER','Parfums Homme Votre parfum femme pas cher toute l\'ann&eacute;e');
+
 ?>
 
