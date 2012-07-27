@@ -94,4 +94,5 @@
   define('FILENAME_HOW_TO_ORDER','how_to_order.php');
   define('FILENAME_CHECKOUT', 'checkout.php');
   define('FILENAME_PRESENTATION','presentation.php');
+  define('FILENAME_PPCHERE','ppascher.php');
  ?>
