@@ -25,4 +25,5 @@ define('TEXT_ORDER_COST', 'Coût de la commande :');
 define('TEXT_VIEW_ORDER', 'Afficher commande');
 
 define('TEXT_NO_PURCHASES', 'Vous n\'avez pas encore fait d\'achat.');
+define(TRACKING,'num tracking');
 ?>
