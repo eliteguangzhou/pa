@@ -17,11 +17,11 @@
   define('HTTP_CATALOG_SERVER', 'http://'.$_SERVER['SERVER_NAME']);
   define('HTTPS_CATALOG_SERVER', 'http://'.$_SERVER['SERVER_NAME']);
   define('ENABLE_SSL_CATALOG', 'false');
-  define('DIR_FS_DOCUMENT_ROOT', '/home/tidjean/elite/parfumrama/');
+  define('DIR_FS_DOCUMENT_ROOT', '/var/www/vhosts/parfumrama.com/httpdocs/');
   define('DIR_WS_ADMIN', '/bo/');
-  define('DIR_FS_ADMIN', '/home/tidjean/elite/parfumrama/bo/');
+  define('DIR_FS_ADMIN', '/var/www/vhosts/parfumrama.com/httpdocs/bo/');
   define('DIR_WS_CATALOG', '/');
-  define('DIR_FS_CATALOG', '/home/tidjean/elite/parfumrama/');
+  define('DIR_FS_CATALOG', '/var/www/vhosts/parfumrama.com/httpdocs/');
   define('DIR_WS_IMAGES', 'images/');
   define('DIR_WS_ICONS', DIR_WS_IMAGES . 'icons/');
   define('DIR_WS_CATALOG_IMAGES', DIR_WS_CATALOG . 'images/');
@@ -38,9 +38,9 @@
   define('DIR_FS_BACKUP', DIR_FS_ADMIN . 'backups/');
 
   define('DB_SERVER', 'localhost');
-  define('DB_SERVER_USERNAME', 'root');
-  define('DB_SERVER_PASSWORD', 'hahaha');
-  define('DB_DATABASE', 'pa');
+  define('DB_SERVER_USERNAME', 'pa123');
+  define('DB_SERVER_PASSWORD', '3ry54SJhRAvEul');
+  define('DB_DATABASE', 'pa123');
   define('USE_PCONNECT', 'false');
   define('STORE_SESSIONS', 'mysql');
 ?>
