@@ -16,7 +16,7 @@ define('TEXT_INFORMATION','<br /><h2 class="text_rose">Cadeau</h2>
 <span style="font-size:14px;line-height:19px;">
 Votre carte membre parfumrama vous est offerte.
 Vous pourrez imm&eacute;diatement b&eacute;n&eacute;ficier des parfums &agrave; prix coutant pendant 1 mois uniquement. 
-<br/>(Offre valable jusqu\'au 14 juillet 2012).<br/>
+<br/>(Offre valable jusqu\'au 15 aout 2012).<br/>
 Afin de profiter de l\'offre il vous suffit de rajouter la carte d\'essais dans votre panier, puis de choisir les parfums de votre choix en s&eacute;lectionnant les prix membres.
 Bon shopping.
 </span>
