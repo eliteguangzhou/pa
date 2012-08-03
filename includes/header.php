@@ -133,7 +133,7 @@
                                                     <?php echo MENU_FRAGRANCE_MEN?></a>
                                             </td>
                                             <td>
-                                                <a class="menu_top4" href="<?php echo tep_href_link('parfums-pas-chers.php')?>"> 
+                                                <a class="menu_top4" href="<?php echo tep_href_link('parfums-pas-chers.php')?>">
                                                     <?php echo MENU_ALL_BRANDS?></a>
                                             </td>
                                             <td>
