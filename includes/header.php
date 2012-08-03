@@ -134,7 +134,7 @@
                                             </td>
                                             <td>
                                                 <a class="menu_top4" href="<?php echo tep_href_link('parfums-pas-chers.php')?>">
-                                                    <?php echo MENU_ALL_BRANDS?></a>
+                                                    <?php echo MENU_ALL_BRANDS /*ttt*/?></a>
                                             </td>
                                             <td>
                                                 <a class="menu_top4" href="<?php echo tep_href_link('parfum-pas-cher.php')?>">
