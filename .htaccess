@@ -1,9 +1,10 @@
+Options +FollowSymlinks
 RewriteEngine on
 RewriteRule ^parfum-homme-pas-cher.php index.php?cPath=38_27
-
 RewriteRule ^parfum-femme-pas-cher.php index.php?cPath=38_28
-
 RewriteRule ^parfums-pas-chers.php index.php?cPath=38
+RewriteRule ^marque/([A-Za-z0-9-]+)-(.*)$ index.php?manufacturers_id=$1&name=$2
+RewriteRule ^marque/([A-Za-z0-9-]+)$ index.php?manufacturers_id=$1
 
 order allow,deny
 deny from 94.75.199.200

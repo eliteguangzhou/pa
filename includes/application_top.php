@@ -15,11 +15,11 @@
   define('PAGE_PARSE_START_TIME', microtime());
 
   ini_set('date.timezone', 'Asia/Pyongyang');
-  error_reporting(E_ALL);
-// set the level of error reporting
- // ini_set('display_errors', true);
- // error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE);
-  // error_reporting(1);
+ error_reporting(E_ALL);
+//set the level of error reporting
+ ini_set('display_errors', true);
+ error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE);
+  error_reporting(1);
 // check support for register_globals
   if (function_exists('ini_get') && (ini_get('register_globals') == false) && (PHP_VERSION < 4.3) ) {
     exit('Server Requirement Error: register_globals is disabled in your PHP configuration. This can be enabled in your php.ini configuration file or in the .htaccess file in your catalog directory. Please use PHP 4.3+ if register_globals cannot be enabled on the server.');
@@ -377,6 +377,9 @@ $nb_products_discount = new nb_products_discount();
   define('DIR_WS_IMAGES', DIR_WS_LANGUAGES.$language . '/images/');
   define('DIR_WS_ICONS', DIR_WS_IMAGES . 'icons/');
   
+  if (!isset($language)){
+    $language = 'french';
+  }
   //include the language translations
   require(DIR_WS_LANGUAGES . $language . '.php');
   
@@ -610,7 +613,8 @@ $nb_products_discount = new nb_products_discount();
     $manufacturers_query = tep_db_query("select manufacturers_name from " . TABLE_MANUFACTURERS . " where manufacturers_id = '" . (int)$HTTP_GET_VARS['manufacturers_id'] . "'");
     if (tep_db_num_rows($manufacturers_query)) {
       $manufacturers = tep_db_fetch_array($manufacturers_query);
-      $breadcrumb->add($manufacturers['manufacturers_name'], tep_href_link(FILENAME_DEFAULT, 'manufacturers_id=' . $HTTP_GET_VARS['manufacturers_id']));
+//       $breadcrumb->add($manufacturers['manufacturers_name'], tep_href_link(FILENAME_DEFAULT, 'manufacturers_id=' . $HTTP_GET_VARS['manufacturers_id']));
+      $breadcrumb->add($manufacturers['manufacturers_name'], '/marque/'.$HTTP_GET_VARS['manufacturers_id']);
     }
   }
 
@@ -621,16 +625,19 @@ $nb_products_discount = new nb_products_discount();
       $breadcrumb->add($manufacturers['manufacturers_name'], tep_href_link(FILENAME_DEFAULT, 'cPath='.$cPath.'&filter_id=' . (int)$HTTP_GET_VARS['filter_id']));
     }
   }
-  if (!empty($cPath2))
+  if (!empty($cPath2)){
+    error_log('----------'.get_url_cPath2());
     $breadcrumb->add($product['Gamme'], tep_href_link(FILENAME_DEFAULT, get_url_cPath2() . '&cPath2=' . (int)$cPath2 ));
-
+  }
 // add the products model to the breadcrumb trail
   if (isset($HTTP_GET_VARS['products_id'])) {
     $model_query = tep_db_query("select m.manufacturers_name, p.products_model, c.parent_id, p.manufacturers_id, pd.Gamme, p2c.categories_id from " . TABLE_PRODUCTS . " p, " . TABLE_PRODUCTS_DESCRIPTION . " pd, " . TABLE_PRODUCTS_TO_CATEGORIES . " p2c," . TABLE_CATEGORIES . " c," . TABLE_MANUFACTURERS . " m  where m.manufacturers_id = p.manufacturers_id AND c.categories_id = p2c.categories_id AND p.products_id = p2c.products_id AND p.products_id = pd.products_id AND pd.language_id = ".(int)$languages_id." AND p.products_id = '" . (int)$HTTP_GET_VARS['products_id'] . "'");
     if (tep_db_num_rows($model_query)) {
       $model = tep_db_fetch_array($model_query);
-      if (!isset($HTTP_GET_VARS['manufacturers_id']))
-        $breadcrumb->add($model['manufacturers_name'], tep_href_link(FILENAME_DEFAULT, get_url_cPath2($model)));
+      if (!isset($HTTP_GET_VARS['manufacturers_id'])){
+        $breadcrumb->add($model['manufacturers_name'], get_url_cPath2($model));
+	
+      }
       $breadcrumb->add($model['Gamme'], tep_href_link(FILENAME_DEFAULT, get_url_cPath2($model).'&cPath2=' . $HTTP_GET_VARS['products_id']));
       $breadcrumb->add($model['products_model'], tep_href_link(FILENAME_PRODUCT_INFO, get_url_cPath2($model) . '&products_id=' . $HTTP_GET_VARS['products_id']));
     }
