@@ -20,21 +20,21 @@
 
 <?php
 $links = array(
-    1=>'?manufacturers_id=2863',
-    2=>'?manufacturers_id=588',
-    3=>'?manufacturers_id=362',
-    4=>'?manufacturers_id=336',
-    5=>'?manufacturers_id=293',
-    6=>'?manufacturers_id=245',
-    7=>'?manufacturers_id=200',
-    8=>'?manufacturers_id=166',
-    9=>'?manufacturers_id=114',
-    10=>'?manufacturers_id=92',
-    11=>'?manufacturers_id=83',
-    12=>'?manufacturers_id=82',
-    13=>'?manufacturers_id=264',
-    14=>'?manufacturers_id=53',
-    15=>'?manufacturers_id=341'
+    1=>'/marque/2863',
+    2=>'/marque/588',
+    3=>'/marque/362',
+    4=>'/marque/336',
+    5=>'/marque/293',
+    6=>'/marque/245',
+    7=>'/marque/200',
+    8=>'/marque/166',
+    9=>'/marque/114',
+    10=>'/marque/92',
+    11=>'/marque/83',
+    12=>'/marque/82',
+    13=>'/marque/264',
+    14=>'/marque/53',
+    15=>'/marque/341'
 );
 ?>
 <div id="partnair_cont_sup">
