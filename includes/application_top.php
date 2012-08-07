@@ -622,8 +622,9 @@ $nb_products_discount = new nb_products_discount();
     $manufacturers_query = tep_db_query("select manufacturers_name from " . TABLE_MANUFACTURERS . " where manufacturers_id = '" . (int)$HTTP_GET_VARS['filter_id'] . "'");
     if (tep_db_num_rows($manufacturers_query)) {
       $manufacturers = tep_db_fetch_array($manufacturers_query);
-      $breadcrumb->add($manufacturers['manufacturers_name'], tep_href_link(FILENAME_DEFAULT, 'cPath='.$cPath.'&filter_id=' . (int)$HTTP_GET_VARS['filter_id']));
-    }
+//       $breadcrumb->add($manufacturers['manufacturers_name'], tep_href_link(FILENAME_DEFAULT, 'cPath='.$cPath.'&filter_id=' . (int)$HTTP_GET_VARS['filter_id']));
+	  $breadcrumb->add($manufacturers['manufacturers_name'], '/'.$HTTP_GET_VARS['filter_id'].'-'.$manufacturers['manufacturers_name']);
+}
   }
   if (!empty($cPath2)){
     $breadcrumb->add($product['Gamme'], tep_href_link(FILENAME_DEFAULT, get_url_cPath2() . '&cPath2=' . (int)$cPath2 ));
