@@ -30,7 +30,7 @@ asort($newResult);
 	foreach ($newResult as $name => $id)
 //     $str .= '<li class="bg_list"><a href="'.tep_href_link(FILENAME_DEFAULT, 'manufacturers_id='.$id.'&name='.$name).'">'.$name.'</a>';
 
-    $str .= '<li class="bg_list"><a href="marque/'.$id.'-'.$name.'.html">'.$name.'</a>';
+    $str .= '<li class="bg_list"><a href="/'.$id.'-'.$name.'.html">'.$name.'</a>';
   $str .= '</ul>';
   
   $info_box_contents[] = array('text' => meilleurs_marques);

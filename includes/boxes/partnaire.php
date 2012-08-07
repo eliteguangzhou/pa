@@ -20,21 +20,21 @@
 
 <?php
 $links = array(
-    1=>'/marque/2863.html',
-    2=>'/marque/588.html',
-    3=>'/marque/362.html',
-    4=>'/marque/336.html',
-    5=>'/marque/293.html',
-    6=>'/marque/245.html',
-    7=>'/marque/200.html',
-    8=>'/marque/166.html',
-    9=>'/marque/114.html',
-    10=>'/marque/92.html',
-    11=>'/marque/83.html',
-    12=>'/marque/82.html',
-    13=>'/marque/264.html',
-    14=>'/marque/53.html',
-    15=>'/marque/341.html'
+    1=>'/2863-versace.html',
+    2=>'/588-thierry mugler.html',
+    3=>'/362-lolita.html',
+    4=>'/336-lacost.html',
+    5=>'/293-jean paul gaultier.html',
+    6=>'/245-lucci.html',
+    7=>'/200-fendi.html',
+    8=>'/166-dg.html',
+    9=>'/114-cartier.html',
+    10=>'/92-cacharel.html',
+    11=>'/83-bvlgari.html',
+    12=>'/82-burberry.html',
+    13=>'/264-boss.html',
+    14=>'/53-azzaro.html',
+    15=>'/341-lanvin.html'
 );
 ?>
 <div id="partnair_cont_sup">
