@@ -1461,8 +1461,8 @@ $orders_check_query = tep_db_query("select count(*) as total from " . TABLE_ORDE
                 $string_query .= '&cPath='.$HTTP_GET_VARS['cPath'];
 
             if (isset($HTTP_GET_VARS['manufacturers_id']))
-                $string_query .= '/'.$HTTP_GET_VARS['manufacturers_id'].'.html'; 
-//                 $string_query .= '&manufacturers_id='.$HTTP_GET_VARS['manufacturers_id'];
+//                 $string_query .= '/'.$HTTP_GET_VARS['manufacturers_id'].'.html'; 
+                $string_query .= '&manufacturers_id='.$HTTP_GET_VARS['manufacturers_id'];
 
             if (isset($HTTP_GET_VARS['filter_id']))
                 $string_query .= '&filter_id='.$HTTP_GET_VARS['filter_id'];

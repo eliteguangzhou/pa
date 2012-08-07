@@ -626,7 +626,6 @@ $nb_products_discount = new nb_products_discount();
     }
   }
   if (!empty($cPath2)){
-    error_log('----------'.get_url_cPath2());
     $breadcrumb->add($product['Gamme'], tep_href_link(FILENAME_DEFAULT, get_url_cPath2() . '&cPath2=' . (int)$cPath2 ));
   }
 // add the products model to the breadcrumb trail
