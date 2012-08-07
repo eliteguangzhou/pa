@@ -584,10 +584,8 @@ $nb_products_discount = new nb_products_discount();
   if (isset($HTTP_GET_VARS['cPath2'])) {
     $cPath2 = $HTTP_GET_VARS['cPath2'];
     $display_type = '';
-
     $product_query = tep_db_query("select Brand, Gamme from " . TABLE_PRODUCTS_DESCRIPTION . " where products_id = '" . (int)$cPath2 . "' and language_id = '" . (int)$languages_id . "'");
     $product = tep_db_fetch_array($product_query);
-
     $range_where = ' AND pd.Gamme LIKE "'.$product['Gamme'].'" ';
   }
 
@@ -615,6 +613,7 @@ $nb_products_discount = new nb_products_discount();
       $manufacturers = tep_db_fetch_array($manufacturers_query);
 //       $breadcrumb->add($manufacturers['manufacturers_name'], tep_href_link(FILENAME_DEFAULT, 'manufacturers_id=' . $HTTP_GET_VARS['manufacturers_id']));
       $breadcrumb->add($manufacturers['manufacturers_name'], '/'.$HTTP_GET_VARS['manufacturers_id'].'-'.$manufacturers['manufacturers_name'].'.html');
+ //     header('Location: /'.$HTTP_GET_VARS['manufacturers_id'].'-'.$manufacturers['manufacturers_name'].'.html');
     }
   }
 
