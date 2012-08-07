@@ -614,7 +614,7 @@ $nb_products_discount = new nb_products_discount();
     if (tep_db_num_rows($manufacturers_query)) {
       $manufacturers = tep_db_fetch_array($manufacturers_query);
 //       $breadcrumb->add($manufacturers['manufacturers_name'], tep_href_link(FILENAME_DEFAULT, 'manufacturers_id=' . $HTTP_GET_VARS['manufacturers_id']));
-      $breadcrumb->add($manufacturers['manufacturers_name'], '/marque/'.$HTTP_GET_VARS['manufacturers_id']);
+      $breadcrumb->add($manufacturers['manufacturers_name'], '/'.$HTTP_GET_VARS['manufacturers_id'].'-'.$manufacturers['manufacturers_name']);
     }
   }
 
