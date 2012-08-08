@@ -20,11 +20,11 @@
     
     $p_id = $product['products_id'];
 
-    $p_pic = '<a href="' . tep_href_link(FILENAME_PRODUCT_INFO, 'cPath=' . $product['categories_id'].'&products_id=' . $product['products_id']) . '">' . tep_image(DIR_WS_PWS_IMAGE . $product['products_image'], $product['products_name'], SMALL_IMAGE_WIDTH, SMALL_IMAGE_HEIGHT) . '</a>';
+    $p_pic = '<a href="' . $specials['products_id'] . '-p-'.str_replace(' ','_',$specials['products_name']) . '.html">' . tep_image(DIR_WS_PWS_IMAGE . $product['products_image'], $product['products_name'], SMALL_IMAGE_WIDTH, SMALL_IMAGE_HEIGHT) . '</a>';
 
     $p_desc = ''.substr(strip_tags($product['products_description']), 0, MAX_DESCR_1).' ...';
 
-    $p_name = '<a href="' . tep_href_link(FILENAME_PRODUCT_INFO, 'cPath=' . $product['categories_id'].'&products_id=' . $product['products_id']) . '">' .display_product_name($product['products_name'] , $product).'</a>';
+    $p_name = '<a href="' . $specials['products_id'] . '-p-'.str_replace(' ','_',$specials['products_name']) . '.html">' .display_product_name($product['products_name'] , $product).'</a>';
 
     $p_price = '<span class="productSpecialPrice">'.$currencies->display_price(get_price($product['products_price']), tep_get_tax_rate($product['products_tax_class_id'])).'</span>';
 

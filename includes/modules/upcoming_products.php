@@ -34,7 +34,7 @@
         echo '              <tr class="upcomingProducts-odd">' . "\n";
       }
 
-      echo '                <td class="smallText">&nbsp;<a href="' . tep_href_link(FILENAME_PRODUCT_INFO, 'products_id=' . $expected['products_id']) . '">' . $expected['products_name'] . '</a>&nbsp;</td>' . "\n" .
+      echo '                <td class="smallText">&nbsp;<a href="' . $expected['products_id'] . '-p-'.str_replace(' ','_',$expected['products_name']) . '.html">' . $expected['products_name'] . '</a>&nbsp;</td>' . "\n" .
            '                <td align="right" class="smallText">&nbsp;' . tep_date_short($expected['date_expected']) . '&nbsp;</td>' . "\n" .
            '              </tr>' . "\n";
     }

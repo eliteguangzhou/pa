@@ -164,7 +164,7 @@ $products_ids = '';  //use for the tag in last line.
 						<tr>
 
 							 <td align="center" class="vam"><table cellpadding="0" cellspacing="0" border="0" style="width:124px"><tr><td align="center">
-								'.tep_draw_prod_pic_top().'<a href="' . tep_href_link(FILENAME_PRODUCT_INFO, 'products_id=' . $products[$i]['id']) . '">' . tep_image(($cart->is_card($products[$i]['id']) ? DIR_WS_IMAGES : DIR_WS_PWS_IMAGE) . $products[$i]['image'], $products[$i]['name'], SMALL_IMAGE_WIDTH, SMALL_IMAGE_HEIGHT) . '</a>'.tep_draw_prod_pic_bottom().'</td></tr></table>
+								'.tep_draw_prod_pic_top().'<a href="' . $products[$i]['id'] . '-p-'.str_replace(' ','_',$products[$i]['name']) . '.html">' . tep_image(($cart->is_card($products[$i]['id']) ? DIR_WS_IMAGES : DIR_WS_PWS_IMAGE) . $products[$i]['image'], $products[$i]['name'], SMALL_IMAGE_WIDTH, SMALL_IMAGE_HEIGHT) . '</a>'.tep_draw_prod_pic_bottom().'</td></tr></table>
 							'.tep_draw_separator('spacer.gif', '1', '10').'
 								<br><em>'.display_product_name($products[$i]['name'], $products[$i]).'</em>';
 

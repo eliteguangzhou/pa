@@ -32,7 +32,7 @@
         $cart_contents_string .= '<span class="">';
       }
 
-      $cart_contents_string .= $products[$i]['quantity'] . '&nbsp;x&nbsp;</span></td><td valign="top"><a href="' . tep_href_link(FILENAME_PRODUCT_INFO, 'products_id=' . $products[$i]['id']) . '">';
+      $cart_contents_string .= $products[$i]['quantity'] . '&nbsp;x&nbsp;</span></td><td valign="top"><a href="' . $products[$i]['id'] . '-p-' .str_replace(' ','_',$products[$i]['name']) . '.html">TTTTTT';
 
       if ((tep_session_is_registered('new_products_id_in_cart')) && ($new_products_id_in_cart == $products[$i]['id'])) {
         $cart_contents_string .= '<span class="newItemInCart">';

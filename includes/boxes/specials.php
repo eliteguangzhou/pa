@@ -21,9 +21,9 @@
 
     new infoBoxHeading($info_box_contents, false, false, tep_href_link(FILENAME_SPECIALS));
 	
-	$name_prod = '<span><a href="' . tep_href_link(FILENAME_PRODUCT_INFO, 'products_id=' . $random_product['products_id']) . '">' . $random_product['products_name'] . '</a></span>';
+	$name_prod = '<span><a href="' . $random_product['products_id'] . '-p-'.str_replace(' ','_',$random_product['products_name']) . '.html">' . $random_product['products_name'] . '</a></span>';
 	
-	$pic_prod = '<a href="' . tep_href_link(FILENAME_PRODUCT_INFO, 'products_id=' . $random_product['products_id']) . '">' . tep_image(DIR_WS_PWS_IMAGE . $random_product['products_image'], $random_product['products_name'], HEADING_IMAGE_WIDTH, HEADING_IMAGE_HEIGHT) . '</a>';
+	$pic_prod = '<a href="' . $random_product['products_id'] . '-p-'.str_replace(' ','_',$random_product['products_name']) . '.html">' . tep_image(DIR_WS_PWS_IMAGE . $random_product['products_image'], $random_product['products_name'], HEADING_IMAGE_WIDTH, HEADING_IMAGE_HEIGHT) . '</a>';
 
 	$sp_price_1 = '<span class="productSpecialPrice">' . $currencies->display_price($random_product['specials_new_products_price'], tep_get_tax_rate($random_product['products_tax_class_id'])).'</span>';
 	

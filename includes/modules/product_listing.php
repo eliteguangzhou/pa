@@ -66,9 +66,9 @@ $my_col = 0;
           case 'PRODUCT_LIST_NAME':
             $lc_align = '';
             if (isset($HTTP_GET_VARS['manufacturers_id'])) {
-            $p_name = $lc_text = '<a href="' . tep_href_link(FILENAME_PRODUCT_INFO, 'manufacturers_id=' . $HTTP_GET_VARS['manufacturers_id'] . '&products_id=' . $listing['products_id']) . '">' . display_product_name($listing['products_name'], $product) . '</a>';
+            $p_name = $lc_text = '<a href="' . $listing['products_id'] . '-p-'.str_replace(' ','_',$listing['products_name']) . '.html">' . display_product_name($listing['products_name'], $product) . '</a>';
             } else {
-            $p_name = $lc_text = '<a href="' . tep_href_link(FILENAME_PRODUCT_INFO, ($cPath ? 'cPath=' . $cPath . '&' : '') . 'products_id=' . $listing['products_id']) . '">' . display_product_name($listing['products_name'], $product) . '</a>';
+            $p_name = $lc_text = '<a href="' . $listing['products_id'] . '-p-'.str_replace(' ','_',$listing['products_name']) . '.html">' . display_product_name($listing['products_name'], $product) . '</a>';
             }
 
             break;
@@ -95,9 +95,9 @@ $my_col = 0;
           case 'PRODUCT_LIST_IMAGE':
             $lc_align = 'center';
             if (isset($HTTP_GET_VARS['manufacturers_id'])) {
-              $p_pic = '<a href="' . tep_href_link(FILENAME_PRODUCT_INFO, 'manufacturers_id=' . $HTTP_GET_VARS['manufacturers_id'] . '&products_id=' . $listing['products_id']) . '">' . tep_image(DIR_WS_PWS_IMAGE . $listing['products_image'], $listing['products_name'], SMALL_IMAGE_WIDTH, SMALL_IMAGE_HEIGHT) . '</a>';
+              $p_pic = '<a href="' . $listing['products_id'] . '-p-'.str_replace(' ','_',$listing['products_name']) . '.html">' . tep_image(DIR_WS_PWS_IMAGE . $listing['products_image'], $listing['products_name'], SMALL_IMAGE_WIDTH, SMALL_IMAGE_HEIGHT) . '</a>';
             } else {
-              $p_pic = '<a href="' . tep_href_link(FILENAME_PRODUCT_INFO, ($cPath ? 'cPath=' . $cPath . '&' : '') . 'products_id=' . $listing['products_id']) . '">' . tep_image(DIR_WS_PWS_IMAGE . $listing['products_image'], $listing['products_name'], SMALL_IMAGE_WIDTH, SMALL_IMAGE_HEIGHT) . '</a>';
+              $p_pic = '<a href="' . $listing['products_id'] . '-p-'.str_replace(' ','_',$listing['products_name']) . '.html">' . tep_image(DIR_WS_PWS_IMAGE . $listing['products_image'], $listing['products_name'], SMALL_IMAGE_WIDTH, SMALL_IMAGE_HEIGHT) . '</a>';
             }
             break;
           case 'PRODUCT_LIST_BUY_NOW':
