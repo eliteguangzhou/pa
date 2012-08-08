@@ -65,8 +65,10 @@ else {
 
   $str .= '<ul>';
   $cat_name ='';
-  while($products = tep_db_fetch_array($products_query))
-  	$str .= '<li class="bg_list"> <a  href="'.tep_href_link('index.php', 'cPath='.$current_category_id.'&filter_id='.$products['manufacturers_id'].'&name='.$cat_name.'&name1='.$products['manufacturers_name']).'">'.$products['manufacturers_name'].'</a>';
+  while($products = tep_db_fetch_array($products_query)){
+//   	$str .= '<li class="bg_list"> <a  href="'.tep_href_link('index.php', 'cPath='.$current_category_id.'&filter_id='.$products['manufacturers_id'].'&name='.$cat_name.'&name1='.$products['manufacturers_name']).'">'.$products['manufacturers_name'].'</a>';
+  	$str .= '<li class="bg_list"> <a  href="'.$products['manufacturers_id'].'-'.str_replace(' ','_',$products['manufacturers_name']).'.html">'.$products['manufacturers_name'].'</a>';
+  }
   $str .= '</ul>';
 /*
   $best_sellers_query = tep_db_query("select distinct p.products_id, pd.products_name from " . TABLE_PRODUCTS . " p, " . TABLE_PRODUCTS_DESCRIPTION . " pd, " . TABLE_PRODUCTS_TO_CATEGORIES . " p2c, " . TABLE_CATEGORIES . " c where p.products_status = '1' and p.products_ordered > 0 and p.products_id = pd.products_id and pd.language_id = '" . (int)$languages_id . "' and p.products_id = p2c.products_id and p2c.categories_id = c.categories_id and '" . (int)$current_category_id . "' in (c.categories_id, c.parent_id) order by p.products_ordered desc, pd.products_name limit 5");

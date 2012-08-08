@@ -355,7 +355,7 @@ define('Skin_Care', 'Meilleurs soins de peau');
 define('Nos_meilleurs_coffrets_w', 'Meilleurs coffrets Femmes');
 define('Nos_meilleurs_coffrets_m', 'Meilleurs coffrets Hommes');
 define('meilleurs_marques', 'Top marques');
-define('Nos_marques', 'Nos Marques');
+define('Nos_marques', 'Nos Marques2');
 define('minimum_order',  '<div align="center"><img src="images/wholesaleonly.jpg"></div>');
 define('BOX_SHOPPING_CART_MIN_ORDER', 'Commande minimum 150&euro;');
 define('HEADER_HELLO', 'Bienvenue');
@@ -439,7 +439,7 @@ define('TEXT_MAIN_MEMBER', 'Pour devenir membre de '.STORE_NAME.' et b&eacute;n&
 define('MEMBER_CARD1', '<span class="bigger">- <span class="blue bold">Membre SAPHIR</span> : Carte membre (validit&eacute; '.$cards->list['card1']['duration'].' mois) : <span class="red bold">'.$currencies->format($cards->list['card1']['price']).'</span></span>');
 define('MEMBER_CARD2', '<span class="bigger">- <span class="red">Membre RUBIS</span> : Carte membre '.$cards->list['card2']['duration'].' mois : <span class="red bold">'.$currencies->format($cards->list['card2']['price']).'</span> (<span class="bold">-50% d\'&eacute;conomie</span>)</span>');
 define('MEMBER_CARD3', '<span class="bigger">- <span class="gold bold">Membre GOLD</span> : Carte membre (validit&eacute; '.$cards->list['card3']['duration'].' mois) : <span class="red bold">'.$currencies->format($cards->list['card3']['price']).'</span> <span class="bold small">(soit '.$currencies->format(floor($cards->list['card3']['price'] / 12)).' par mois)</span></span>');
-define('MEMBER_CARD4', '<span class="bigger">- <span class="pink bold">Membre JUNIOR</span> : Carte membre (validit&eacute; '.$cards->list['card4']['duration'].' mois) : <span class="red bold">Offerte</span> </span><span class="bold small">(Offre valable jusqu\'au 30 juillet)</span>');
+define('MEMBER_CARD4', '<span class="bigger">- <span class="pink bold">Membre JUNIOR</span> : Carte membre (validit&eacute; '.$cards->list['card4']['duration'].' mois) : <span class="red bold">Offerte</span> </span><span class="bold small">(Offre valable jusqu\'au 15 aout)</span>');
 
 define('MEMBER_CARD31', '<span class="bold small">(-80% d\'&eacute;conomie)</span>');
 define('TEXT_END', '<center><span class="bold">Cherchez et trouvez votre parfum pas cher</span><center>');

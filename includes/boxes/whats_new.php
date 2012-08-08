@@ -57,7 +57,7 @@
                         <tr>
                             <td style="height:20px;" align="center" class="vam">'.$whats_new_price.'</td>
                         </tr>
-                </table> 
+                </table>
 								 ');
 
     new infoBox($info_box_contents);
