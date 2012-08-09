@@ -34,7 +34,7 @@ if ( $category_depth == 'products' || (isset($HTTP_GET_VARS['manufacturers_id'])
   define('TEXT_ALL_MANUFACTURERS', 'Tous fabricants');
   define('TEXT_PRICE_FROM', 'à partir de');
 } elseif ($category_depth == 'top') {
-  define('HEADING_TITLE2', 'A d&eacute;couvrir...');
+  define('HEADING_TITLE', 'A d&eacute;couvrir...');
 } elseif ($category_depth == 'nested') {
   define('HEADING_TITLE', 'Catégories');
 }

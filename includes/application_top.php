@@ -357,7 +357,6 @@ $nb_products_discount = new nb_products_discount();
     $lng->set_language($check_server);
     $language = $lng->language['directory'];
     $languages_id = $lng->language['id'];
-    print_r($languages_id);
   }
 if ($languages_id == 0){
   $languages_id = 5;

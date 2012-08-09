@@ -91,11 +91,11 @@
   $info_box_contents = array();
   while ($new_products = tep_db_fetch_array($new_products_query)) {
   
-  $p_pic = '<a href="' . $products_new['products_id'] . '-p-'.str_replace(' ','_',$products_new['products_name']) . '.html">' . tep_image(DIR_WS_PWS_IMAGE . $new_products['products_image'], $new_products['products_name'], SMALL_IMAGE_WIDTH, SMALL_IMAGE_HEIGHT) . '</a>';
+  $p_pic = '<a href="' . $new_products['products_id'] . '-p-'.str_replace(' ','_',$new_products['products_name']) . '.html">' . tep_image(DIR_WS_PWS_IMAGE . $new_products['products_image'], $new_products['products_name'], SMALL_IMAGE_WIDTH, SMALL_IMAGE_HEIGHT) . '</a>';
 
   $p_desc = ''.substr(strip_tags($new_products['products_description']), 0, MAX_DESCR_1).' ...';
 
-  $p_name = '<a href="' . $products_new['products_id'] . '-p-'.str_replace(' ','_',$products_new['products_name']) . '.html">' .display_product_name($new_products['products_name'] , $new_products).'</a>';
+  $p_name = '<a href="' . $new_products['products_id'] . '-p-'.str_replace(' ','_',$new_products['products_name']) . '.html">' .display_product_name($new_products['products_name'] , $new_products).'</a>';
 
   $p_price = '<span class="productSpecialPrice">'.$currencies->display_price(get_price($new_products['products_price']), tep_get_tax_rate($new_products['products_tax_class_id'])).'</span>';
 
