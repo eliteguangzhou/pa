@@ -636,8 +636,8 @@ if ($languages_id == 0){
     if (tep_db_num_rows($model_query)) {
       $model = tep_db_fetch_array($model_query);
       if (!isset($HTTP_GET_VARS['manufacturers_id'])){
-        $breadcrumb->add($model['manufacturers_name'], get_url_cPath2($model));
-	
+//        $breadcrumb->add($model['manufacturers_name'], get_url_cPath2($model));
+        $breadcrumb->add($model['manufacturers_name'], '/'.$model['manufacturers_id'].'-'.$model['manufacturers_name'].'.html');
       }
       $breadcrumb->add($model['Gamme'], tep_href_link(FILENAME_DEFAULT, get_url_cPath2($model).'&cPath2=' . $HTTP_GET_VARS['products_id']));
       $breadcrumb->add($model['products_model'], tep_href_link(FILENAME_PRODUCT_INFO, get_url_cPath2($model) . '&products_id=' . $HTTP_GET_VARS['products_id']));
