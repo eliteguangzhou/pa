@@ -85,13 +85,17 @@ echo "website offline";
 die();
 }
   else if (preg_match("/profumilovers/", $_SERVER['SERVER_NAME'])) {
-    $check_server = 'it';
-	$google_account = 'UA-29025614-1';
+//     $check_server = 'it';
+// 	$google_account = 'UA-29025614-1';
+	echo "website offline";
+die();
   }
   else if (preg_match("/perfumeslovers/", $_SERVER['SERVER_NAME'])) {
-    $check_server = 'es';
-	$google_account = 'UA-28971072-1';
-  }
+  //  $check_server = 'es';
+//	$google_account = 'UA-28971072-1';
+ echo "website offline";
+die();
+ }
     
   while ($configuration = tep_db_fetch_array($configuration_query)) {
     $configuration['cfgValue'] = str_replace($config_flag_in, $config_flag_out, $configuration['cfgValue']);
@@ -630,7 +634,7 @@ if ($languages_id == 0){
 }
   }
   if (!empty($cPath2)){
-    $breadcrumb->add($product['Gamme'], tep_href_link(FILENAME_DEFAULT, get_url_cPath2() . '&cPath2=' . (int)$cPath2 ));
+    $breadcrumb->add($product['Gamme'],  get_url_cPath2_urlre2($HTTP_GET_VARS) . '-m-' . (int)$cPath2 .'-'. $product['Gamme']. '.html');
   }
 // add the products model to the breadcrumb trail
   if (isset($HTTP_GET_VARS['products_id'])) {
@@ -641,7 +645,7 @@ if ($languages_id == 0){
 //        $breadcrumb->add($model['manufacturers_name'], get_url_cPath2($model));
         $breadcrumb->add($model['manufacturers_name'], '/'.$model['manufacturers_id'].'-'.$model['manufacturers_name'].'.html');
       }
-      $breadcrumb->add($model['Gamme'], tep_href_link(FILENAME_DEFAULT, get_url_cPath2($model).'&cPath2=' . $HTTP_GET_VARS['products_id']));
+      $breadcrumb->add($model['Gamme'],get_url_cPath2_urlre($model).'-g-' . $HTTP_GET_VARS['products_id'].'-'.$model['Gamme'].'.html');
       $breadcrumb->add($model['products_model'], tep_href_link(FILENAME_PRODUCT_INFO, get_url_cPath2($model) . '&products_id=' . $HTTP_GET_VARS['products_id']));
     }
   }

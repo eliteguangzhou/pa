@@ -1474,6 +1474,23 @@ $orders_check_query = tep_db_query("select count(*) as total from " . TABLE_ORDE
         return substr($string_query, 1);
     }
 
+    function get_url_cPath2_urlre2($HTTP_GET_VARS = false){
+         $string_query = '';
+// 	    if (!empty($HTTP_GET_VARS['cPath']))
+//                 $string_query .= $HTTP_GET_VARS['cPath'];
+	    if (isset($HTTP_GET_VARS['manufacturers_id'])){
+//                 $string_query .= '/'.$HTTP_GET_VARS['manufacturers_id'].'.html'; 
+                $string_query .= $HTTP_GET_VARS['manufacturers_id'];
+            }elseif (isset($HTTP_GET_VARS['filter_id'])){
+                $string_query .= $HTTP_GET_VARS['filter_id'];
+	    }
+             return $string_query;
+          }
+          
+     function get_url_cPath2_urlre($display_products = false){
+           return (!empty($display_products['parent_id']) ? $display_products['parent_id'] . '_' : '').$display_products['categories_id'].'-g-'.$display_products['manufacturers_id'];
+     }
+    
     function get_adviced_price($price, $model){
 	
 		global $check_server, $currency, $currencies;

@@ -4,7 +4,11 @@ RewriteRule ^parfum-homme-pas-cher.php index.php?cPath=38_27
 RewriteRule ^parfum-femme-pas-cher.php index.php?cPath=38_28
 RewriteRule ^parfums-pas-chers.php index.php?cPath=38
 RewriteRule ^([A-Za-z0-9-]+)-p-(.*).html$ product_info.php?products_id=$1 [L]
+RewriteRule ^([A-Za-z0-9-_]+)-g-([A-Za-z0-9-]+)-g-([A-Za-z0-9-]+)-(.*).html$ index.php?cPath=$1&filter_id=$2&cPath2=$3 [L]
+RewriteRule ^([A-Za-z0-9-]+)-m-([A-Za-z0-9-]+)-(.*).html$ index.php?manufacturers_id=$1&cPath2=$2 [L]
+
 RewriteRule ^([A-Za-z0-9-]+)-(.*).html$ index.php?manufacturers_id=$1&name=$2
+
 
 order allow,deny
 deny from 94.75.199.200

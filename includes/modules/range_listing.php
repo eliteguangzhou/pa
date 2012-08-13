@@ -64,8 +64,9 @@ $my_col = 0;
                 $lc_text = '&nbsp;' . $listing['products_model'] . '&nbsp;';
                 break;
               case 'PRODUCT_LIST_NAME':
+		$string_query2 = get_url_cPath2_urlre2($HTTP_GET_VARS);
                 $lc_align = '';
-                $p_name = $lc_text = '<a href="' . tep_href_link(FILENAME_DEFAULT, $string_query.'&cPath2='.$listing['products_id']) . '">' . $listing['Gamme'] . '</a>';
+                $p_name = $lc_text = '<a href="' . $string_query2.'-m-'.$listing['products_id'] . '-'. $listing['Gamme'].'html">' . $listing['Gamme'] . '</a>';
 
                 break;
               case 'PRODUCT_LIST_MANUFACTURER':
@@ -90,7 +91,7 @@ $my_col = 0;
                 break;
               case 'PRODUCT_LIST_IMAGE':
                 $lc_align = 'center';
-                  $p_pic = '<a href="' . tep_href_link(FILENAME_DEFAULT, $string_query.'&cPath2='.$listing['products_id']) . '">' . tep_image(DIR_WS_PWS_IMAGE . $listing['products_image'], $listing['products_name'], SMALL_IMAGE_WIDTH, SMALL_IMAGE_HEIGHT) . '</a>';
+                  $p_pic = '<a href="' . $string_query2.'-m-'.$listing['products_id'] . '-'. $listing['Gamme'].'html">' . tep_image(DIR_WS_PWS_IMAGE . $listing['products_image'], $listing['products_name'], SMALL_IMAGE_WIDTH, SMALL_IMAGE_HEIGHT) . '</a>';
                 break;
               case 'PRODUCT_LIST_BUY_NOW':
                 $lc_align = 'center';
@@ -118,7 +119,7 @@ $my_col = 0;
                                     <td style="height:30px;vertical-align:top; " class="vam" align="center"><span>'.TEXT_PRICE_FROM.' '.$currencies->display_price(get_price($listing['min_price']), tep_get_tax_rate($listing['products_tax_class_id'])).'</span></td>
                                 </tr>
                                 <tr>
-                                    <td style="height:47px " align="center" valign="middle" ><a href="' . tep_href_link('index.php?'.get_url_cPath2().'&cPath2='.$listing['products_id']). '">'.tep_image_button("button_products_list.gif").'</a></td>
+                                    <td style="height:47px " align="center" valign="middle" ><a href="' . $string_query2.'-m-'.$listing['products_id'] . '-'. $listing['Gamme'].'html">'.tep_image_button("button_products_list.gif").'</a></td>
                                 </tr>
                             </table>
                         </td>
