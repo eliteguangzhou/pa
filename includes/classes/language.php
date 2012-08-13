@@ -71,7 +71,6 @@
     }
 
     function set_language($language) {
-    print_r(DEFAULT_LANGUAGE);
       if ( (tep_not_null($language)) && (isset($this->catalog_languages[$language])) ) {
         $this->language = $this->catalog_languages[$language];
       } else {

@@ -79,9 +79,11 @@
   $paypal_lang = 'fr_FR';
   $google_account = 'UA-20842438-1';
   if (preg_match("/fragrancelover/", $_SERVER['SERVER_NAME'])) {
-    $check_server = 'en';
-	$google_account = 'UA-29015123-1';
-  }
+    //$check_server = 'en';
+//	$google_account = 'UA-29015123-1';
+echo "website offline";
+die();
+}
   else if (preg_match("/profumilovers/", $_SERVER['SERVER_NAME'])) {
     $check_server = 'it';
 	$google_account = 'UA-29025614-1';

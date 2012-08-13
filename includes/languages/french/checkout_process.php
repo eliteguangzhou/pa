@@ -24,7 +24,12 @@ define('EMAIL_TEXT_SUB_TOTAL','Sous-Total');
 define('EMAIL_TEXT_TAX','TVA');
 define('EMAIL_TEXT_ORDER_TOTAL','Total commande');
 
+define('EMAIL_TEXT_SUBJECT_MEMBER', 'Parfumrama vous souhaite la bienvenue.');
+define('EMAIL_MEMBER', 'Félicitation, vous faites maintenant parti du club Parfumrama.
+vous pouvez maintenant effectuer une commande sur le site parmi plus de 6000 références de parfums et bénéficier des tarifs membre.
+Bon shopping.
 
+L\'équipe parfumrama');
 
 define('EMAIL_TEXT_CONTENT_HIGH','Cher(e) %s,
 <br><br>
