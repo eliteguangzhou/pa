@@ -81,18 +81,26 @@
   if (preg_match("/fragrancelover/", $_SERVER['SERVER_NAME'])) {
     //$check_server = 'en';
 //	$google_account = 'UA-29015123-1';
+Header( "HTTP/1.1 301 Moved Permanently" ); 
+Header( "Location: http://www.parfumrama.com" ); 
 echo "website offline";
 die();
 }
   else if (preg_match("/profumilovers/", $_SERVER['SERVER_NAME'])) {
 //     $check_server = 'it';
 // 	$google_account = 'UA-29025614-1';
+
+Header( "HTTP/1.1 301 Moved Permanently" ); 
+Header( "Location: http://www.parfumrama.com" ); 
 	echo "website offline";
 die();
   }
   else if (preg_match("/perfumeslovers/", $_SERVER['SERVER_NAME'])) {
   //  $check_server = 'es';
 //	$google_account = 'UA-28971072-1';
+ 
+Header( "HTTP/1.1 301 Moved Permanently" ); 
+Header( "Location: http://www.parfumrama.com" ); 
  echo "website offline";
 die();
  }
