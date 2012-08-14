@@ -83,9 +83,9 @@
 	$p_desc = substr(strip_tags($product['products_description']), 0, MAX_DESCR_1) . '<br />' .strip_tags($product['Item_size']). '<br />[' . strip_tags($product['product_id']) . ']';
 	$p_id = $product['products_id'];
 
-	$p_pic = '<a href="' . $specials['products_id'] . '-p-'.str_replace(' ','_',$specials['products_name']) . '.html">' . tep_image(DIR_WS_PWS_IMAGE . $specials['products_image'], $specials['products_name'], SMALL_IMAGE_WIDTH, SMALL_IMAGE_HEIGHT) . '</a>';
+	$p_pic = '<a href="' . $specials['products_id'] . '-p-'.str_replace(' ','_',$specials['products_name']). '-'.str_replace(' ','_',$product['products_description'] ) . '.html">' . tep_image(DIR_WS_PWS_IMAGE . $specials['products_image'], $specials['products_name'], SMALL_IMAGE_WIDTH, SMALL_IMAGE_HEIGHT) . '</a>';
 
-	$p_name = '<a href="' . $specials['products_id'] . '-p-'.str_replace(' ','_',$specials['products_name']) . '.html">' .display_product_name($specials['products_name'], $product)  .'</a>';
+	$p_name = '<a href="' . $specials['products_id'] . '-p-'.str_replace(' ','_',$specials['products_name']) . '-'.str_replace(' ','_',$product['products_description'] ). '.html">' .display_product_name($specials['products_name'], $product)  .'</a>';
 
 	$p_price = '<span class="productSpecialPrice">'.$currencies->display_price($specials['specials_new_products_price'],'').'</span>';
     $has_discount = !empty($product['discount']) && $product['discount'] > 0;

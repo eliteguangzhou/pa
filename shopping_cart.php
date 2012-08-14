@@ -124,14 +124,16 @@ function autotab(original,destination){if (original.getAttribute&&original.value
       if (isset($products[$i]['attributes']) && is_array($products[$i]['attributes'])) {
         while (list($option, $value) = each($products[$i]['attributes'])) {
           echo tep_draw_hidden_field('id[' . $products[$i]['id'] . '][' . $option . ']', $value);
-          $attributes = tep_db_query("select popt.products_options_name, poval.products_options_values_name, pa.options_values_price, pa.price_prefix
-                                      from " . TABLE_PRODUCTS_OPTIONS . " popt, " . TABLE_PRODUCTS_OPTIONS_VALUES . " poval, " . TABLE_PRODUCTS_ATTRIBUTES . " pa
+          $attributes = tep_db_query("select popt.products_options_name, poval.products_options_values_name, pa.options_values_price, pa.price_prefix, pd.products_description
+                                      from " . TABLE_PRODUCTS_OPTIONS . " popt, " . TABLE_PRODUCTS_OPTIONS_VALUES . " poval, " . TABLE_PRODUCTS_ATTRIBUTES . " pa, ".TABLE_PRODUCTS_DESCRIPTION." pd 
                                       where pa.products_id = '" . (int)$products[$i]['id'] . "'
                                        and pa.options_id = '" . (int)$option . "'
                                        and pa.options_id = popt.products_options_id
                                        and pa.options_values_id = '" . (int)$value . "'
                                        and pa.options_values_id = poval.products_options_values_id
                                        and popt.language_id = '" . (int)$languages_id . "'
+					and pd.products_id = p.products_id
+					and pd.language_id = '" . (int)$languages_id . "'
                                        and poval.language_id = '" . (int)$languages_id . "'");
           $attributes_values = tep_db_fetch_array($attributes);
 
@@ -164,7 +166,7 @@ $products_ids = '';  //use for the tag in last line.
 						<tr>
 
 							 <td align="center" class="vam"><table cellpadding="0" cellspacing="0" border="0" style="width:124px"><tr><td align="center">
-								'.tep_draw_prod_pic_top().'<a href="' . $products[$i]['id'] . '-p-'.str_replace(' ','_',$products[$i]['name']) . '.html">' . tep_image(($cart->is_card($products[$i]['id']) ? DIR_WS_IMAGES : DIR_WS_PWS_IMAGE) . $products[$i]['image'], $products[$i]['name'], SMALL_IMAGE_WIDTH, SMALL_IMAGE_HEIGHT) . '</a>'.tep_draw_prod_pic_bottom().'</td></tr></table>
+								'.tep_draw_prod_pic_top().'<a href="' . $products[$i]['id'] . '-p-'.str_replace(' ','_',$products[$i]['name']) . '-'.str_replace(' ','_',$products[$i]['products_description'] ). '.html">' . tep_image(($cart->is_card($products[$i]['id']) ? DIR_WS_IMAGES : DIR_WS_PWS_IMAGE) . $products[$i]['image'], $products[$i]['name'], SMALL_IMAGE_WIDTH, SMALL_IMAGE_HEIGHT) . '</a>'.tep_draw_prod_pic_bottom().'</td></tr></table>
 							'.tep_draw_separator('spacer.gif', '1', '10').'
 								<br><em>'.display_product_name($products[$i]['name'], $products[$i]).'</em>';
 

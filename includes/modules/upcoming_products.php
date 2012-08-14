@@ -10,7 +10,7 @@
   Released under the GNU General Public License
 */
 
-  $expected_query = tep_db_query("select p.products_id, pd.products_name, products_date_available as date_expected from " . TABLE_PRODUCTS . " p, " . TABLE_PRODUCTS_DESCRIPTION . " pd where to_days(products_date_available) >= to_days(now()) and p.products_id = pd.products_id and pd.language_id = '" . (int)$languages_id . "' order by " . EXPECTED_PRODUCTS_FIELD . " " . EXPECTED_PRODUCTS_SORT . " limit " . MAX_DISPLAY_UPCOMING_PRODUCTS);
+  $expected_query = tep_db_query("select p.products_id, pd.products_name, pd.products_description, products_date_available as date_expected from " . TABLE_PRODUCTS . " p, " . TABLE_PRODUCTS_DESCRIPTION . " pd where to_days(products_date_available) >= to_days(now()) and p.products_id = pd.products_id and pd.language_id = '" . (int)$languages_id . "' order by " . EXPECTED_PRODUCTS_FIELD . " " . EXPECTED_PRODUCTS_SORT . " limit " . MAX_DISPLAY_UPCOMING_PRODUCTS);
   if (tep_db_num_rows($expected_query) > 0) {
 ?>
 <!-- upcoming_products //-->
@@ -34,7 +34,7 @@
         echo '              <tr class="upcomingProducts-odd">' . "\n";
       }
 
-      echo '                <td class="smallText">&nbsp;<a href="' . $expected['products_id'] . '-p-'.str_replace(' ','_',$expected['products_name']) . '.html">' . $expected['products_name'] . '</a>&nbsp;</td>' . "\n" .
+      echo '                <td class="smallText">&nbsp;<a href="' . $expected['products_id'] . '-p-'.str_replace(' ','_',$expected['products_name']) . '-'.str_replace(' ','_',$expected['products_description'] ). '.html">' . $expected['products_name'] . '</a>&nbsp;</td>' . "\n" .
            '                <td align="right" class="smallText">&nbsp;' . tep_date_short($expected['date_expected']) . '&nbsp;</td>' . "\n" .
            '              </tr>' . "\n";
     }
