@@ -355,7 +355,7 @@ define('Skin_Care', 'Meilleurs soins de peau');
 define('Nos_meilleurs_coffrets_w', 'Meilleurs coffrets Femmes');
 define('Nos_meilleurs_coffrets_m', 'Meilleurs coffrets Hommes');
 define('meilleurs_marques', 'Top marques');
-define('Nos_marques', 'Nos Marques2');
+define('Nos_marques', 'Nos Marques');
 define('minimum_order',  '<div align="center"><img src="images/wholesaleonly.jpg"></div>');
 define('BOX_SHOPPING_CART_MIN_ORDER', 'Commande minimum 150&euro;');
 define('HEADER_HELLO', 'Bienvenue');

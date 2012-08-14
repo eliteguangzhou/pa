@@ -56,7 +56,23 @@
   }
   
   $customer_name = tep_session_is_registered('customer_id') ? ucfirst($_SESSION['customer_last_name']) .' '.ucfirst($_SESSION['customer_first_name']) : '';
-
+  if (tep_session_is_registered('customer_id')){
+    $sql = "SELECT count(*) as new
+	  FROM  `ticket` 
+	  INNER JOIN `ticket_message` ON  `ticket`.id = ticket_id
+	  WHERE  `customer_id` = ".$_SESSION['customer_id'].
+	  " and ticket_message.status = 0";
+    $res =  tep_db_query($sql);
+    $res = tep_db_fetch_array($res);
+    $res = $res['new'];
+    if ($res > 0){
+      $customer_name .= '<br/><a class="banner_login" href="'.FILENAME_MY_TICKET.'">'.NEW_MESSAGES.' ('.$res.')</a>'.$_SESSION['customer_id'];
+    }
+    else {
+     $customer_name .= '<br/><a class="banner_login" href="">'.NO_MESSAGE.'</a>';
+    }
+    
+  }
     if (SPONSORSHIP_ACTIVATE)
         $new_discount = $sponsorship->check_new_discounts($customer_email_address);
 	$width = $check_server == 'fr' ? '25%' : '33%';

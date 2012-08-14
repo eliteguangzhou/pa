@@ -95,4 +95,5 @@
   define('FILENAME_CHECKOUT', 'checkout.php');
   define('FILENAME_PRESENTATION','presentation.php');
   define('FILENAME_PPCHERE','ppascher.php');
+  define('FILENAME_MY_TICKET','my_ticket.php');
  ?>

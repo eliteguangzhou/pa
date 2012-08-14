@@ -33,7 +33,7 @@ define('TEXT_MANUFACTURERS_IMAGE', 'Image du fabricant :');
 define('TEXT_MANUFACTURERS_URL', 'URL du fabricant :');
 
 define('TEXT_DELETE_INTRO', 'Etes vous sûr de vouloir supprimer ce fabricant ?');
-define('TEXT_DELETE_IMAGE', 'Suppprimer l\'image du fabricant ?');
+define('TEXT_DELETE_IMAGE', 'Supprimer l\'image du fabricant ?');
 define('TEXT_DELETE_PRODUCTS', 'Supprimer tous les produits de ce fabricant ? (en incluant les critiques, produits en promotion, produits à venir)');
 define('TEXT_DELETE_WARNING_PRODUCTS', '<b>ATTENTION :</b> Il reste %s produit(s) liées à ce fabricant !');
 
