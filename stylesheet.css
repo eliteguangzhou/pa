@@ -1658,3 +1658,11 @@ padding-bottom: 5px;
 .pink{
 	color:#E519A8;
 	}
+	
+.black_c a{
+ color:black; 
+}
+
+.t_message_unread{
+ background-color:pink; 
+}
