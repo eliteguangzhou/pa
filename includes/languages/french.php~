@@ -492,6 +492,8 @@ define('OUR_MARQUES','Nos marques');
 define('MENU_P_PAS_CHER','parfum pas cher');
 define('FEMME_P_PAS_CHER','Parfums Femme Votre parfum femme pas cher toute l\'ann&eacute;e');
 define('HOMME_P_PAS_CHER','Parfums Homme Votre parfum homme pas cher toute l\'ann&eacute;e');
+define('NEW_MESSAGES','Nouveau(x) message(s)');
+define('NO_MESSAGE','Pas de nouveau message');
 
 ?>
 

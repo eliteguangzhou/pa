@@ -82,7 +82,7 @@
     //$check_server = 'en';
 //	$google_account = 'UA-29015123-1';
 Header( "HTTP/1.1 301 Moved Permanently" ); 
-Header( "Location: http://www.parfumrama.com" ); 
+// Header( "Location: http://www.parfumrama.com" ); 
 echo "website offline";
 die();
 }
@@ -91,7 +91,7 @@ die();
 // 	$google_account = 'UA-29025614-1';
 
 Header( "HTTP/1.1 301 Moved Permanently" ); 
-Header( "Location: http://www.parfumrama.com" ); 
+// Header( "Location: http://www.parfumrama.com" ); 
 	echo "website offline";
 die();
   }
@@ -100,7 +100,7 @@ die();
 //	$google_account = 'UA-28971072-1';
  
 Header( "HTTP/1.1 301 Moved Permanently" ); 
-Header( "Location: http://www.parfumrama.com" ); 
+// Header( "Location: http://www.parfumrama.com" ); 
  echo "website offline";
 die();
  }
@@ -628,7 +628,7 @@ if ($languages_id == 0){
     if (tep_db_num_rows($manufacturers_query)) {
       $manufacturers = tep_db_fetch_array($manufacturers_query);
 //       $breadcrumb->add($manufacturers['manufacturers_name'], tep_href_link(FILENAME_DEFAULT, 'manufacturers_id=' . $HTTP_GET_VARS['manufacturers_id']));
-      $breadcrumb->add($manufacturers['manufacturers_name'], '/'.$HTTP_GET_VARS['manufacturers_id'].'-'.$manufacturers['manufacturers_name'].'.html');
+      $breadcrumb->add($manufacturers['manufacturers_name'], '/'.$HTTP_GET_VARS['manufacturers_id'].'-'.str_replace(' ','_',$manufacturers['manufacturers_name']).'.html');
  //     header('Location: /'.$HTTP_GET_VARS['manufacturers_id'].'-'.$manufacturers['manufacturers_name'].'.html');
     }
   }
@@ -638,11 +638,11 @@ if ($languages_id == 0){
     if (tep_db_num_rows($manufacturers_query)) {
       $manufacturers = tep_db_fetch_array($manufacturers_query);
 //       $breadcrumb->add($manufacturers['manufacturers_name'], tep_href_link(FILENAME_DEFAULT, 'cPath='.$cPath.'&filter_id=' . (int)$HTTP_GET_VARS['filter_id']));
-	  $breadcrumb->add($manufacturers['manufacturers_name'], '/'.$HTTP_GET_VARS['filter_id'].'-'.$manufacturers['manufacturers_name'].'.html');
+	  $breadcrumb->add($manufacturers['manufacturers_name'], '/'.$HTTP_GET_VARS['filter_id'].'-'.str_replace(' ','_',$manufacturers['manufacturers_name']).'.html');
 }
   }
   if (!empty($cPath2)){
-    $breadcrumb->add($product['Gamme'],  get_url_cPath2_urlre2($HTTP_GET_VARS) . '-m-' . (int)$cPath2 .'-'. $product['Gamme']. '.html');
+    $breadcrumb->add($product['Gamme'],  get_url_cPath2_urlre2($HTTP_GET_VARS) . '-m-' . (int)$cPath2 .'-'. str_replace(' ','_',$product['Gamme']). '.html');
   }
 // add the products model to the breadcrumb trail
   if (isset($HTTP_GET_VARS['products_id'])) {
@@ -651,9 +651,9 @@ if ($languages_id == 0){
       $model = tep_db_fetch_array($model_query);
       if (!isset($HTTP_GET_VARS['manufacturers_id'])){
 //        $breadcrumb->add($model['manufacturers_name'], get_url_cPath2($model));
-        $breadcrumb->add($model['manufacturers_name'], '/'.$model['manufacturers_id'].'-'.$model['manufacturers_name'].'.html');
+        $breadcrumb->add($model['manufacturers_name'], '/'.$model['manufacturers_id'].'-'.str_replace(' ','_',$model['manufacturers_name']).'.html');
       }
-      $breadcrumb->add($model['Gamme'],get_url_cPath2_urlre($model).'-g-' . $HTTP_GET_VARS['products_id'].'-'.$model['Gamme'].'.html');
+      $breadcrumb->add($model['Gamme'],get_url_cPath2_urlre($model).'-g-' . $HTTP_GET_VARS['products_id'].'-'.str_replace(' ','_',$model['Gamme']).'.html');
       $breadcrumb->add($model['products_model'], tep_href_link(FILENAME_PRODUCT_INFO, get_url_cPath2($model) . '&products_id=' . $HTTP_GET_VARS['products_id']));
     }
   }
