@@ -54,7 +54,7 @@ function pavemarque($current_category_id) {
     	if ($i == 1) echo '<tr>';
 
 //     	echo '<td width="200"><a class="letter_center_roll" href="'.tep_href_link(FILENAME_DEFAULT, 'filter_id='.$products['manufacturers_id'].'&cPath='.(!empty($products['parent_id']) ? $products['parent_id'] . '_' : '') .$current_category_id).'">'.$products['manufacturers_name'].'</a></td>';
-	echo '<td width="200"><a class="letter_center_roll" href="/'.$products['manufacturers_id'].'-'.$products['manufacturers_name'].'.html">'.$products['manufacturers_name'].'</a></td>';
+	echo '<td width="200"><a class="letter_center_roll" href="/'.$products['manufacturers_id'].'-'.str_replace(' ','_',$products['manufacturers_name']).'.html">'.$products['manufacturers_name'].'</a></td>';
 
         if ($i==$nbcol) echo '</tr>';
 
