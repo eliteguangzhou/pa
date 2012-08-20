@@ -642,7 +642,7 @@ if ($languages_id == 0){
 }
   }
   if (!empty($cPath2)){
-    $breadcrumb->add($product['Gamme'],  get_url_cPath2_urlre2($HTTP_GET_VARS) . '-m-' . (int)$cPath2 .'-'. $product['Gamme']. '.html');
+    $breadcrumb->add($product['Gamme'],  get_url_cPath2_urlre2($HTTP_GET_VARS) . '-m-' . (int)$cPath2 .'-'. str_replace(' ','_',$product['Gamme']). '.html');
   }
 // add the products model to the breadcrumb trail
   if (isset($HTTP_GET_VARS['products_id'])) {
