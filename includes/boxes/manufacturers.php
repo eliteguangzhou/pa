@@ -53,7 +53,7 @@
                                    'text' =>' 
 												<table cellpadding="0" cellspacing="0" border="0">
 													<tr>
-													  <td align="center"><br style="line-height:2px">'.tep_draw_pull_down_menu('manufacturers_id', $manufacturers_array, (isset($HTTP_GET_VARS['manufacturers_id']) ? $HTTP_GET_VARS['manufacturers_id'] : ''), 'onChange="this.form.submit();" size="' . MAX_MANUFACTURERS_LIST . '"  style=" width:100%;"') . tep_hide_session_id().
+													  <td align="center"><br style="line-height:2px">'.tep_draw_pull_down_menu('manufacturers_id_redirect', $manufacturers_array, (isset($HTTP_GET_VARS['manufacturers_id']) ? $HTTP_GET_VARS['manufacturers_id'] : ''), 'onChange="this.form.submit();" size="' . MAX_MANUFACTURERS_LIST . '"  style=" width:100%;"') . tep_hide_session_id().
 															'</td>
 													</tr>
 												</table>								   

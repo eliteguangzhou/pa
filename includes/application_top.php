@@ -574,7 +574,18 @@ if ($languages_id == 0){
 // auto expire special products
   require(DIR_WS_FUNCTIONS . 'specials.php');
   tep_expire_specials();
-
+   
+  if (isset($HTTP_GET_VARS['manufacturers_id_redirect'])) {
+    error_log('inside -------------');
+    $manufacturers_query = tep_db_query("select manufacturers_name from " . TABLE_MANUFACTURERS . " where manufacturers_id = '" . (int)$HTTP_GET_VARS['manufacturers_id_redirect'] . "'");
+    if (tep_db_num_rows($manufacturers_query)) {
+      $manufacturers = tep_db_fetch_array($manufacturers_query);
+//       $breadcrumb->add($manufacturers['manufacturers_name'], tep_href_link(FILENAME_DEFAULT, 'manufacturers_id=' . $HTTP_GET_VARS['manufacturers_id']));
+      header('location: ' .$HTTP_GET_VARS['manufacturers_id_redirect'].'-'.str_replace(' ','_',$manufacturers['manufacturers_name']).'.html');
+ //     header('Location: /'.$HTTP_GET_VARS['manufacturers_id'].'-'.$manufacturers['manufacturers_name'].'.html');
+    }
+  }
+  
 // calculate category path
   if (isset($HTTP_GET_VARS['cPath'])) {
     $cPath = $HTTP_GET_VARS['cPath'];
