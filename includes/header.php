@@ -120,10 +120,13 @@
                                     </table>
                                 </td>-->
 <!--                                     <td><?php require_once(DIR_WS_MODULES.'easy_coupons_box2.php'); ?></td> -->
+
                                 <td><?php echo $customer_name ? HEADER_HELLO . ' ' . $customer_name . '<br />'.(isset($new_discount) && $new_discount > 0 ? constant('HEADER_NEW_DISCOUNT'.(isset($new_discount) && $new_discount > 1 ? 'S' : '')) . '<br />' : '').'<a class="banner_login" href="'.tep_href_link('logoff.php').'">'.HEADER_LOGOUT.'</a>' : '<a class="banner_login" href="'.tep_href_link('login.php').'">'.HEADER_LOGIN.'</a>'; ?></td>
   
                             </tr>
                         </table> 
+                        <div style="float:right;"><a href="https://twitter.com/share" class="twitter-share-button" data-via="Parfumrama" data-lang="fr">Tweeter</a></div>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                         <table cellpadding="0" cellspacing="0" border="0" style="height:29px; background:url(images/top1.gif) no-repeat 10px 0; width:100%">
                             <tr>
                                 <td width="20%"  align="left" class="shipCart"><?php //echo tep_draw_separator('spacer.gif', '610', '1'); ?><?php echo tep_image(DIR_WS_IMAGES.'z1.gif')?> &nbsp; <?php echo BOX_HEADING_SHOPPING_CART?>(<a href="<?php echo tep_href_link('shopping_cart.php')?>"><?php echo $cart->count_contents()?> <?php echo BOX_SHOPPING_CART_EMPTY?></a>)</td>
