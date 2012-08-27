@@ -290,7 +290,9 @@ WHERE  `manufacturers_id` = " . $HTTP_GET_VARS['manufacturers_id'] . "
 AND  `languages_id` =".$languages_id;
 $res = tep_db_query($sql);
 $res = tep_db_fetch_array($res);
+echo '<span style="font-size: 15px;text-align: justify;">';
 print_r($res['manufacturers_description']);
+echo '</span>';
 }
 else {
  tep_draw_heading_top($cPath);
