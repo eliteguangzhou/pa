@@ -125,6 +125,7 @@
   
                             </tr>
                         </table> 
+                        <div style="padding-top:10px;">
                         <!-- Place this tag where you want the +1 button to render. -->
 <div style="float:right;">
 <!-- Place this tag in your head or just before your close body tag. -->
@@ -147,7 +148,7 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 </div>
 <div class="fb-like" data-href="http://www.parfumrama.com" data-send="false" data-layout="button_count" data-width="450" data-show-faces="true" style="float:right;width:136px;"></div>
-
+</div>
 
                         <table cellpadding="0" cellspacing="0" border="0" style="height:29px; background:url(images/top1.gif) no-repeat 10px 0; width:100%">
                             <tr>
