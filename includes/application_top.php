@@ -576,7 +576,6 @@ if ($languages_id == 0){
   tep_expire_specials();
    
   if (isset($HTTP_GET_VARS['manufacturers_id_redirect'])) {
-    error_log('inside -------------');
     $manufacturers_query = tep_db_query("select manufacturers_name from " . TABLE_MANUFACTURERS . " where manufacturers_id = '" . (int)$HTTP_GET_VARS['manufacturers_id_redirect'] . "'");
     if (tep_db_num_rows($manufacturers_query)) {
       $manufacturers = tep_db_fetch_array($manufacturers_query);
@@ -716,4 +715,5 @@ $newsletter_pr = new newsletter;
 $newsletter_pr->auto_save();
 
 if (!isset($is_member)) $is_member = false;
+
 ?>

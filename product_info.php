@@ -21,13 +21,27 @@
 
   $product_check_query = tep_db_query("select count(*) as total from " . TABLE_PRODUCTS . " p, " . TABLE_PRODUCTS_DESCRIPTION . " pd where p.products_status = '1' and p.products_id = '" . (int)$HTTP_GET_VARS['products_id'] . "' and pd.products_id = p.products_id and pd.language_id = '" . (int)$languages_id . "'");
   $product_check = tep_db_fetch_array($product_check_query);
- 
+  
+   if ($product_check['total'] >= 1 ) {
+  $product_info_query = tep_db_query("select p.products_id, p.products_model, p.products_quantity, pd.products_name, pd.Prix_conseille, pd.Brand, pd.Gender, pd.Gamme, pd.Prix_achat, pd.Note, pd.Annee, pd.Item_size, pd.products_description, p.products_model, p.products_quantity, p.products_image, pd.products_url, p.products_price, p.products_tax_class_id, p.products_date_added, p.products_date_available, p.manufacturers_id, p.buy_price from " . TABLE_PRODUCTS . " p, " . TABLE_PRODUCTS_DESCRIPTION . " pd where p.products_status = '1' and p.products_id = '" . (int)$HTTP_GET_VARS['products_id'] . "' and pd.products_id = p.products_id and pd.language_id = '" . (int)$languages_id . "'");
+  $product_info = tep_db_fetch_array($product_info_query);
+  }
+  print_r($model['manufacturers_name']);
 ?>
 <!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html <?php echo HTML_PARAMS; ?>>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=<?php echo CHARSET; ?>">
-<title><?php echo TITLE; ?></title>
+<meta NAME="Description" CONTENT="Achetez le parfum <?php echo $product_info['products_name']; ?> au meilleur prix et retrouvez  plus de 6000 parfums femmes et hommes de marques authentiques  sur Parfumrama.">
+<META NAME="Keywords" CONTENT=" <?php echo $model['manufacturers_name']; ?>, <?php echo $product_info['products_name'] ; ?>, <?php echo $product_info['products_name'] ; ?> <?php echo $model['manufacturers_name']; ?>,parfum <?php echo $model['manufacturers_name']; ?>,parfum  <?php echo $product_info['products_name'] ; ?>,parfum  <?php echo $product_info['products_name'] ; ?> <?php echo $model['manufacturers_name']; ?>, eau de toilette <?php echo $product_info['products_name']?>, parfum,eau de parfum, eau de toilette">
+<meta name="rating" content="General">
+<meta name="distribution" content="Global">
+<meta name="robots" content="INDEX,FOLLOW,ALL">
+<meta name="robots" content="noodp">
+<meta name="googlebot" content="noodp">
+<meta name="msnbot" content="noodp">
+<meta name="revisit-after" content="1 Day">
+<title><?php echo $product_info['products_name'].' - '.$product_info['products_description']; ?></title>
 <base href="<?php echo (($request_type == 'SSL') ? HTTPS_SERVER : HTTP_SERVER) . DIR_WS_CATALOG; ?>">
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
 <script language="javascript"><!--
@@ -95,8 +109,7 @@ function popupWindow(url) {
 
 <?php
   } else {
-    $product_info_query = tep_db_query("select p.products_id, p.products_model, p.products_quantity, pd.products_name, pd.Prix_conseille, pd.Brand, pd.Gender, pd.Gamme, pd.Prix_achat, pd.Note, pd.Annee, pd.Item_size, pd.products_description, p.products_model, p.products_quantity, p.products_image, pd.products_url, p.products_price, p.products_tax_class_id, p.products_date_added, p.products_date_available, p.manufacturers_id, p.buy_price from " . TABLE_PRODUCTS . " p, " . TABLE_PRODUCTS_DESCRIPTION . " pd where p.products_status = '1' and p.products_id = '" . (int)$HTTP_GET_VARS['products_id'] . "' and pd.products_id = p.products_id and pd.language_id = '" . (int)$languages_id . "'");
-    $product_info = tep_db_fetch_array($product_info_query);
+    
 
     tep_db_query("update " . TABLE_PRODUCTS_DESCRIPTION . " set products_viewed = products_viewed+1 where products_id = '" . (int)$HTTP_GET_VARS['products_id'] . "' and language_id = '" . (int)$languages_id . "'");
 

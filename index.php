@@ -36,6 +36,13 @@
 <html <?php echo HTML_PARAMS; ?>>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=<?php echo CHARSET; ?>">
+<meta name="rating" content="General">
+<meta name="distribution" content="Global">
+<meta name="robots" content="INDEX,FOLLOW,ALL">
+<meta name="robots" content="noodp">
+<meta name="googlebot" content="noodp">
+<meta name="msnbot" content="noodp">
+<meta name="revisit-after" content="1 Day">
 <title><?php echo TITLE; ?></title>
 <base href="<?php echo (($request_type == 'SSL') ? HTTPS_SERVER : HTTP_SERVER) . DIR_WS_CATALOG; ?>">
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
@@ -270,8 +277,25 @@ $p_name_sub = '<a href="' . tep_href_link(FILENAME_DEFAULT, $cPath_new) . '">' .
     }
 ?>
     <td width="100%" class="col_center">
-<?php tep_draw_heading_top($cPath);?>
-		
+<?php
+if (isset($HTTP_GET_VARS['manufacturers_id'])){
+echo '
+					<table cellpadding="0" cellspacing="0" border="0" style="border-top:1px solid #d9d9d9;">
+						<tr>
+							<td style="border-left:1px solid #d9d9d9;">'.tep_draw_separator('spacer.gif', '1', '1').'</td>
+							<td style="padding:0px 10px 0px 10px;">';
+$sql = "SELECT manufacturers_description 
+FROM  `manufacturers_info` 
+WHERE  `manufacturers_id` = " . $HTTP_GET_VARS['manufacturers_id'] . "
+AND  `languages_id` =".$languages_id;
+$res = tep_db_query($sql);
+$res = tep_db_fetch_array($res);
+print_r($res['manufacturers_description']);
+}
+else {
+ tep_draw_heading_top($cPath);
+}
+?>
 <?php
 // optional Product List Filter
 /*      if (PRODUCT_LIST_FILTER > 0) {
@@ -329,7 +353,6 @@ require('fonctioncompdb.php');
 		
 	  </td>
 <?php
-
   } else { // default page
 ?>
     <td width="100%" class="col_center">
