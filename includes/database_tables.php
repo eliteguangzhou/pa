@@ -67,4 +67,7 @@
   define('TABLE_NETA', 'neta');
   define('TABLE_SELECTIONS', 'selections');
   define('TABLE_NEWSLETTERS_ORDERS', 'newsletters_orders');
+  //easyCommentz
+define('TABLE_COMM_MESSAGES','comm_messages');
+define('TABLE_COMM_GLOBALS','comm_globals');
 ?>

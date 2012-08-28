@@ -299,7 +299,21 @@ include(DIR_WS_MODULES .'other_products_gamme.php');// echo get_related_products
 ?>
         </td>
       </tr>
-    </table></form></td>
+    </table></form>
+    <?php
+      
+///////ossCommentz
+      
+include_once(DIR_WS_CLASSES . 'comment8r/delegate.php');
+      
+$easyCommentz = new delegate();
+      
+$easyCommentz->displayMessageSet4Prod($product_info['products_id'],$HTTP_GET_VARS['captcha']);
+      
+///////eof ossCommentz
+      
+?>
+    </td>
 <!-- body_text_eof //-->
     <td class="col_right">
 <!-- right_navigation //-->

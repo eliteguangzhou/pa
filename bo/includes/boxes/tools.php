@@ -24,6 +24,7 @@
     $contents[] = array('text'  => '<a href="' . tep_href_link(FILENAME_COUPONS) . '" class="menuBoxContentLink">' . 'Easy Coupons' . '</a><br>' .
                                    '<a href="' . tep_href_link(FILENAME_EXPORT) . '" class="menuBoxContentLink">' . BOX_TOOLS_EXPORT . '</a><br>' .
                                    '<a href="' . tep_href_link(FILENAME_BACKUP) . '" class="menuBoxContentLink">' . BOX_TOOLS_BACKUP . '</a><br>' .
+                                   '<a href="' . tep_href_link(FILENAME_COMMENT8R) . '" class="menuBoxContentLink">' . BOX_TOOLS_COMMENT8R . '</a><br>' .
                                    '<a href="' . tep_href_link(FILENAME_BANNER_MANAGER) . '" class="menuBoxContentLink">' . BOX_TOOLS_BANNER_MANAGER . '</a><br>' .
                                    '<a href="' . tep_href_link(FILENAME_CACHE) . '" class="menuBoxContentLink">' . BOX_TOOLS_CACHE . '</a><br>' .
                                    '<a href="' . tep_href_link(FILENAME_DEFINE_LANGUAGE) . '" class="menuBoxContentLink">' . BOX_TOOLS_DEFINE_LANGUAGE . '</a><br>' .

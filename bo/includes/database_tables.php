@@ -58,4 +58,7 @@
   define('TABLE_ZONES', 'zones');
   define('TABLE_COUPONS', 'coupons');
   define('TABLE_COUPONS_A', 'coupons_a');
+  //easyCommentz
+define('TABLE_COMM_MESSAGES','comm_messages');
+define('TABLE_COMM_GLOBALS','comm_globals');
 ?>

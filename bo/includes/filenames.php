@@ -52,4 +52,7 @@
   define('FILENAME_ZONES', 'zones.php');
   define('FILENAME_COUPONS','easy_coupons.php');
   define('FILENAME_EXPORT','export.php');
-?>
+
+//easyCommentz
+define('FILENAME_COMMENT8R','comment8r.php');
+  ?>
