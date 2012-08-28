@@ -35,6 +35,8 @@
 <!doctype html public "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html <?php echo HTML_PARAMS; ?>>
 <head>
+<meta NAME="Description" CONTENT="leader du parfum pas cher parfumrama est le 1er club de parfums à prix coutant avec 500 marques authentiques pour femmes et pour hommes.">
+<META NAME="Keywords" CONTENT="parfum, parfums parfum femme, parfum homme, parfum pas cher,parfum discount,achat parfum, eau de toilette,eau de parfum">
 <meta http-equiv="Content-Type" content="text/html; charset=<?php echo CHARSET; ?>">
 <meta name="rating" content="General">
 <meta name="distribution" content="Global">
@@ -43,7 +45,7 @@
 <meta name="googlebot" content="noodp">
 <meta name="msnbot" content="noodp">
 <meta name="revisit-after" content="1 Day">
-<title><?php echo TITLE; ?></title>
+<title><?php echo "Parfum pas cher sur Parfumrama-6000 parfums à prix coutant"; ?></title>
 <base href="<?php echo (($request_type == 'SSL') ? HTTPS_SERVER : HTTP_SERVER) . DIR_WS_CATALOG; ?>">
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
