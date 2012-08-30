@@ -91,8 +91,14 @@
 	<tr>
 		<td align="center">
 		<br/>
-                    <h1>Parfum pas cher pour femme et pour homme toute l'ann&eacute;e</h1>
-			<table cellpadding="0" cellspacing="0" border="0" style="height:169px;" class="header">
+		  <?php
+		    if (!isset($h1)){
+		      $h1 = "Parfum pas cher pour femme et pour homme toute l'ann&eacute;e";
+		    }
+                    echo '<h1>'.$h1.'</h1>';
+	  
+		  ?>
+		  <table cellpadding="0" cellspacing="0" border="0" style="height:169px;" class="header">
 				<tr>
 					<td align="center">
                     	<table cellpadding="0" cellspacing="0" border="0" style="height:93px; width:980px">

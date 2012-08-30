@@ -639,6 +639,8 @@ if ($languages_id == 0){
       $manufacturers = tep_db_fetch_array($manufacturers_query);
 //       $breadcrumb->add($manufacturers['manufacturers_name'], tep_href_link(FILENAME_DEFAULT, 'manufacturers_id=' . $HTTP_GET_VARS['manufacturers_id']));
       $breadcrumb->add($manufacturers['manufacturers_name'], '/'.$HTTP_GET_VARS['manufacturers_id'].'-'.str_replace(' ','_',$manufacturers['manufacturers_name']).'.html');
+      $h1 = 'Parfum '.$manufacturers['manufacturers_name'];
+      $title = $manufacturers['manufacturers_name'];
  //     header('Location: /'.$HTTP_GET_VARS['manufacturers_id'].'-'.$manufacturers['manufacturers_name'].'.html');
     }
   }
@@ -653,10 +655,12 @@ if ($languages_id == 0){
   }
   if (!empty($cPath2)){
     $breadcrumb->add($product['Gamme'],  get_url_cPath2_urlre2($HTTP_GET_VARS) . '-m-' . (int)$cPath2 .'-'. str_replace(' ','_',$product['Gamme']). '.html');
+    $h1 = 'Parfum '.$product['Gamme'];
+    $title = $product['Gamme'];
   }
 // add the products model to the breadcrumb trail
   if (isset($HTTP_GET_VARS['products_id'])) {
-    $model_query = tep_db_query("select m.manufacturers_name, p.products_model, c.parent_id, p.manufacturers_id, pd.Gamme, p2c.categories_id from " . TABLE_PRODUCTS . " p, " . TABLE_PRODUCTS_DESCRIPTION . " pd, " . TABLE_PRODUCTS_TO_CATEGORIES . " p2c," . TABLE_CATEGORIES . " c," . TABLE_MANUFACTURERS . " m  where m.manufacturers_id = p.manufacturers_id AND c.categories_id = p2c.categories_id AND p.products_id = p2c.products_id AND p.products_id = pd.products_id AND pd.language_id = ".(int)$languages_id." AND p.products_id = '" . (int)$HTTP_GET_VARS['products_id'] . "'");
+    $model_query = tep_db_query("select m.manufacturers_name, p.products_model, c.parent_id, p.manufacturers_id, pd.products_name,pd.Gamme, p2c.categories_id from " . TABLE_PRODUCTS . " p, " . TABLE_PRODUCTS_DESCRIPTION . " pd, " . TABLE_PRODUCTS_TO_CATEGORIES . " p2c," . TABLE_CATEGORIES . " c," . TABLE_MANUFACTURERS . " m  where m.manufacturers_id = p.manufacturers_id AND c.categories_id = p2c.categories_id AND p.products_id = p2c.products_id AND p.products_id = pd.products_id AND pd.language_id = ".(int)$languages_id." AND p.products_id = '" . (int)$HTTP_GET_VARS['products_id'] . "'");
     if (tep_db_num_rows($model_query)) {
       $model = tep_db_fetch_array($model_query);
       if (!isset($HTTP_GET_VARS['manufacturers_id'])){
@@ -665,6 +669,8 @@ if ($languages_id == 0){
       }
       $breadcrumb->add($model['Gamme'],get_url_cPath2_urlre($model).'-g-' . $HTTP_GET_VARS['products_id'].'-'.str_replace(' ','_',$model['Gamme']).'.html');
       $breadcrumb->add($model['products_model'], tep_href_link(FILENAME_PRODUCT_INFO, get_url_cPath2($model) . '&products_id=' . $HTTP_GET_VARS['products_id']));
+          $h1 = 'Parfum '.$model['products_name'];
+    $title = $product['Gamme'];
     }
   }
 

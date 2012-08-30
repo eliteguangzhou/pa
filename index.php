@@ -45,7 +45,8 @@
 <meta name="googlebot" content="noodp">
 <meta name="msnbot" content="noodp">
 <meta name="revisit-after" content="1 Day">
-<title><?php echo "Parfum pas cher sur Parfumrama-6000 parfums à prix coutant"; ?></title>
+<title><?php if (!isset($title)) {echo "Parfum pas cher sur Parfumrama-6000 parfums à prix coutant"; }
+else { echo $title; } ?></title>
 <base href="<?php echo (($request_type == 'SSL') ? HTTPS_SERVER : HTTP_SERVER) . DIR_WS_CATALOG; ?>">
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
