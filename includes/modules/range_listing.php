@@ -16,7 +16,12 @@
 				<?php echo $breadcrumb->trail(' &raquo; ')?>
 
 <?php echo tep_draw_title_bottom();?>
-
+<?php if (isset($marque_description)) {
+      echo '<span style="font-size: 15px;text-align: justify;">';
+      print_r($marque_description);
+      echo '</span>';
+}
+?>
 <? tep_draw_heading_top_3();?>
 
 <?php
