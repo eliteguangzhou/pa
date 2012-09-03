@@ -1364,11 +1364,14 @@ $orders_check_query = tep_db_query("select count(*) as total from " . TABLE_ORDE
   function display_product_name($name, $product, $display_model_id = false) {
     preg_match_all('([0-9\.]{1,4} [OZoz]{2})',$product['products_description'], $patterns);
 	$desc = '';
-    if(count($patterns[0]) < 2 && isset($patterns[0][0]))
+    if(count($patterns[0]) < 2 && isset($patterns[0][0])){
         $desc .= get_desc($product['products_description']) . '<br />' .get_ml($patterns[0][0]);
-    else
+        $desc .= '<br/>'.'<br/>'.$product['products_description2'].'<br/>';
+        }
+    else{
         $desc .= get_desc2($product['products_description'], $patterns[0]);
-
+	$desc .= '<br/>'.'<br/>'.$product['products_description2'].'<br/>';
+      }
     if ($display_model_id && tep_not_null($product['products_model']))
         $desc .= '<br />' . strip_tags($product['Note']) . '<br />[' . strip_tags($product['products_model']) . ']';
         //var_rh($patterns);

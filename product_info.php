@@ -23,7 +23,7 @@
   $product_check = tep_db_fetch_array($product_check_query);
   
    if ($product_check['total'] >= 1 ) {
-  $product_info_query = tep_db_query("select p.products_id, p.products_model, p.products_quantity, pd.products_name, pd.Prix_conseille, pd.Brand, pd.Gender, pd.Gamme, pd.Prix_achat, pd.Note, pd.Annee, pd.Item_size, pd.products_description, p.products_model, p.products_quantity, p.products_image, pd.products_url, p.products_price, p.products_tax_class_id, p.products_date_added, p.products_date_available, p.manufacturers_id, p.buy_price from " . TABLE_PRODUCTS . " p, " . TABLE_PRODUCTS_DESCRIPTION . " pd where p.products_status = '1' and p.products_id = '" . (int)$HTTP_GET_VARS['products_id'] . "' and pd.products_id = p.products_id and pd.language_id = '" . (int)$languages_id . "'");
+  $product_info_query = tep_db_query("select p.products_id, p.products_model, p.products_quantity, pd.products_name, pd.Prix_conseille, pd.Brand, pd.Gender, pd.Gamme, pd.Prix_achat, pd.Note, pd.Annee, pd.Item_size, pd.products_description, pd.products_description2, p.products_model, p.products_quantity, p.products_image, pd.products_url, p.products_price, p.products_tax_class_id, p.products_date_added, p.products_date_available, p.manufacturers_id, p.buy_price from " . TABLE_PRODUCTS . " p, " . TABLE_PRODUCTS_DESCRIPTION . " pd where p.products_status = '1' and p.products_id = '" . (int)$HTTP_GET_VARS['products_id'] . "' and pd.products_id = p.products_id and pd.language_id = '" . (int)$languages_id . "'");
   $product_info = tep_db_fetch_array($product_info_query);
   }
 ?>
@@ -186,7 +186,7 @@ function popupWindow(url) {
 						<td class="product_gender" align="right"><?php echo display_gender($product_info['Gender']);?></td>
 					</tr>
 				</table>
-				<div class="padd3"><?php echo display_product_name('', $product_info, true); ?>
+				<div class="padd3"><?php echo display_product_name('', $product_info, true); ?>qqqq
 				<br><br style="line-height:11px"><input type="radio" name="price_type" value="reduced" <?php echo $is_member || $cart->has_card() ? 'disabled' : 'checked'; ?> /><?php echo REDUCED_PRICE?><span class="productSpecialPrice"><?php echo $currencies->display_price(get_reduced_price($product_info['buy_price']), tep_get_tax_rate($product_info['products_tax_class_id'])); ?></span>
 				<br style="line-height:11px"><input type="radio" name="price_type" value="member" <?php echo $is_member || $cart->has_card() ? 'checked' : ''; ?> /><?php echo MEMBER_PRICE?><span class="productSpecialPrice"><?php echo $products_price; ?></span>
 				<?php
