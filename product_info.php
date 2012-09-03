@@ -186,9 +186,10 @@ function popupWindow(url) {
 						<td class="product_gender" align="right"><?php echo display_gender($product_info['Gender']);?></td>
 					</tr>
 				</table>
-				<div class="padd3"><?php echo display_product_name('', $product_info, true); ?>
-				<br><br style="line-height:11px"><input type="radio" name="price_type" value="reduced" <?php echo $is_member || $cart->has_card() ? 'disabled' : 'checked'; ?> /><?php echo REDUCED_PRICE?><span class="productSpecialPrice"><?php echo $currencies->display_price(get_reduced_price($product_info['buy_price']), tep_get_tax_rate($product_info['products_tax_class_id'])); ?></span>
+				<br style="line-height:11px"><input type="radio" name="price_type" value="reduced" <?php echo $is_member || $cart->has_card() ? 'disabled' : 'checked'; ?> /><?php echo REDUCED_PRICE?><span class="productSpecialPrice"><?php echo $currencies->display_price(get_reduced_price($product_info['buy_price']), tep_get_tax_rate($product_info['products_tax_class_id'])); ?></span>
 				<br style="line-height:11px"><input type="radio" name="price_type" value="member" <?php echo $is_member || $cart->has_card() ? 'checked' : ''; ?> /><?php echo MEMBER_PRICE?><span class="productSpecialPrice"><?php echo $products_price; ?></span>
+				<br></br>
+				<div class="padd3"><?php echo display_product_name('', $product_info, true); ?>
 				<?php
 
 				$advised_price = get_adviced_price($product_info['Prix_conseille'], $product_info['products_model']);
