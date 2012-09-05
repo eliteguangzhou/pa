@@ -588,6 +588,15 @@ if ($languages_id == 0){
 // calculate category path
   if (isset($HTTP_GET_VARS['cPath'])) {
     $cPath = $HTTP_GET_VARS['cPath'];
+    if ($cPath == '38_27'){
+      $h1 = 'Parfum pas cher pour homme toute l\'ann&eacute;e';
+      $tilte = $h1;
+    }
+    elseif ($cPath == '38_28') {
+      $h1 = 'Parfum pas cher pour femme toute l\'ann&eacute;e';
+      $tilte = $h1;
+    }
+    error_log('------------'.$title);
   } elseif (isset($HTTP_GET_VARS['products_id']) && !isset($HTTP_GET_VARS['manufacturers_id'])) {
     $cPath = tep_get_product_path($HTTP_GET_VARS['products_id']);
   } else {
