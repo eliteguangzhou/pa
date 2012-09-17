@@ -80,7 +80,6 @@ join status_ticket on status_ticket.id = `ticket`.status
 LEFT OUTER JOIN ticket_message ON (ticket_message.ticket_id = ticket.id AND ticket_message.status = 0)
 WHERE `customer_id` = '.$_SESSION['customer_id'].' 
  group by ticket.id';
- print_r($sql);
 $res = tep_db_query($sql);
 $test = TRUE;
 $return_file = FILENAME_ACCOUNT;

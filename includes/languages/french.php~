@@ -445,7 +445,7 @@ define('MEMBER_CARD31', '<span class="bold small">(-80% d\'&eacute;conomie)</spa
 define('TEXT_END', '<center><span class="bold">Cherchez et trouvez votre parfum pas cher</span><center>');
 
 define('MENU_BONS_PLANS', 'Comit&eacute; d\'entreprise');
-define('MENU_SELECTION', 'Soldes');
+define('MENU_SELECTION', 'sp&eacute;cial rentr&eacute;');
 define('ALREADY_MEMBER', 'Vous &ecirc;tes d&eacute;j&agrave; membre.');
 define('ALREADY_HAVE_CARD', 'Vous avez d&eacute;j&agrave; une carte dans votre panier.');
 define('YOUR_PROMO_CODE', 'Votre code promo');
