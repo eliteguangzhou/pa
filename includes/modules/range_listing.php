@@ -99,7 +99,7 @@ $my_col = 0;
                 if (!isset($string_query2)){
 		  $string_query2 = get_url_cPath2_urlre2($HTTP_GET_VARS);
                 }
-                  $p_pic = '<a href="' . $string_query2.'-m-'.$listing['products_id'] . '-'. str_replace(' ','_',$listing['Gamme']).'.html">' . tep_image(DIR_WS_PWS_IMAGE . $listing['products_image'], $listing['products_name'], SMALL_IMAGE_WIDTH, SMALL_IMAGE_HEIGHT) . '</a>';
+                  $p_pic = '<a href="' . $string_query2.'-m-'.$listing['products_id'] . '-'. str_replace('#','',str_replace(' ','_',$listing['Gamme'])).'.html">' . tep_image(DIR_WS_PWS_IMAGE . $listing['products_image'], $listing['products_name'], SMALL_IMAGE_WIDTH, SMALL_IMAGE_HEIGHT) . '</a>';
                 break;
               case 'PRODUCT_LIST_BUY_NOW':
                 $lc_align = 'center';
