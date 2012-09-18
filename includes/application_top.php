@@ -18,7 +18,7 @@
 //  error_reporting(E_ALL);
 //set the level of error reporting
 //  ini_set('display_errors', true);
-//  error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE);
+ error_reporting(E_ERROR | E_WARNING | E_PARSE | E_NOTICE);
 //   error_reporting(1);
 // check support for register_globals
   if (function_exists('ini_get') && (ini_get('register_globals') == false) && (PHP_VERSION < 4.3) ) {
@@ -189,8 +189,8 @@ die();
     }
   }
 
-  $blocked_countries = array(73, 74);
-  $blocked_postcode = array(97, 98);
+//   $blocked_countries = array(73, 74);
+//   $blocked_postcode = array(97, 98);
 // define general functions used application-wide
   require(DIR_WS_FUNCTIONS . 'general.php');
   require(DIR_WS_FUNCTIONS . 'html_output.php');
