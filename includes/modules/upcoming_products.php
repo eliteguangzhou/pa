@@ -34,7 +34,7 @@
         echo '              <tr class="upcomingProducts-odd">' . "\n";
       }
 
-      echo '                <td class="smallText">&nbsp;<a href="' . $expected['products_id'] . '-p-'.str_replace(' ','_',$expected['products_name']) . '-'.str_replace(' ','_',$expected['products_description'] ). '.html">' . $expected['products_name'] . '</a>&nbsp;</td>' . "\n" .
+      echo '                <td class="smallText">&nbsp;<a href="' . $expected['products_id'] . '-p-'.str_replace('#','',str_replace(' ','_',$expected['products_name'])) . '-'.str_replace('#','',str_replace(' ','_',$expected['products_description'] )). '.html">' . $expected['products_name'] . '</a>&nbsp;</td>' . "\n" .
            '                <td align="right" class="smallText">&nbsp;' . tep_date_short($expected['date_expected']) . '&nbsp;</td>' . "\n" .
            '              </tr>' . "\n";
     }

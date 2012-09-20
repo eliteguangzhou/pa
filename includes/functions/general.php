@@ -1550,7 +1550,7 @@ $orders_check_query = tep_db_query("select count(*) as total from " . TABLE_ORDE
             $str .= '<td style="width:33%;" class="product_zoom"><table align="center" cellpadding="0" cellspacing="0" border="0">
             <tr>
                 <td style="height:86px;">'.tep_draw_prod_pic_top().'
-                    <a href="' . $product_info['products_id'] . '-p-'.str_replace(' ','_',$product_info['products_name']) . '.html">' . tep_image(DIR_WS_PWS_IMAGE . $product_info['products_image'], $product_info['products_name'], SMALL_IMAGE_WIDTH, SMALL_IMAGE_HEIGHT) . '</a>
+                    <a href="' . $product_info['products_id'] . '-p-'.str_replace('#','',str_replace(' ','_',$product_info['products_name'])) . '.html">' . tep_image(DIR_WS_PWS_IMAGE . $product_info['products_image'], $product_info['products_name'], SMALL_IMAGE_WIDTH, SMALL_IMAGE_HEIGHT) . '</a>
                 '.tep_draw_prod_pic_bottom().'</td>
                 <td class="products_gender">'.display_gender($product_info['Gender'], false).'</td>
             </tr>
@@ -1558,7 +1558,7 @@ $orders_check_query = tep_db_query("select count(*) as total from " . TABLE_ORDE
                 <td colspan="2" style="border:1px solid #FFFFFF; border-width:0 15px 0 0;">
                     <table cellpadding="0" cellspacing="0" border="0">
                         <tr>
-                            <td style="height:40px " class="vam"><span><a href="' . $product_info['products_id'] . '-p-'.str_replace(' ','_',$product_info['products_name']) . '.html">' . display_product_name($product_info['products_name'], $product_info) . '</a></span></td>
+                            <td style="height:40px " class="vam"><span><a href="' . $product_info['products_id'] . '-p-'.str_replace('#','',str_replace(' ','_',$product_info['products_name'])) . '.html">' . display_product_name($product_info['products_name'], $product_info) . '</a></span></td>
                         </tr>
                         <tr>
                             <td class="vam product_price"><span class="productSpecialPrice">' . $currencies->display_price(get_price($product_info['products_price']), tep_get_tax_rate($product_info['products_tax_class_id'])) . '</span></td>

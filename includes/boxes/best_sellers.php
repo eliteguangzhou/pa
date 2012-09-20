@@ -37,7 +37,7 @@
 if ($count ==0 ) $kk=' class="bg_list"'; else $kk=' class="bg_list"';
 
  	$count++;
-	$bestsellers_list .= '<li'.$kk.'><a href="'.$best_sellers['products_id']. '-p-' .str_replace(' ','_',$best_sellers['products_name']).'.html">' .
+	$bestsellers_list .= '<li'.$kk.'><a href="'.$best_sellers['products_id']. '-p-' .str_replace('#','',str_replace(' ','_',$best_sellers['products_name'])).'.html">' .
 	substr(strip_tags($best_sellers['products_name']),0,MAX_DESCR_BESTS) .
 	'</a></li>';
 }
