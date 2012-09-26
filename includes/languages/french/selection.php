@@ -10,7 +10,7 @@
   Released under the GNU General Public License
 */
 
-define('NAVBAR_TITLE', 'Soldes');
-define('HEADING_TITLE', '<h1>Soldes</h1>');
+define('NAVBAR_TITLE', 'Sp&eacute;cial rentr&eacute;e');
+define('HEADING_TITLE', '<h1>Sp&eacute;cial rentr&eacute;e</h1>');
 
 ?>

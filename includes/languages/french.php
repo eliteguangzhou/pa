@@ -439,13 +439,13 @@ define('TEXT_MAIN_MEMBER', 'Pour devenir membre de '.STORE_NAME.' et b&eacute;n&
 define('MEMBER_CARD1', '<span class="bigger">- <span class="blue bold">Membre SAPHIR</span> : Carte membre (validit&eacute; '.$cards->list['card1']['duration'].' mois) : <span class="red bold">'.$currencies->format($cards->list['card1']['price']).'</span></span>');
 define('MEMBER_CARD2', '<span class="bigger">- <span class="red">Membre RUBIS</span> : Carte membre '.$cards->list['card2']['duration'].' mois : <span class="red bold">'.$currencies->format($cards->list['card2']['price']).'</span> (<span class="bold">-50% d\'&eacute;conomie</span>)</span>');
 define('MEMBER_CARD3', '<span class="bigger">- <span class="gold bold">Membre GOLD</span> : Carte membre (validit&eacute; '.$cards->list['card3']['duration'].' mois) : <span class="red bold">'.$currencies->format($cards->list['card3']['price']).'</span> <span class="bold small">(soit '.$currencies->format(floor($cards->list['card3']['price'] / 12)).' par mois)</span></span>');
-define('MEMBER_CARD4', '<span class="bigger">- <span class="pink bold">Membre JUNIOR</span> : Carte membre (validit&eacute; '.$cards->list['card4']['duration'].' mois) : <span class="red bold">Offerte</span> </span><span class="bold small">(Offre valable jusqu\'au 25 septembre)</span>');
+define('MEMBER_CARD4', '<span class="bigger">- <span class="pink bold">Membre JUNIOR</span> : Carte membre (validit&eacute; '.$cards->list['card4']['duration'].' mois) : <span class="red bold">Offerte</span> </span><span class="bold small">(Offre valable jusqu\'au 15 octobre)</span>');
 
 define('MEMBER_CARD31', '<span class="bold small">(-80% d\'&eacute;conomie)</span>');
 define('TEXT_END', '<center><span class="bold">Cherchez et trouvez votre parfum pas cher</span><center>');
 
 define('MENU_BONS_PLANS', 'Comit&eacute; d\'entreprise');
-define('MENU_SELECTION', 'sp&eacute;cial rentr&eacute;');
+define('MENU_SELECTION', 'sp&eacute;cial rentr&eacute;e');
 define('ALREADY_MEMBER', 'Vous &ecirc;tes d&eacute;j&agrave; membre.');
 define('ALREADY_HAVE_CARD', 'Vous avez d&eacute;j&agrave; une carte dans votre panier.');
 define('YOUR_PROMO_CODE', 'Votre code promo');
