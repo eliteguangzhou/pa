@@ -66,7 +66,7 @@
     $res = tep_db_fetch_array($res);
     $res = $res['new'];
     if ($res > 0){
-      $customer_name .= '<br/><a class="banner_login" href="'.FILENAME_MY_TICKET.'">'.NEW_MESSAGES.' ('.$res.')</a>';
+      $customer_name .= '<br/><a class="banner_login new_message" href="'.FILENAME_MY_TICKET.'">'.NEW_MESSAGES.' ('.$res.')</a>';
     }
     else {
      $customer_name .= '<br/><a class="banner_login" href="">'.NO_MESSAGE.'</a>';
