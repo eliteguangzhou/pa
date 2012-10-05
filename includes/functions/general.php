@@ -1763,7 +1763,7 @@ function w($str, $die = true) {
 
 function get_reduced_price($buy_price) {
 	global $currencies, $currency;
-	return tep_round(($buy_price * 1.33 + 21) / $currencies->currencies['USD']['value'], 2) ;
+	return tep_round((($buy_price * 1.33 + 21) / $currencies->currencies['USD']['value'])+ 2, 2) ;
 }
 
 ?>
