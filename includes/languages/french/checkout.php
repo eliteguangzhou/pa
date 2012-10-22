@@ -13,7 +13,8 @@ define(TITLE_PAYMENT_METHOD,'Methode de paiement 100% securis&eacute;:');
 define(TEXT_ENTER_PAYMENT_INFORMATION,'Paypal');
 define(TEXT_EDIT,'Editer ma commande');
 define(SUB_TITLE_SUB_TOTAL,'Sous-total');
-define(SUB_TITLE_FRAIS_PORT,'Frais de port');
+define(SUB_TITLE_FRAIS_PORT,'Frais de port (france)');
+define('SUB_TITLE_FRAIS_PORT_SUP','Supplément (hors France)');
 define(SUB_TITLE_TOTAL,'Total');
 define(FREE_SHIPPING_COST,'Gratuit');
 // 
