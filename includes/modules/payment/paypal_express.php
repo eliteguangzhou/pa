@@ -158,6 +158,11 @@
           $params['L_AMT'.$lasti]     = $this->format_raw($order->info['shipping_cost']);
           $params['ITEMAMT']           += $params['L_AMT'.$lasti];
           $params['AMT']               += $params['L_AMT'.$lasti];
+	  $lasti++;
+	  $params['L_NAME'.$lasti]    = 'Port sup';
+          $params['L_AMT'.$lasti]     = $this->format_raw(country_cost($_SESSION['customer_country_id']));
+          $params['ITEMAMT']           += $params['L_AMT'.$lasti];
+          $params['AMT']               += $params['L_AMT'.$lasti];
      }
 
       if (is_numeric($sendto) && ($sendto > 0)) {

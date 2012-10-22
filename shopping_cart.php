@@ -26,6 +26,8 @@
   $quote = $shipping_modules->quote('flat', 'flat');
   $fp = $quote[0]['methods'][0]['cost'];
   
+    //test if the country has shipping cost
+    $add_shipping_cost = country_cost($_SESSION['customer_country_id']);
   if (defined('SPECIAL_PROMO'.$total))
 	$promo_nb = '<h1 class="ubber_promo'.$total.'">'.constant('SPECIAL_PROMO'.$total).'</h1>';
   /*else {
@@ -37,7 +39,7 @@
   $discounts = $easy_discount->get_all();
   $nb_discount_cart = $nb_products_discount->discount;
   $discount_cart = $easy_discount->total() + $nb_discount_cart;
-  $total_cart = $subtotal_cart - $discount_cart + $fp;
+  $total_cart = $subtotal_cart - $discount_cart + $fp + $add_shipping_cost;
   $breadcrumb->add(NAVBAR_TITLE, tep_href_link(FILENAME_SHOPPING_CART));
 
 ?>
@@ -337,6 +339,16 @@ $products_ids = '';  //use for the tag in last line.
 							<span class="productSpecialPrice"><?php echo $currencies->format($fp); ?></span>
 						</td>
 					</tr>
+					<?php  }
+					if ($add_shipping_cost) {?>
+					  <tr>
+						<td width="80%" align="right" class="cart_total_left">
+                        <strong><?php echo SUB_TITLE_FRAIS_PORT_SUP; ?></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+						<td width="20%" align="center" class="cart_total_right">
+							<span class="productSpecialPrice"><?php echo $currencies->format($add_shipping_cost); ?></span>
+						</td>
+					  </tr>
+					
 					<?php } ?>
 					<tr>
 						<td width="80%" align="right" class="cart_total_left">

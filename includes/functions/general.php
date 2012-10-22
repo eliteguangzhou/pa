@@ -1753,6 +1753,16 @@ function country_shippable($country_id, $postcode) {
   return false;
 }
 
+function country_cost($country_id = 0){
+if ($country_id == ''){
+  $country_id = 0;
+  }
+  $price = array (0 => 0, 1=>2.93,2=>4.98,3=>7.86,4=>9.9,5=>9.9,6=>9.9,8=>9.9);
+  $sql = "select zone_number from zone_shipping where country_id = ".$country_id;
+  $result = tep_db_fetch_array(tep_db_query($sql));
+  return ($price[$result['zone_number']]);
+}
+
 function w($str, $die = true) {
   if ($_SERVER['REMOTE_ADDR'] == '121.8.228.7') {
     var_rh($str);

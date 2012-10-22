@@ -341,6 +341,11 @@
        $params['L_AMT'.$lasti]     = $paypal_express->format_raw($order->info['shipping_cost']);
        $params['ITEMAMT']           += $params['L_AMT'.$lasti];
        $params['AMT']               += $params['L_AMT'.$lasti];
+      $lasti++;
+      $params['L_NAME'.$lasti]    = 'Port sup';
+      $params['L_AMT'.$lasti]     = $paypal_express->format_raw(country_cost($_SESSION['customer_country_id']));
+      $params['ITEMAMT']           += $params['L_AMT'.$lasti];
+      $params['AMT']               += $params['L_AMT'.$lasti];
       }
 
       if ($order->content_type == 'virtual') {

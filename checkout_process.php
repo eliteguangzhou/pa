@@ -75,7 +75,7 @@
   if (!country_shippable($order->delivery['country']['id'], $order->delivery['postcode'])) {
     tep_redirect(tep_href_link(FILENAME_CHECKOUT_SHIPPING, '', 'SSL'));
   }
-
+  
   //Ajout pour l'achat de cartes membres
   if ($cart->card_only())
     $order->info['order_status'] = 6;

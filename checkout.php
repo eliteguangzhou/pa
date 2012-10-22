@@ -1629,6 +1629,9 @@ function toggle_ship_new(addr){
                 		echo tep_output_string_protected($error['error']);
                 	}
                 }
+                
+                
+                $add_shipping_cost = country_cost($_SESSION['customer_country_id']);
                 ?>
 
 
@@ -2467,7 +2470,7 @@ function toggle_ship_new(addr){
 																	$fp = $quote[0]['methods'][0]['cost'];
 																	$nb_discount_cart = $nb_products_discount->discount;
 																	$discount_cart = $easy_discount->total() + $nb_discount_cart;
-																	$total_cart = $subtotal_cart - $discount_cart + $fp;
+																	$total_cart = $subtotal_cart - $discount_cart + $fp + $add_shipping_cost;
 																	function  get_description($id){
 																		//         print_r( $_SESSION);
 																		$sql = "SELECT products_description FROM products_description WHERE products_id = '".$id."' and language_id = '".(int)$_SESSION['languages_id']."';";
@@ -2542,6 +2545,18 @@ function toggle_ship_new(addr){
 																				</span>
 																				</td>
 																			</tr>
+																			<?php if ($add_shipping_cost) {?>
+																																						<tr>
+																				<td width="80%" align="right"
+																					class="cart_total_left" nowrap><strong><?php echo SUB_TITLE_FRAIS_PORT_SUP; ?>
+																				</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+																				<td width="20%" align="center"
+																					class="cart_total_right"><span
+																					class="productSpecialPrice"><?php echo $fp <= 0 ? FREE_SHIPPING_COST : $currencies->format($add_shipping_cost); ?>
+																				</span>
+																				</td>
+																			</tr>
+																			<?php } ?>
 																			<tr>
 
 																				<td width="80%" align="right"

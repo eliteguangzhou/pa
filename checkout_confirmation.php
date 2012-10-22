@@ -9,8 +9,6 @@
 
   Released under the GNU General Public License
 */
-error_log(implode($_POST));
-eror_log('---------');
   require('includes/application_top.php');
 
 // if the customer is not logged on, redirect them to the login page
