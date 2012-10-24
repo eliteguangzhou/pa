@@ -252,7 +252,7 @@ $products_ids = '';  //use for the tag in last line.
 
 				<table cellspacing="0" cellpadding="0" border="0" class="product">
 
-				<tr><td width="350"  style="vertical-align:middle">
+				<tr><td width="150"  style="vertical-align:middle">
                 <?php
 				
                 if (!$is_member && !$cart->has_card() || $cart->count_contents(false) == 0){
@@ -272,7 +272,7 @@ $products_ids = '';  //use for the tag in last line.
                 }
 
                 ?>
-                </td><td width="190" align="right"><table cellspacing="0" cellpadding="0" border="0" align="right">
+                </td><td width="290" align="right"><table cellspacing="0" cellpadding="0" border="0" align="right">
                     <?php if (!$cart->card_only() && is_promo_date()) { ?>
 					<tr>
 						<td width="80%" align="right" class="cart_total_left">
